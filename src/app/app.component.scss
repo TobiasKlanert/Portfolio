@@ -1,0 +1,12 @@
+@import 'mixins';
+@import 'variables';
+
+section {
+    @include dFlex;
+    background-color: $background-dark;
+    height: 100vh;
+}
+
+button {
+    @include standardButton;
+}
