@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include standardSection();
+  @include dFlex($jc: space-between);
+  background-color: $background-blue;
+  color: $highlight-white;
+}
+
+button {
+  @include standardButton();
+}
+
+.left-side {
+  @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+  height: 100%;
+}
+
+.right-side {
+  @include dFlex($ai: flex-end);
+  position: relative;
+  height: 100%;
+}
+
+.introduction {
+    @include dFlex($fd: column, $ai: flex-start, $g: 8px)
+}
+
+.scroll-widget {
+    position: relative;
+    @include dFlex();
+    padding-bottom: 160px;
+}
+
+.scroll-down {
+    width: 144px;
+    height: 144px;
+}
+
+.arrow-down {
+    position: absolute;
+    height: 40px;
+    z-index: 99;
+}
+
+.profile-picture {
+  z-index: 99;
+  width: 720px;
+  height: 720px;
+}
+
+.background-object {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  right: 10px;
+  width: 500px;
+  height: 500px;
+}

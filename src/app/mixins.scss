@@ -1,31 +1,36 @@
-@import 'variables';
+@import "variables";
 
-@mixin dFlex($fd: row, $jc:center, $ai:center, $g:0) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-    gap: $g;
+@mixin dFlex($fd: row, $jc: center, $ai: center, $g: 0) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
 }
 
-@mixin standardSection($w: 100vw, $h: 100vh, $mw: 100%) {
-    width: $w;
-    height: $h;
-    max-Width: $mw;
+@mixin standardSection($w: 100vw, $h: 100vh, $mw: 1440px, $pt: 160px, $pb: 0, $pl: 112px, $pr: 112px) {
+  width: $w;
+  height: $h;
+  max-width: $mw;
+  padding: $pt $pr $pb $pl;
 }
 
 @mixin standardButton($ptb: 12px, $plr: 24px, $g: 10px) {
-    height: 40px;
-    border: 1px;
-    border-style: solid;
-    border-radius: 100px;
-    border-color: $highlight-white;
-    padding: $ptb $plr;
-    gap: $g;
-    background-color: transparent;
-    color: $highlight-white;
-    transition: all 125ms ease-in-out;
-    &:hover {
-        background-color: $highlight-orange;
-    }
+  height: 40px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: $highlight-white;
+  padding: $ptb $plr;
+  gap: $g;
+  background-color: transparent;
+  color: $highlight-white;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: all 125ms ease-in-out;
+  &:hover {
+    background-color: $highlight-orange;
+  }
 }
