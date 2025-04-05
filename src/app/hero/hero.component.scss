@@ -10,6 +10,7 @@ section {
 
 button {
   @include standardButton();
+  margin-top: 16px;
 }
 
 .left-side {
@@ -34,6 +35,7 @@ button {
 }
 
 .scroll-down {
+    @include rotate-image();
     width: 144px;
     height: 144px;
 }
