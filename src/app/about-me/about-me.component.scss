@@ -1,0 +1,47 @@
+@import "../mixins.scss";
+@import "../variables";
+
+section {
+  @include standardSection();
+  background-color: $background-bright;
+  position: relative;
+  > h2 {
+    position: absolute;
+    top: 160px;
+    right: 112px;
+  }
+  > img {
+    position: absolute;
+    left: 112px;
+    bottom: 0;
+  }
+}
+
+.textbox {
+  @include dFlex($fd: column, $jc: space-between, $g: 32px);
+  position: absolute;
+  top: 350px;
+  left: 554px;
+  width: 600px;
+  height: 250px;
+  background-color: $background-dark;
+  color: $highlight-white;
+  padding: 32px;
+  border-radius: 4px;
+  > p {
+    font-family: "Quicksand";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  > div {
+    @include dFlex($jc: space-between);
+    width: 100%;
+    > button {
+      @include standardButton();
+    }
+    > svg {
+      @include floating-icon();
+      cursor: pointer;
+    }
+  }
+}

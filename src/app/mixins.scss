@@ -8,7 +8,7 @@
   gap: $g;
 }
 
-@mixin standardSection($w: 100vw, $h: 100vh, $mw: 1920px, $pt: 160px, $pb: 0, $pl: 112px, $pr: 112px) {
+@mixin standardSection($w: 100vw, $h: 100vh, $mw: 1440px, $pt: 160px, $pb: 0, $pl: 112px, $pr: 112px) {
   width: $w;
   height: $h;
   max-width: $mw;
@@ -48,3 +48,17 @@
   animation: rotate360 7s linear infinite;
 }
 
+@keyframes floatSmooth {
+  0%, 100% {
+    transform: translateY(5px);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(-5px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@mixin floating-icon {
+  animation: floatSmooth 1s ease-in-out infinite;
+}

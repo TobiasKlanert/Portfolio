@@ -25,25 +25,26 @@ button {
 }
 
 .introduction {
-    @include dFlex($fd: column, $ai: flex-start, $g: 8px)
+  @include dFlex($fd: column, $ai: flex-start, $g: 8px);
 }
 
 .scroll-widget {
-    position: relative;
-    @include dFlex();
-    padding-bottom: 160px;
+  @include dFlex();
+  position: relative;
+  padding-bottom: 160px;
+  cursor: pointer;
 }
 
 .scroll-down {
-    @include rotate-image();
-    width: 144px;
-    height: 144px;
+  @include rotate-image();
+  width: 144px;
+  height: 144px;
 }
 
 .arrow-down {
-    position: absolute;
-    height: 40px;
-    z-index: 99;
+  position: absolute;
+  height: 40px;
+  z-index: 99;
 }
 
 .profile-picture {
@@ -55,8 +56,8 @@ button {
 .background-object {
   position: absolute;
   z-index: 1;
-  top: 200px;
-  right: 10px;
+  top: 0;
+  right: -10px;
   width: 500px;
   height: 500px;
 }

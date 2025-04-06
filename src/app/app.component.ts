@@ -2,11 +2,12 @@ import { AfterViewInit, Component, ElementRef, Renderer2, ViewChildren, QueryLis
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeroComponent],
+  imports: [CommonModule, RouterOutlet, HeroComponent, AboutMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
