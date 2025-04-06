@@ -1,0 +1,42 @@
+@import "../mixins.scss";
+@import "../variables";
+
+section {
+  @include standardSection();
+  background-color: $background-dark;
+  color: $highlight-white;
+}
+
+.textbox {
+  width: 600px;
+  /* height: 140px; */
+  background-color: $background-blue;
+  padding: 32px;
+  border-radius: 4px;
+  > p {
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.secret-widget {
+  @include dFlex();
+  position: relative;
+  width: 120px;
+  height: 120px;
+  padding-bottom: 160px;
+  cursor: pointer;
+}
+
+.rotate-shape {
+  @include rotate-image();
+  width: 144px;
+  height: 144px;
+}
+
+.learning-icon {
+  position: absolute;
+  height: 40px;
+  z-index: 99;
+}
