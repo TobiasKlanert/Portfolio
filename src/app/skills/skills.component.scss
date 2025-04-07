@@ -3,13 +3,13 @@
 
 section {
   @include standardSection();
+  position: relative;
   background-color: $background-dark;
   color: $highlight-white;
 }
 
 .textbox {
   width: 600px;
-  /* height: 140px; */
   background-color: $background-blue;
   padding: 32px;
   border-radius: 4px;
@@ -22,10 +22,11 @@ section {
 
 .secret-widget {
   @include dFlex();
-  position: relative;
+  position: absolute;
+  bottom: 100px;
+  left: 112px;
   width: 120px;
   height: 120px;
-  padding-bottom: 160px;
   cursor: pointer;
 }
 
@@ -39,4 +40,34 @@ section {
   position: absolute;
   height: 40px;
   z-index: 99;
+}
+
+
+.skills {
+  @include dFlex($ai: self-start, $g: 40px);
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 100px;
+  right: 112px;
+  width: 640px;
+}
+
+.skill-item {
+  @include dFlex($fd: column, $g: 8px);
+
+  img {
+    width: 96px;
+    flex: 0 0 calc(20% - 40px);
+    transition: transform 200ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  p {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
 }

@@ -5,8 +5,19 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-
+  skillNames = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'Angular',
+    'Firebase',
+    'Git',
+    'Rest-Api',
+    'Scrum',
+    'Material <br> Design',
+  ];
 }

@@ -39,7 +39,7 @@ section {
     > button {
       @include standardButton();
     }
-    > svg {
+    > img {
       @include floating-icon();
       cursor: pointer;
     }
