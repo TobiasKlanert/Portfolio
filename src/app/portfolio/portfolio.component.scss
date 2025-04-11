@@ -1,12 +1,95 @@
-@import '../variables';
-@import '../mixins.scss';
+@import "../variables";
+@import "../mixins.scss";
 
 section {
-    @include standardSection();
-    background-color: $background-bright;
-    color: #1D1D1D;
+  @include standardSection();
+  background-color: $background-bright;
+  color: #1d1d1d;
 }
 
 .headline {
-    @include dFlex($g: 40px);
+  @include dFlex($g: 40px);
+}
+
+.projects {
+  @include dFlex($g: 40px);
+  width: 100%;
+  height: 488px;
+}
+
+.screenshot-container {
+  @include dFlex();
+  position: relative;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px;
+  border-color: #1D1D1D;
+  border-style: solid;
+  background-color: $highlight-orange;
+}
+
+.screenshot {
+  width: 85%;
+  z-index: 99;
+}
+
+.spinner {
+  @include rotate-image();
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.project-container {
+  @include dFlex($fd: column, $g: 32px);
+  height: 100%;
+}
+
+.project-description {
+  @include dFlex($fd: column, $ai: flex-start, $g: 16px);
+  background-color: $background-dark;
+  color: $highlight-white;
+  padding: 64px 32px;
+  border-radius: 4px;
+}
+
+.project-header {
+  @include dFlex($jc: space-between);
+  width: 100%;
+  > img {
+    @include floating-icon();
+    cursor: pointer;
+  }
+}
+
+.project-techstack {
+    color: #679AAC;
+}
+
+.project-buttons {
+  @include dFlex($jc: flex-start, $g: 32px);
+  width: 100%;
+  margin-top: 16px;
+  > a {
+    @include standardButton();
+    text-decoration: none;
+  }
+}
+
+.project-switch {
+  @include dFlex($jc: space-between);
+  width: 100%;
+  > button {
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 18px;
+    color: #1d1d1d;
+    border: none;
+    background: none;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      color: $highlight-orange;
+    }
+  }
 }
