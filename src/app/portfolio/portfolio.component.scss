@@ -1,0 +1,12 @@
+@import '../variables';
+@import '../mixins.scss';
+
+section {
+    @include standardSection();
+    background-color: $background-bright;
+    color: #1D1D1D;
+}
+
+.headline {
+    @include dFlex($g: 40px);
+}

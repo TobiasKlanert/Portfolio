@@ -28,11 +28,6 @@ section {
   color: $highlight-white;
   padding: 32px;
   border-radius: 4px;
-  > p {
-    font-family: "Quicksand";
-    font-size: 16px;
-    font-weight: 400;
-  }
   > div {
     @include dFlex($jc: space-between);
     width: 100%;
