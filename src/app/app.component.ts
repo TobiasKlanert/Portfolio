@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, ElementRef, Renderer2, ViewChildren, QueryList } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Renderer2,
+  ViewChildren,
+  QueryList,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
@@ -6,15 +13,25 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeroComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, ReferencesComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    HeroComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    PortfolioComponent,
+    ReferencesComponent,
+    ContactComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent implements AfterViewInit { 
+export class AppComponent implements AfterViewInit {
   @ViewChildren('section') sections!: QueryList<ElementRef>;
 
   observer: IntersectionObserver;
@@ -26,7 +43,9 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.sections.forEach(section => this.observer.observe(section.nativeElement));
+    this.sections.forEach((section) =>
+      this.observer.observe(section.nativeElement)
+    );
   }
 
   onIntersection(entries: IntersectionObserverEntry[]) {

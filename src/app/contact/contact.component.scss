@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include standardSection();
+  @include dFlex($ai: flex-start, $g: 64px);
+  background-color: $background-dark;
+}
+
+h2 {
+  color: $highlight-yellow;
+}
