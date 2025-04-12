@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
-  currentProjectIndex = 0;  // Index des aktuellen Projekts
-  
+  currentProjectIndex = 0; // Index des aktuellen Projekts
+
   projects = [
     {
       title: 'Join',
@@ -50,18 +50,14 @@ export class PortfolioComponent {
     },
   ];
 
-  // Methode für "Previous Project"
-  previousProject() {
-    if (this.currentProjectIndex > 0) {
-      this.currentProjectIndex--;
-    }
+  nextProject() {
+    this.currentProjectIndex =
+      (this.currentProjectIndex + 1) % this.projects.length;
   }
 
-  // Methode für "Next Project"
-  nextProject() {
-    if (this.currentProjectIndex < this.projects.length - 1) {
-      this.currentProjectIndex++;
-    }
+  previousProject() {
+    this.currentProjectIndex =
+      (this.currentProjectIndex - 1 + this.projects.length) %
+      this.projects.length;
   }
 }
-

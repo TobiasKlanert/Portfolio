@@ -43,13 +43,11 @@
       <div class="project-switch">
         <button
           (click)="previousProject()"
-          [disabled]="currentProjectIndex === 0"
         >
           << Previous project
         </button>
         <button
           (click)="nextProject()"
-          [disabled]="currentProjectIndex === projects.length - 1"
         >
           Next project >>
         </button>

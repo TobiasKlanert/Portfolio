@@ -8,11 +8,14 @@ section {
 }
 
 .headline {
-  @include dFlex($g: 40px);
+  @include dFlex($jc: flex-start, $g: 40px);
+  > p {
+    padding: 32px;
+  }
 }
 
 .projects {
-  @include dFlex($g: 40px);
+  @include dFlex($jc: space-between, $g: 40px);
   width: 100%;
   height: 488px;
 }
@@ -21,7 +24,8 @@ section {
   @include dFlex();
   position: relative;
   height: 100%;
-  border: 1px solid #1D1D1D;
+  width: 488px;
+  border: 1px solid #1d1d1d;
   border-radius: 4px;
 }
 
@@ -43,6 +47,7 @@ section {
 .project-container {
   @include dFlex($fd: column, $g: 32px);
   height: 100%;
+  width: 688px;
 }
 
 .project-description {
@@ -51,6 +56,8 @@ section {
   color: $highlight-white;
   padding: 64px 32px;
   border-radius: 4px;
+  width: 100%;
+  height: 368px;
 }
 
 .project-header {
@@ -63,7 +70,7 @@ section {
 }
 
 .project-techstack {
-    color: #679AAC;
+  color: #679aac;
 }
 
 .project-buttons {
