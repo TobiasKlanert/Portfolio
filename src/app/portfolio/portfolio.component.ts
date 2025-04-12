@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
-  currentProjectIndex = 0; // Index des aktuellen Projekts
+  currentProjectIndex = 0;
 
   projects = [
     {
