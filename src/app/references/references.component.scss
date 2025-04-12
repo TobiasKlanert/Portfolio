@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include standardSection();
+  background-color: $background-blue;
+  color: $highlight-white;
+}
+
+.ref-wrapper {
+  @include dFlex($ai: flex-start, $g: 32px);
+  margin-top: 48px;
+}
+
+.ref-container {
+  @include dFlex($fd: column, $ai: flex-end, $g: 32px);
+  > a {
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 18px;
+    color: $highlight-white;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      color: $highlight-orange;
+    }
+  }
+}
+
+.ref-box {
+  @include dFlex($fd: column, $ai: flex-start, $g: 10px);
+  border: 1px solid $highlight-white;
+  border-radius: 4px;
+  padding: 32px;
+  &:hover {
+    .ref-header {
+      > img {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.ref-header {
+  @include dFlex($jc: space-between);
+  width: 100%;
+  > img {
+    width: 40px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 125ms ease, transform 125ms ease;
+  }
+}

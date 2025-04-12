@@ -1,1 +1,18 @@
-<p>references works!</p>
+<section>
+  <h2>What my colleagues say about me</h2>
+  <div class="ref-wrapper">
+    @for (reference of references; let i = $index; track i) {
+    <div class="ref-container">
+      <div [ngStyle]="{ 'margin-top.px': i * i * 60 }" class="ref-box">
+        <div class="ref-header">
+          <h4>{{ reference.name }}</h4>
+          <img src="/assets/img/spinning_shape.svg" alt="" />
+        </div>
+        <p>{{ reference.feedback }}</p>
+        <h5>{{ reference.role }}</h5>
+      </div>
+      <a [href]="reference.link" target="_blank">To the LinkedIn profile >></a>
+    </div>
+    }
+  </div>
+</section>
