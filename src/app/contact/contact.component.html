@@ -1,5 +1,87 @@
 <section>
   <div class="left-side">
     <h2>Let's build something Cool together!</h2>
+    <div>
+      <h4>Got a problem to solve?</h4>
+      <p>
+        Encourage people to contact you and describe what role you are
+        interested in. Show that you will add value to their projects through
+        your work.
+      </p>
+    </div>
+  </div>
+  <div class="right-side">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div class="form-group">
+        <div class="input-wrapper">
+          <label for="name">What's your name?</label>
+          <input
+            [(ngModel)]="contactData.name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name goes here"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">What's your email?</label>
+          <input
+            [(ngModel)]="contactData.email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@email.com"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            required
+          />
+        </div>
+      </div>
+
+      <div [ngStyle]="{ 'width.%': 100 }" class="input-wrapper">
+        <label for="message">How can I help you?</label>
+        <textarea
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          id="message"
+          name="message"
+          placeholder="Hello Tobias, I am interested in..."
+          required
+        ></textarea>
+      </div>
+
+      <!-- @if (!message.valid && message.touched && !message.disabled) {
+      <span>bla</span>
+      }
+ -->
+      <div class="form-group">
+        <div class="checkbox-wrapper" (click)="toggleCheckbox()">
+          <div class="checkbox-icon">
+            <img
+              [src]="
+                isChecked
+                  ? '/assets/img/checkbox_checked.svg'
+                  : '/assets/img/checkbox.svg'
+              "
+              alt="checkbox"
+            />
+          </div>
+
+          <label
+            >I've read the <a href="">privacy policy</a> and agree to the
+            processing of my data.</label
+          >
+          <input
+            type="checkbox"
+            [(ngModel)]="isChecked"
+            name="agreement"
+            hidden
+          />
+        </div>
+      </div>
+
+      <button type="submit">Drop a Line</button>
+    </form>
   </div>
 </section>

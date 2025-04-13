@@ -8,7 +8,15 @@
   gap: $g;
 }
 
-@mixin standardSection($w: 100vw, $h: 100vh, $mw: 1440px, $pt: 160px, $pb: 0, $pl: 112px, $pr: 112px) {
+@mixin standardSection(
+  $w: 100vw,
+  $h: 100vh,
+  $mw: 1440px,
+  $pt: 160px,
+  $pb: 0,
+  $pl: 112px,
+  $pr: 112px
+) {
   width: $w;
   height: $h;
   max-width: $mw;
@@ -25,15 +33,24 @@
   gap: $g;
   background-color: transparent;
   color: $highlight-white;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-size: 18px;
   font-weight: 700;
+  line-height: 120%;
   display: flex;
   align-items: center;
   transition: all 125ms ease-in-out;
   &:hover {
     background-color: $highlight-orange;
   }
+}
+
+@mixin standardText($fs: 16px, $fw: 400) {
+  font-family: 'Quicksand';
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: 120%;
+  letter-spacing: 0%;
 }
 
 @keyframes rotate360 {
@@ -50,7 +67,8 @@
 }
 
 @keyframes floatSmooth {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(5px);
     animation-timing-function: ease-in-out;
   }
