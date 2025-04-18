@@ -13,49 +13,60 @@
   <div class="right-side">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="form-group">
-        <div class="input-wrapper">
+        <div
+          class="input-wrapper"
+          [class.invalid]="!name.valid && name.touched"
+        >
           <label for="name">What's your name?</label>
           <input
+            #name="ngModel"
             [(ngModel)]="contactData.name"
+            [ngClass]="{ invalid: !name.valid && name.touched }"
             type="text"
             id="name"
             name="name"
-            placeholder="Your name goes here"
+            [placeholder]="getNamePlaceholder(name)"
             required
           />
         </div>
 
-        <div class="input-wrapper">
+        <div
+          class="input-wrapper"
+          [class.invalid]="!email.valid && email.touched"
+        >
           <label for="email">What's your email?</label>
           <input
+            #email="ngModel"
             [(ngModel)]="contactData.email"
+            [ngClass]="{ invalid: !email.valid && email.touched }"
             type="email"
             id="email"
             name="email"
-            placeholder="youremail@email.com"
+            [placeholder]="getEmailPlaceholder(email)"
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             required
           />
         </div>
       </div>
 
-      <div [ngStyle]="{ 'width.%': 100 }" class="input-wrapper">
+      <div
+        [ngStyle]="{ 'width.%': 100 }"
+        class="input-wrapper"
+        [class.invalid]="!message.valid && message.touched"
+      >
         <label for="message">How can I help you?</label>
         <textarea
           #message="ngModel"
           [(ngModel)]="contactData.message"
+          [ngClass]="{ invalid: !message.valid && message.touched }"
           id="message"
           name="message"
-          placeholder="Hello Tobias, I am interested in..."
+          [placeholder]="getMessagePlaceholder(message)"
           required
         ></textarea>
       </div>
 
-      <!-- @if (!message.valid && message.touched && !message.disabled) {
-      <span>bla</span>
-      }
- -->
-      <div class="form-group">
+      <div class="checkbox-group">
         <div class="checkbox-wrapper" (click)="toggleCheckbox()">
           <div class="checkbox-icon">
             <img
@@ -74,14 +85,25 @@
           >
           <input
             type="checkbox"
+            #agreement="ngModel"
             [(ngModel)]="isChecked"
             name="agreement"
+            required
             hidden
           />
         </div>
+        <p
+          class="checkbox-error"
+          [class.visible]="agreement.invalid && agreement.touched"
+        >
+          Please accept the privacy policy.
+        </p>
       </div>
 
-      <button type="submit">Drop a Line</button>
+      <button type="submit" [disabled]="!contactForm.valid">Drop a Line</button>
     </form>
+  </div>
+  <div class="success-toast" *ngIf="showSuccess">
+    Your message has been sent!
   </div>
 </section>

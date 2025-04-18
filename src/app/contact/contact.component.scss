@@ -42,6 +42,12 @@ form {
 
 button {
   @include standardButton();
+  margin-top: -28px;
+  &:disabled {
+    pointer-events: none;
+    border-color: #858585;
+    color: #858585;
+  }
 }
 
 .form-group {
@@ -49,9 +55,29 @@ button {
   width: 100%;
 }
 
+.checkbox-group {
+  @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+  width: 100%;
+  > p {
+    color: #ec7b7b;
+    height: 20px;
+  }
+}
+
+.checkbox-error {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 75ms ease-in-out;
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .input-wrapper {
   @include dFlex($fd: column, $g: 10px);
-  padding: 16px;
+  padding: 16px 0 16px 16px;
   border-bottom: 1px solid $highlight-yellow;
   width: 100%;
   transition: border 125ms ease-in-out;
@@ -62,6 +88,8 @@ button {
     height: 23px;
     line-height: 23px;
     resize: none;
+  }
+  > textarea {
     overflow: hidden;
   }
   &:focus-within {
@@ -70,6 +98,9 @@ button {
       color: $highlight-orange;
       transition: color 125ms ease-in-out;
     }
+  }
+  &.invalid {
+    border-color: $highlight-orange;
   }
 }
 
@@ -82,32 +113,22 @@ input[type="text"],
 [type="email"],
 textarea {
   @include standardText();
-  color: #ffffffcc;
+  color: $highlight-white;
 
   border: none;
   background-color: transparent;
   outline: none;
 }
 
-
-
 .checkbox-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  @include dFlex($jc: flex-start, $g: 8px);
   cursor: pointer;
-
-  /* img {
-    width: 15px;
-    height: 15px;
-    transition: all 0.2s ease;
-  } */
 
   label {
     font-size: 16px;
     user-select: none;
     @include standardText();
-    >a {
+    > a {
       @include standardText();
       color: $highlight-orange;
       &:hover {
@@ -118,10 +139,15 @@ textarea {
   }
 }
 
+input.invalid::placeholder,
+textarea.invalid::placeholder {
+  color: #ec7b7bcc;
+}
+
 .checkbox-icon {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 
   img {
     width: 100%;
@@ -131,13 +157,13 @@ textarea {
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 20px;
     height: 20px;
-    background-color: #F9AF4280;
+    background-color: #f9af4280;
     border-radius: 38px;
     transform: translate(-50%, -50%) scale(0);
     transition: transform 125ms ease-in-out;
@@ -147,4 +173,51 @@ textarea {
   &:hover::after {
     transform: translate(-50%, -50%) scale(1);
   }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1d1d1d inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@keyframes slideUpFadeInOut {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.success-toast {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $highlight-orange;
+  color: $highlight-white;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 12px 24px;
+  border-radius: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: slideUpFadeInOut 3s ease forwards;
+  z-index: 1000;
 }
