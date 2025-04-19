@@ -2,9 +2,14 @@
 @import "../mixins.scss";
 
 section {
-  @include standardSection($pb: 160px);
-  @include dFlex($ai: flex-start, $g: 64px);
+  @include standardSection();
+  @include dFlex($fd: column, $ai: flex-start);
   background-color: $background-dark;
+  position: relative;
+  > div {
+    @include dFlex($ai: flex-start, $g: 64px);
+    height: 100%;
+  }
 }
 
 .left-side {
@@ -17,6 +22,7 @@ section {
 
 .right-side {
   @include dFlex($fd: column, $jc: flex-end, $g: 40px);
+  padding-bottom: 160px;
   height: 100%;
   width: 50%;
 }
@@ -36,7 +42,7 @@ p {
 }
 
 form {
-  @include dFlex($fd: column, $g: 64px);
+  @include dFlex($fd: column, $g: 48px);
   width: 100%;
 }
 
@@ -131,6 +137,7 @@ textarea {
     > a {
       @include standardText();
       color: $highlight-orange;
+      transition: all 125ms ease-in-out;
       &:hover {
         font-weight: 700;
         color: $highlight-white;

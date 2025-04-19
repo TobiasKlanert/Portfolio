@@ -1,109 +1,114 @@
 <section>
-  <div class="left-side">
-    <h2>Let's build something Cool together!</h2>
-    <div>
-      <h4>Got a problem to solve?</h4>
-      <p>
-        Encourage people to contact you and describe what role you are
-        interested in. Show that you will add value to their projects through
-        your work.
-      </p>
+  <div>
+    <div class="left-side">
+      <h2>Let's build something Cool together!</h2>
+      <div>
+        <h4>Got a problem to solve?</h4>
+        <p>
+          Encourage people to contact you and describe what role you are
+          interested in. Show that you will add value to their projects through
+          your work.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="right-side">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <div class="form-group">
-        <div
-          class="input-wrapper"
-          [class.invalid]="!name.valid && name.touched"
-        >
-          <label for="name">What's your name?</label>
-          <input
-            #name="ngModel"
-            [(ngModel)]="contactData.name"
-            [ngClass]="{ invalid: !name.valid && name.touched }"
-            type="text"
-            id="name"
-            name="name"
-            [placeholder]="getNamePlaceholder(name)"
-            required
-          />
-        </div>
-
-        <div
-          class="input-wrapper"
-          [class.invalid]="!email.valid && email.touched"
-        >
-          <label for="email">What's your email?</label>
-          <input
-            #email="ngModel"
-            [(ngModel)]="contactData.email"
-            [ngClass]="{ invalid: !email.valid && email.touched }"
-            type="email"
-            id="email"
-            name="email"
-            [placeholder]="getEmailPlaceholder(email)"
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-            required
-          />
-        </div>
-      </div>
-
-      <div
-        [ngStyle]="{ 'width.%': 100 }"
-        class="input-wrapper"
-        [class.invalid]="!message.valid && message.touched"
-      >
-        <label for="message">How can I help you?</label>
-        <textarea
-          #message="ngModel"
-          [(ngModel)]="contactData.message"
-          [ngClass]="{ invalid: !message.valid && message.touched }"
-          id="message"
-          name="message"
-          [placeholder]="getMessagePlaceholder(message)"
-          required
-        ></textarea>
-      </div>
-
-      <div class="checkbox-group">
-        <div class="checkbox-wrapper" (click)="toggleCheckbox()">
-          <div class="checkbox-icon">
-            <img
-              [src]="
-                isChecked
-                  ? '/assets/img/checkbox_checked.svg'
-                  : '/assets/img/checkbox.svg'
-              "
-              alt="checkbox"
+    <div class="right-side">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="form-group">
+          <div
+            class="input-wrapper"
+            [class.invalid]="!name.valid && name.touched"
+          >
+            <label for="name">What's your name?</label>
+            <input
+              #name="ngModel"
+              [(ngModel)]="contactData.name"
+              [ngClass]="{ invalid: !name.valid && name.touched }"
+              type="text"
+              id="name"
+              name="name"
+              [placeholder]="getNamePlaceholder(name)"
+              required
             />
           </div>
 
-          <label
-            >I've read the <a href="">privacy policy</a> and agree to the
-            processing of my data.</label
+          <div
+            class="input-wrapper"
+            [class.invalid]="!email.valid && email.touched"
           >
-          <input
-            type="checkbox"
-            #agreement="ngModel"
-            [(ngModel)]="isChecked"
-            name="agreement"
-            required
-            hidden
-          />
+            <label for="email">What's your email?</label>
+            <input
+              #email="ngModel"
+              [(ngModel)]="contactData.email"
+              [ngClass]="{ invalid: !email.valid && email.touched }"
+              type="email"
+              id="email"
+              name="email"
+              [placeholder]="getEmailPlaceholder(email)"
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+              required
+            />
+          </div>
         </div>
-        <p
-          class="checkbox-error"
-          [class.visible]="agreement.invalid && agreement.touched"
-        >
-          Please accept the privacy policy.
-        </p>
-      </div>
 
-      <button type="submit" [disabled]="!contactForm.valid">Drop a Line</button>
-    </form>
+        <div
+          [ngStyle]="{ 'width.%': 100 }"
+          class="input-wrapper"
+          [class.invalid]="!message.valid && message.touched"
+        >
+          <label for="message">How can I help you?</label>
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            [ngClass]="{ invalid: !message.valid && message.touched }"
+            id="message"
+            name="message"
+            [placeholder]="getMessagePlaceholder(message)"
+            required
+          ></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <div class="checkbox-wrapper" (click)="toggleCheckbox()">
+            <div class="checkbox-icon">
+              <img
+                [src]="
+                  isChecked
+                    ? '/assets/img/checkbox_checked.svg'
+                    : '/assets/img/checkbox.svg'
+                "
+                alt="checkbox"
+              />
+            </div>
+
+            <label
+              >I've read the <a href="">privacy policy</a> and agree to the
+              processing of my data.</label
+            >
+            <input
+              type="checkbox"
+              #agreement="ngModel"
+              [(ngModel)]="isChecked"
+              name="agreement"
+              required
+              hidden
+            />
+          </div>
+          <p
+            class="checkbox-error"
+            [class.visible]="agreement.invalid && agreement.touched"
+          >
+            Please accept the privacy policy.
+          </p>
+        </div>
+
+        <button type="submit" [disabled]="!contactForm.valid">
+          Drop a Line
+        </button>
+      </form>
+    </div>
+    <div class="success-toast" *ngIf="showSuccess">
+      Your message has been sent!
+    </div>
   </div>
-  <div class="success-toast" *ngIf="showSuccess">
-    Your message has been sent!
-  </div>
+  <app-footer></app-footer>
 </section>

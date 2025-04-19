@@ -62,8 +62,21 @@
   }
 }
 
+@keyframes rotate-360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 @mixin rotate-image {
   animation: rotate360 7s linear infinite;
+}
+
+@mixin rotate-image-negative {
+  animation: rotate-360 7s linear infinite;
 }
 
 @keyframes floatSmooth {

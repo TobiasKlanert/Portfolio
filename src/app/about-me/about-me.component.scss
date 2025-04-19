@@ -31,7 +31,7 @@ section {
   > div {
     @include dFlex($jc: space-between);
     width: 100%;
-    > button {
+    > a {
       @include standardButton();
     }
     > img {

@@ -1,0 +1,51 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include dFlex($jc: space-between, $ai: flex-end);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: $highlight-white;
+}
+
+a {
+  font-family: "Quicksand";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $highlight-white;
+  transition: all 125ms ease-in-out;
+  &:hover {
+    color: $highlight-orange;
+  }
+}
+
+p {
+  padding-bottom: 56px;
+}
+
+.spinner {
+  position: relative;
+}
+
+.clockwise {
+  @include rotate-image();
+  width: 180px;
+  height: 180px;
+}
+
+.counterclockwise {
+  @include rotate-image-negative();
+  width: 263px;
+  height: 263px;
+  position: absolute;
+  left: 110px;
+  bottom: 0;
+}
+
+.links {
+  @include dFlex($g: 32px);
+  padding-bottom: 56px;
+}

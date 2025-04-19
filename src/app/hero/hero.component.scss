@@ -8,7 +8,7 @@ section {
   color: $highlight-white;
 }
 
-button {
+a {
   @include standardButton();
   margin-top: 16px;
 }
