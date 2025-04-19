@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    HeaderComponent,
     HeroComponent,
     AboutMeComponent,
     SkillsComponent,

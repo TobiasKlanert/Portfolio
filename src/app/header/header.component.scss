@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include dFlex($jc: space-between);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 24px 72px;
+  z-index: 999;
+  > div {
+    @include dFlex();
+  }
+}
+
+h4 {
+  color: $highlight-white;
+}
+
+.btn-language {
+  height: 40px;
+  width: 40px;
+  border: solid 1px $highlight-white;
+  border-radius: 100px;
+  background-color: transparent;
+  color: $highlight-white;
+  transition: all 125ms ease-in-out;
+  &:hover {
+    background-color: $highlight-orange;
+  }
+}
+
+.btn-menu {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+}

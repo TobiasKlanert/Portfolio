@@ -1,1 +1,63 @@
-<p>header works!</p>
+<section>
+  <div [ngStyle]="{ 'gap.px': 32 }">
+    <a
+      href="https://github.com/TobiasKlanert"
+      (mouseenter)="isHoveringGitHub = true"
+      (mouseleave)="isHoveringGitHub = false"
+      target="_blank"
+      ><img
+        [src]="
+          isHoveringGitHub
+            ? '/assets/img/contact_github_hover.svg'
+            : '/assets/img/contact_github.svg'
+        "
+        alt="GitHub"
+    /></a>
+    <a
+      href="https://www.linkedin.com/in/tobias-klanert-80563731a/"
+      (mouseenter)="isHoveringLinkedIn = true"
+      (mouseleave)="isHoveringLinkedIn = false"
+      target="_blank"
+      ><img
+        [src]="
+          isHoveringLinkedIn
+            ? '/assets/img/contact_linkedin_hover.svg'
+            : '/assets/img/contact_linkedin.svg'
+        "
+        alt="LinkedIn"
+    /></a>
+    <a
+      href="mailto:tobias.klanert@t-online.de"
+      (mouseenter)="isHoveringMail = true"
+      (mouseleave)="isHoveringMail = false"
+      ><img
+        [src]="
+          isHoveringMail
+            ? '/assets/img/contact_mail_hover.svg'
+            : '/assets/img/contact_mail.svg'
+        "
+        alt="E-Mail"
+    /></a>
+  </div>
+  <div [ngStyle]="{ 'gap.px': 12 }">
+    <img src="../../assets/img/logo.svg" alt="Logo" />
+    <h4>Klanert</h4>
+  </div>
+  <div [ngStyle]="{ 'gap.px': 16 }">
+    <button class="btn-language" (click)="switchLanguage()">
+      {{ isGerman ? "DE" : "EN" }}
+    </button>
+    <button
+      class="btn-menu"
+      (mouseenter)="isHoveringMenu = true"
+      (mouseleave)="isHoveringMenu = false"
+    >
+      <img
+        [src]="
+          isHoveringMenu ? '/assets/img/menu_hover.svg' : '/assets/img/menu.svg'
+        "
+        alt="Menu"
+      />
+    </button>
+  </div>
+</section>
