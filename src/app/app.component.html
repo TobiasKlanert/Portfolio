@@ -1,27 +1,29 @@
-<app-header></app-header>
+<div class="scroll-container">
+  <app-header></app-header>
 
-<section #section data-bg="#679AAC">
-  <app-hero></app-hero>
-</section>
+  <section [ngStyle]="{ 'background-color': '#679AAC' }">
+    <app-hero></app-hero>
+  </section>
 
-<section #section data-bg="#F8F7E5">
-  <app-about-me></app-about-me>
-</section>
+  <section [ngStyle]="{ 'background-color': '#F8F7E5' }">
+    <app-about-me></app-about-me>
+  </section>
 
-<section #section data-bg="#1D1D1D">
-  <app-skills></app-skills>
-</section>
+  <section [ngStyle]="{ 'background-color': '#1D1D1D' }">
+    <app-skills></app-skills>
+  </section>
 
-<section #section data-bg="#F8F7E5">
-  <app-portfolio></app-portfolio>
-</section>
+  <section [ngStyle]="{ 'background-color': '#F8F7E5' }">
+    <app-portfolio></app-portfolio>
+  </section>
 
-<section #section data-bg="#679AAC">
-  <app-references></app-references>
-</section>
+  <section [ngStyle]="{ 'background-color': '#679AAC' }">
+    <app-references></app-references>
+  </section>
 
-<section id="contact" #section data-bg="#1D1D1D">
-  <app-contact></app-contact>
-</section>
+  <section [ngStyle]="{ 'background-color': '#1D1D1D' }" id="contact">
+    <app-contact></app-contact>
+  </section>
+</div>
 
 <router-outlet></router-outlet>
