@@ -14,8 +14,16 @@ section {
   }
 }
 
-h4 {
+a {
+  @include dFlex($g: 12px);
+  font-family: 'Quicksand'; 
+  font-size: 24px;
+  font-weight: 700;
   color: $highlight-white;
+  transition: all 125ms ease-in-out;
+  &:hover {
+    color: $highlight-orange;
+  }
 }
 
 .btn-language {

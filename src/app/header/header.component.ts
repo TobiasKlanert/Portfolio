@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +14,16 @@ export class HeaderComponent {
   isHoveringMail = false;
   isHoveringMenu = false;
   isGerman = false;
+  isFirstSectionVisible = true;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      const rect = heroSection.getBoundingClientRect();
+      this.isFirstSectionVisible = rect.top <= 0 && rect.bottom > 100;
+    }
+  }
 
   switchLanguage() {
     this.isGerman = !this.isGerman;
