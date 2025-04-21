@@ -35,15 +35,29 @@
 nav {
   @include dFlex($fd: column, $ai: flex-start, $g: 8px);
   > a {
-    @include standardText($fs: 18px, $fw: 700);
     @include dFlex();
-    color: $highlight-dark;
+    > p {
+      @include standardText($fs: 18px, $fw: 700);
+      color: $highlight-dark;
+      transition: all 125ms ease-in-out;
+      transform: translateX(-20px);
+    }
     > img {
       width: 20px;
       height: 20px;
+      opacity: 0;
+      /* transition-delay: 1250ms; */
     }
-    &:hover {
-      color: $highlight-blue;
+    &.hovered {
+      p {
+        transform: translateX(0);
+        color: $highlight-blue;
+        transition-delay: 125ms; 
+      }
+      img {
+        opacity: 1;
+        transition-delay: 0ms;
+      }
     }
   }
 }

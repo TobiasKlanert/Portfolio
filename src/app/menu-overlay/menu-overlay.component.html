@@ -30,20 +30,45 @@
     </button>
   </div>
   <nav>
-    <a href="#aboutMe"
-      ><img src="../../assets/img/spinning_shape.svg" />About Me</a
+    <a
+      href="#aboutMe"
+      (mouseenter)="onMouseEnter('aboutMe')"
+      (mouseleave)="onMouseLeave('aboutMe')"
+      [class.hovered]="hoverStates['aboutMe']"
+      ><img src="../../assets/img/spinning_shape.svg" />
+      <p>About Me</p></a
     >
-    <a href="#skills"
-      ><img src="../../assets/img/spinning_shape.svg" />Skillset</a
+    <a
+      href="#skills"
+      (mouseenter)="onMouseEnter('skills')"
+      (mouseleave)="onMouseLeave('skills')"
+      [class.hovered]="hoverStates['skills']"
+      ><img src="../../assets/img/spinning_shape.svg" />
+      <p>Skillset</p></a
     >
-    <a href="#portfolio"
-      ><img src="../../assets/img/spinning_shape.svg" />Portfolio</a
+    <a
+      href="#portfolio"
+      (mouseenter)="onMouseEnter('portfolio')"
+      (mouseleave)="onMouseLeave('portfolio')"
+      [class.hovered]="hoverStates['portfolio']"
+      ><img src="../../assets/img/spinning_shape.svg" />
+      <p>Portfolio</p></a
     >
-    <a href="#references"
-      ><img src="../../assets/img/spinning_shape.svg" />References</a
+    <a
+      href="#references"
+      (mouseenter)="onMouseEnter('references')"
+      (mouseleave)="onMouseLeave('references')"
+      [class.hovered]="hoverStates['references']"
+      ><img src="../../assets/img/spinning_shape.svg" />
+      <p>References</p></a
     >
-    <a href="#contact"
-      ><img src="../../assets/img/spinning_shape.svg" />Contact me</a
+    <a
+      href="#contact"
+      (mouseenter)="onMouseEnter('contact')"
+      (mouseleave)="onMouseLeave('contact')"
+      [class.hovered]="hoverStates['contact']"
+      ><img src="../../assets/img/spinning_shape.svg" />
+      <p>Contact me</p></a
     >
   </nav>
 </div>
