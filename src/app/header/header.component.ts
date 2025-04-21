@@ -12,7 +12,6 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   isHoveringGitHub = false;
   isHoveringLinkedIn = false;
   isHoveringMail = false;
-  isHoveringMenu = false;
   isGerman = false;
 
   isFirstSectionVisible = true;

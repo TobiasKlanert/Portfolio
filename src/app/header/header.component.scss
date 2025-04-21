@@ -64,6 +64,12 @@ header {
     width: 32px;
     background-color: transparent;
     border: none;
+    > svg {
+      color: $highlight-white;
+      &:hover {
+        color: $highlight-orange;
+      }
+    }
   }
 
   &.first {
@@ -89,10 +95,23 @@ header {
   }
 
   &.dark-text {
-    a,
+    a {
+      color: $highlight-dark;
+    }
     .btn-language {
       color: $highlight-dark;
       border-color: $highlight-dark;
+      &:hover {
+        color: $highlight-white;
+      }
+    }
+    .btn-menu {
+      > svg {
+        color: $highlight-dark;
+        &:hover {
+          color: $highlight-orange;
+        }
+      }
     }
   }
 }
