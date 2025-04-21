@@ -4,7 +4,7 @@
 section {
   @include standardSection();
   background-color: $background-bright;
-  color: #1d1d1d;
+  color: $highlight-dark;
 }
 
 .headline {
@@ -25,7 +25,7 @@ section {
   position: relative;
   height: 100%;
   width: 488px;
-  border: 1px solid #1d1d1d;
+  border: 1px solid $highlight-dark;
   border-radius: 4px;
 }
 
@@ -89,7 +89,7 @@ section {
     font-family: "Quicksand";
     font-weight: 700;
     font-size: 18px;
-    color: #1d1d1d;
+    color: $highlight-dark;
     border: none;
     background: none;
     transition: all 125ms ease-in-out;

@@ -14,14 +14,17 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   isHoveringMail = false;
   isHoveringMenu = false;
   isGerman = false;
-  isFirstSectionVisible = true;
 
-  private observer!: IntersectionObserver;
+  isFirstSectionVisible = true;
+  isLightText = true;
+
+  private heroObserver!: IntersectionObserver;
+  private colorObserver!: IntersectionObserver;
 
   ngAfterViewInit(): void {
     const hero = document.getElementById('hero');
     if (hero) {
-      this.observer = new IntersectionObserver(
+      this.heroObserver = new IntersectionObserver(
         ([entry]) => {
           this.isFirstSectionVisible = entry.isIntersecting;
         },
@@ -30,15 +33,32 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
           threshold: 0.5,
         }
       );
-
-      this.observer.observe(hero);
+      this.heroObserver.observe(hero);
     }
+
+    const sectionsToWatch = ['aboutMe', 'portfolio'];
+    this.colorObserver = new IntersectionObserver(
+      (entries) => {
+        const anyLightSectionVisible = entries.some(
+          (entry) => entry.isIntersecting
+        );
+        this.isLightText = !anyLightSectionVisible; // true = white, false = dark
+      },
+      {
+        root: document.querySelector('.scroll-container'),
+        threshold: 0.5,
+      }
+    );
+
+    sectionsToWatch.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) this.colorObserver.observe(el);
+    });
   }
 
   ngOnDestroy(): void {
-    if (this.observer) {
-      this.observer.disconnect();
-    }
+    if (this.heroObserver) this.heroObserver.disconnect();
+    if (this.colorObserver) this.colorObserver.disconnect();
   }
 
   switchLanguage() {

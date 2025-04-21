@@ -184,7 +184,7 @@ textarea.invalid::placeholder {
 
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #1d1d1d inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px $highlight-dark inset !important;
   -webkit-text-fill-color: white !important;
   transition: background-color 5000s ease-in-out 0s;
 }

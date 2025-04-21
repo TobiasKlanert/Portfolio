@@ -26,21 +26,16 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-weight: 700;
+    color: $highlight-white;
+    text-decoration: none;
     transform: translate(-50%, -50%);
-    transition: left 125ms ease-in-out, transform 125ms ease-in-out;
-  }
-
-  &.first {
-    .logo-group {
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &:not(.first) {
-    .logo-group {
-      left: 0;
-      transform: translateY(-50%);
+    transition: color 125ms ease-in-out, left 125ms ease-in-out,
+      transform 125ms ease-in-out;
+    &:hover {
+      color: $highlight-orange;
     }
   }
 
@@ -60,6 +55,7 @@ header {
 
     &:hover {
       background-color: $highlight-orange;
+      color: $highlight-white;
     }
   }
 
@@ -70,16 +66,33 @@ header {
     border: none;
   }
 
-  a {
-    font-family: "Quicksand";
-    font-size: 24px;
-    font-weight: 700;
-    color: $highlight-white;
-    text-decoration: none;
-    transition: color 125ms ease-in-out;
+  &.first {
+    .logo-group {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+  }
 
-    &:hover {
-      color: $highlight-orange;
+  &:not(.first) {
+    .logo-group {
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.light-text {
+    .btn-language {
+      color: $highlight-white;
+      border-color: $highlight-white;
+    }
+  }
+
+  &.dark-text {
+    a,
+    .btn-language {
+      color: $highlight-dark;
+      border-color: $highlight-dark;
     }
   }
 }

@@ -1,4 +1,8 @@
-<header [class.first]="isFirstSectionVisible">
+<header
+  [class.first]="isFirstSectionVisible"
+  [class.light-text]="isLightText"
+  [class.dark-text]="!isLightText"
+>
   <div
     class="social-links"
     *ngIf="isFirstSectionVisible"
