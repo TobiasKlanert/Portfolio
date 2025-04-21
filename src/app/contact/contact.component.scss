@@ -209,6 +209,7 @@ textarea:-webkit-autofill {
 }
 
 .success-toast {
+  @include standardText($fs: 18px, $fw: 700);
   position: fixed;
   display: flex;
   align-items: center;
@@ -218,10 +219,6 @@ textarea:-webkit-autofill {
   transform: translateX(-50%);
   background-color: $highlight-orange;
   color: $highlight-white;
-  font-family: "Quicksand";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 120%;
   padding: 12px 24px;
   border-radius: 100px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

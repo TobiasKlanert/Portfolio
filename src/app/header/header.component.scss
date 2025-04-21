@@ -28,12 +28,10 @@ header {
 
   .logo-group {
     @include dFlex($g: 12px);
+    @include standardText($fs: 24px, $fw: 700);
     position: absolute;
     top: 50%;
     left: 50%;
-    font-family: "Quicksand";
-    font-size: 24px;
-    font-weight: 700;
     color: $highlight-white;
     text-decoration: none;
     transform: translate(-50%, -50%);
@@ -50,6 +48,7 @@ header {
   }
 
   .btn-language {
+    @include standardText($fw: 600, $fs: 18px);
     height: 40px;
     width: 40px;
     border: 1px solid $highlight-white;

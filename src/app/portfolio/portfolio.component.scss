@@ -79,6 +79,14 @@ section {
   margin-top: 16px;
   > a {
     @include standardButton();
+    > img {
+      transition: all 125ms ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 
@@ -86,9 +94,7 @@ section {
   @include dFlex($jc: space-between);
   width: 100%;
   > button {
-    font-family: "Quicksand";
-    font-weight: 700;
-    font-size: 18px;
+    @include standardText($fs: 18px, $fw: 700);
     color: $highlight-dark;
     border: none;
     background: none;

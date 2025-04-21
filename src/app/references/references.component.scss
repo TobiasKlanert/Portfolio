@@ -15,9 +15,7 @@ section {
 .ref-container {
   @include dFlex($fd: column, $ai: flex-end, $g: 32px);
   > a {
-    font-family: "Quicksand";
-    font-weight: 700;
-    font-size: 18px;
+    @include standardText($fs: 18px, $fw: 700);
     color: $highlight-white;
     transition: all 125ms ease-in-out;
     &:hover {

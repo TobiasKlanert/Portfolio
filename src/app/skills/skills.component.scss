@@ -14,9 +14,7 @@ section {
   padding: 32px;
   border-radius: 4px;
   > p {
-    font-family: "Quicksand";
-    font-weight: 400;
-    font-size: 16px;
+    @include standardText();
   }
 }
 
