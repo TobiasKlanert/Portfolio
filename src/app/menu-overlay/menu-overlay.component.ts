@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-overlay',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './menu-overlay.component.scss'
 })
 export class MenuOverlayComponent {
+  @Output() close = new EventEmitter<void>();
 
+  closeMenu() {
+    this.close.emit();
+  }
 }

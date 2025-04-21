@@ -60,7 +60,7 @@
       <button class="btn-language" (click)="switchLanguage()">
         {{ isGerman ? "DE" : "EN" }}
       </button>
-      <button class="btn-menu">
+      <button class="btn-menu" (click)="toggleMenu()">
         <svg
           width="32"
           height="32"
@@ -90,3 +90,9 @@
     </div>
   </div>
 </header>
+<app-menu-overlay
+  *ngIf="isMenuOpen"
+  class="menu-overlay"
+  [ngClass]="{ active: isMenuOpen }"
+  (close)="isMenuOpen = false"
+></app-menu-overlay>

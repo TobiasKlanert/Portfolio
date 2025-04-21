@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MenuOverlayComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -16,6 +17,8 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
 
   isFirstSectionVisible = true;
   isLightText = true;
+
+  isMenuOpen = false;
 
   private heroObserver!: IntersectionObserver;
   private colorObserver!: IntersectionObserver;
@@ -62,5 +65,9 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
 
   switchLanguage() {
     this.isGerman = !this.isGerman;
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }
