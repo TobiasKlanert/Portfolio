@@ -1,5 +1,9 @@
-<section>
-  <div [ngStyle]="{ 'gap.px': 32 }">
+<header [class.first]="isFirstSectionVisible">
+  <div
+    class="social-links"
+    *ngIf="isFirstSectionVisible"
+    [ngStyle]="{ 'gap.px': 32 }"
+  >
     <a
       href="https://github.com/TobiasKlanert"
       (mouseenter)="isHoveringGitHub = true"
@@ -39,11 +43,15 @@
         alt="E-Mail"
     /></a>
   </div>
-  <a href="#hero">
-    <img src="../../assets/img/logo.svg" alt="Logo" />
-    <h4>Klanert</h4>
-  </a>
-  <div [ngStyle]="{ 'gap.px': 16 }">
+
+  <div class="logo-wrapper">
+    <a class="logo-group" href="#hero">
+      <img src="../../assets/img/logo.svg" alt="Logo" />
+      <h4>Klanert</h4>
+    </a>
+  </div>
+
+  <div class="right-group" [ngStyle]="{ 'gap.px': 16 }">
     <button class="btn-language" (click)="switchLanguage()">
       {{ isGerman ? "DE" : "EN" }}
     </button>
@@ -60,4 +68,4 @@
       />
     </button>
   </div>
-</section>
+</header>

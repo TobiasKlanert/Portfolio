@@ -1,47 +1,85 @@
 @import "../variables";
 @import "../mixins.scss";
 
-section {
+header {
   @include dFlex($jc: space-between);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  right: 0;
   padding: 24px 72px;
-  z-index: 999;
-  > div {
+  background-color: transparent;
+  z-index: 1000;
+
+  .social-links {
+    @include dFlex($g: 32px);
+  }
+
+  .logo-wrapper {
+    position: relative;
+    flex: 1;
+    height: 100%;
+  }
+
+  .logo-group {
+    @include dFlex($g: 12px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 125ms ease-in-out, transform 125ms ease-in-out;
+  }
+
+  &.first {
+    .logo-group {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:not(.first) {
+    .logo-group {
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .right-group {
     @include dFlex();
+    gap: 16px;
   }
-}
 
-a {
-  @include dFlex($g: 12px);
-  font-family: 'Quicksand'; 
-  font-size: 24px;
-  font-weight: 700;
-  color: $highlight-white;
-  transition: all 125ms ease-in-out;
-  &:hover {
-    color: $highlight-orange;
+  .btn-language {
+    height: 40px;
+    width: 40px;
+    border: 1px solid $highlight-white;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $highlight-white;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      background-color: $highlight-orange;
+    }
   }
-}
 
-.btn-language {
-  height: 40px;
-  width: 40px;
-  border: solid 1px $highlight-white;
-  border-radius: 100px;
-  background-color: transparent;
-  color: $highlight-white;
-  transition: all 125ms ease-in-out;
-  &:hover {
-    background-color: $highlight-orange;
+  .btn-menu {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
   }
-}
 
-.btn-menu {
-  height: 32px;
-  width: 32px;
-  background-color: transparent;
-  border: none;
+  a {
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-weight: 700;
+    color: $highlight-white;
+    text-decoration: none;
+    transition: color 125ms ease-in-out;
+
+    &:hover {
+      color: $highlight-orange;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,7 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit, OnDestroy {
   isHoveringGitHub = false;
   isHoveringLinkedIn = false;
   isHoveringMail = false;
@@ -16,12 +16,28 @@ export class HeaderComponent {
   isGerman = false;
   isFirstSectionVisible = true;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const heroSection = document.getElementById('hero');
-    if (heroSection) {
-      const rect = heroSection.getBoundingClientRect();
-      this.isFirstSectionVisible = rect.top <= 0 && rect.bottom > 100;
+  private observer!: IntersectionObserver;
+
+  ngAfterViewInit(): void {
+    const hero = document.getElementById('hero');
+    if (hero) {
+      this.observer = new IntersectionObserver(
+        ([entry]) => {
+          this.isFirstSectionVisible = entry.isIntersecting;
+        },
+        {
+          root: document.querySelector('.scroll-container'),
+          threshold: 0.5,
+        }
+      );
+
+      this.observer.observe(hero);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
     }
   }
 
