@@ -44,7 +44,7 @@ export class MenuOverlayComponent {
     const el = document.getElementById(id);
     console.log('Scroll to: ', el);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' }); // 'start' ist wichtig bei Snapping
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     /* setTimeout(() => {
       this.closeMenu();

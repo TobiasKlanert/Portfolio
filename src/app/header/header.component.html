@@ -91,9 +91,8 @@
   </div>
 </header>
 <app-menu-overlay
-  [isMenuOpen]="isMenuOpen"
-  *ngIf="isMenuOpen"
   class="menu-overlay"
-  [ngClass]="{ active: isMenuOpen }"
+  [class.open]="isMenuOpen"
   (close)="isMenuOpen = false"
+  [isMenuOpen]="isMenuOpen"
 ></app-menu-overlay>

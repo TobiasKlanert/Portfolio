@@ -125,11 +125,22 @@ header {
   top: 24px;
   right: 72px;
   z-index: 1100;
+  transition: transform 250ms ease, opacity 250ms ease;
   transform: translateX(100%);
-  transition: transform 125ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
 
-  &.active {
+  &.open {
     transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &.closing {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
   }
 }
+
 
