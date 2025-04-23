@@ -2,6 +2,7 @@
 @import "../mixins.scss";
 
 header {
+  @include dFlex();
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +13,7 @@ header {
   .header-container {
     @include dFlex($jc: space-between);
     max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     padding: 24px 72px;
   }
 
@@ -43,7 +44,7 @@ header {
   }
 
   .right-group {
-    @include dFlex();
+    @include dFlex($jc: flex-end);
     gap: 16px;
   }
 
@@ -69,8 +70,11 @@ header {
     background-color: transparent;
     border: none;
     > svg {
+      height: 100%;
       color: $highlight-white;
-      &:hover {
+    }
+    &:hover {
+      svg {
         color: $highlight-orange;
       }
     }
@@ -142,4 +146,3 @@ header {
     pointer-events: none;
   }
 }
-
