@@ -1,4 +1,12 @@
-import { Component, EventEmitter, HostListener, Input, Output, ViewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Input,
+  Output,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-menu-overlay',
@@ -16,14 +24,9 @@ export class MenuOverlayComponent {
     contact: false,
   };
 
-  @Input() isMenuOpen = false;  
+  @Input() isMenuOpen = false;
   @Output() close = new EventEmitter<void>();
-  @HostListener('document:click', ['$event'])
-  
-
-  onMouseEnter(section: string) {
-    this.hoverStates[section] = true;
-  }
+  @ViewChild('menu', { static: true }) menuElement!: ElementRef;
 
   onMouseLeave(section: string) {
     this.hoverStates[section] = false;
@@ -33,15 +36,31 @@ export class MenuOverlayComponent {
     this.close.emit();
   }
 
-  
-onDocumentClick(event: MouseEvent) {
-  const target = event.target as HTMLElement;
-  const clickedInside = this.menuElement?.nativeElement.contains(target);
-
-  if (!clickedInside && this.isMenuOpen) {
-    this.closeMenu();
+  onMouseEnter(section: string) {
+    this.hoverStates[section] = true;
   }
-}
 
-@ViewChild('menu', { static: true }) menuElement!: ElementRef;
+  scrollToSection(id: string) {
+    const el = document.getElementById(id);
+    console.log('Scroll to: ', el);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' }); // 'start' ist wichtig bei Snapping
+    }
+    /* setTimeout(() => {
+      this.closeMenu();
+    }, 1000); */
+  }
+  
+  
+  
+  @HostListener('document:mousedown', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    const clickedInside = this.menuElement?.nativeElement.contains(target);
+  
+    if (!clickedInside && this.isMenuOpen) {
+      this.closeMenu();
+    }
+  }
+  
 }

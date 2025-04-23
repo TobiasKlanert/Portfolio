@@ -39,7 +39,7 @@ nav {
     > p {
       @include standardText($fs: 18px, $fw: 700);
       color: $highlight-dark;
-      transition: all 125ms ease-in-out;
+      transition: all 100ms ease-in-out;
       transform: translateX(-20px);
     }
     > img {
@@ -51,11 +51,11 @@ nav {
       p {
         transform: translateX(0);
         color: $highlight-blue;
-        transition-delay: 125ms;
+        transition-delay: 100ms;
       }
       img {
         opacity: 1;
-        transition-delay: 250ms;
+        transition-delay: 200ms;
       }
     }
   }
