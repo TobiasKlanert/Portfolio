@@ -46,9 +46,9 @@ export class MenuOverlayComponent {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    /* setTimeout(() => {
+    setTimeout(() => {
       this.closeMenu();
-    }, 1000); */
+    }, 750);
   }
   
   
