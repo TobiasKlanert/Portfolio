@@ -1,21 +1,26 @@
 @import "../variables";
 @import "../mixins.scss";
 
-ul {
+nav {
   @include dFlex($fd: column, $g: 20px);
   position: fixed;
-  top: 50%;
+  top: calc(50% - 104px);
   right: calc(50% - 720px + 72px);
-  list-style-type: none;
   z-index: 999;
   &.light-text {
     a {
       color: $highlight-white;
     }
+    a[aria-current="true"] svg {
+        color: $highlight-yellow;
+      }
   }
   &.dark-text {
     a {
       color: $highlight-dark;
     }
+    a[aria-current="true"] svg {
+        color: $highlight-orange;
+      }
   }
 }
