@@ -12,15 +12,45 @@ nav {
       color: $highlight-white;
     }
     a[aria-current="true"] svg {
-        color: $highlight-yellow;
-      }
+      color: $highlight-yellow;
+    }
   }
   &.dark-text {
     a {
       color: $highlight-dark;
     }
     a[aria-current="true"] svg {
-        color: $highlight-orange;
-      }
+      color: $highlight-orange;
+    }
+  }
+}
+
+.arrow-up {
+  position: fixed;
+  top: calc(20%);
+  right: calc(50% - 720px + 63px);
+  width: 30px;
+  color: $highlight-white;
+  text-align: center;
+  z-index: 999;
+  > svg {
+    animation: arrowPulse 1.2s ease-in-out infinite;
+    transform-origin: center;
+  }
+  &:hover {
+    color: $highlight-orange;
+    border-bottom: 1px solid $highlight-orange;
+  }
+}
+
+@keyframes arrowPulse {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-31px) scaleY(1.5);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
   }
 }
