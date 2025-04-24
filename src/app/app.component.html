@@ -1,6 +1,7 @@
 <div class="scroll-container">
 
-  <app-header></app-header>
+  <app-header [isLightText]="isLightText"></app-header>
+  <app-navbar [isLightText]="isLightText"></app-navbar>
 
   <section [ngStyle]="{ 'background-color': '#679AAC' }" id="hero">
     <app-hero></app-hero>

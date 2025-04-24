@@ -1,0 +1,21 @@
+@import "../variables";
+@import "../mixins.scss";
+
+ul {
+  @include dFlex($fd: column, $g: 20px);
+  position: fixed;
+  top: 50%;
+  right: calc(50% - 720px + 72px);
+  list-style-type: none;
+  z-index: 999;
+  &.light-text {
+    a {
+      color: $highlight-white;
+    }
+  }
+  &.dark-text {
+    a {
+      color: $highlight-dark;
+    }
+  }
+}

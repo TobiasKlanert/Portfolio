@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, Input } from '@angular/core';
 import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 
 @Component({
@@ -16,12 +16,11 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   isGerman = false;
 
   isFirstSectionVisible = true;
-  isLightText = true;
+  @Input() isLightText!: boolean;
 
   isMenuOpen = false;
 
   private heroObserver!: IntersectionObserver;
-  private colorObserver!: IntersectionObserver;
 
   ngAfterViewInit(): void {
     const hero = document.getElementById('hero');
@@ -37,30 +36,10 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
       );
       this.heroObserver.observe(hero);
     }
-
-    const sectionsToWatch = ['aboutMe', 'portfolio'];
-    this.colorObserver = new IntersectionObserver(
-      (entries) => {
-        const anyLightSectionVisible = entries.some(
-          (entry) => entry.isIntersecting
-        );
-        this.isLightText = !anyLightSectionVisible; // true = white, false = dark
-      },
-      {
-        root: document.querySelector('.scroll-container'),
-        threshold: 0.5,
-      }
-    );
-
-    sectionsToWatch.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) this.colorObserver.observe(el);
-    });
   }
 
   ngOnDestroy(): void {
     if (this.heroObserver) this.heroObserver.disconnect();
-    if (this.colorObserver) this.colorObserver.disconnect();
   }
 
   switchLanguage() {
