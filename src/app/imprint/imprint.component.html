@@ -1,6 +1,16 @@
-<app-header></app-header>
 <div class="wrapper">
-    <section>
-        <h2>Imprint</h2>
-    </section>
+  <header>
+    <div class="header-container">
+      <a class="logo-group" routerLink="/">
+        <img src="/assets/img/logo.svg" alt="Logo" />
+        <h4>Klanert</h4>
+      </a>
+      <button class="btn-language" (click)="switchLanguage()">
+        {{ isGerman ? "DE" : "EN" }}
+      </button>
+    </div>
+  </header>
+  <section>
+    <h2>Imprint</h2>
+  </section>
 </div>

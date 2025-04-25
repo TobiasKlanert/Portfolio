@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../portfolio/header/header.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [RouterModule],
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
+  isGerman = false;
 
+  switchLanguage() {
+    this.isGerman = !this.isGerman;
+  }
 }
