@@ -9,13 +9,38 @@
     </p>
   </div>
   <div class="secret-widget">
-    <img class="rotate-shape" src="/assets/img/spinning_shape.svg" alt="" />
-    <img class="learning-icon" src="/assets/img/icon_learning.svg" alt="" />
+    <img class="rotate-shape" src="/assets/img/spinning_shape.svg" />
+    <div class="overlay-wrapper">
+      <img
+        class="learning-icon"
+        src="/assets/img/icon_learning.svg"
+        alt="More Information"
+      />
+      <div class="overlay">
+        <h4>Don't see the skill you are looking for?</h4>
+        <div class="overlay-content">
+          <p>
+            Feel free to contact me. I look forward to expanding on my previous
+            knowledge. Also I have a special interest in learning:
+          </p>
+          <div class="learning-skills">
+            <div class="learning-item">
+              <img src="/assets/img/skill_react.svg" alt="React" />
+              <p>React</p>
+            </div>
+            <div class="learning-item">
+              <img src="/assets/img/skill_vue_js.svg" alt="Vue.Js" />
+              <p>Vue.Js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="skills">
     @for (index of [0,1,2,3,4,5,6,7,8,9]; track $index) {
     <div class="skill-item">
-      <img src="/assets/img/skill_{{ index + 1 }}.svg" alt="" />
+      <img src="/assets/img/skill_{{ index + 1 }}.svg" />
       <p [innerHTML]="skillNames[index]"></p>
     </div>
     }

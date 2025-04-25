@@ -63,6 +63,7 @@ section {
     transition: transform 125ms ease, opacity 125ms ease;
     transform: translateY(100%);
     opacity: 0;
+    pointer-events: none;
     > ul {
       @include dFlex($fd: column, $ai: flex-start, $g: 8px);
       list-style-type: none;

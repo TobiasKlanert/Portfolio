@@ -25,7 +25,6 @@ section {
   left: 112px;
   width: 120px;
   height: 120px;
-  cursor: pointer;
 }
 
 .rotate-shape {
@@ -33,13 +32,54 @@ section {
   width: 144px;
   height: 144px;
 }
-
-.learning-icon {
+.overlay-wrapper {
   position: absolute;
-  height: 40px;
-  z-index: 99;
-}
+  display: inline-block;
 
+  .learning-icon {
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .overlay {
+    @include dFlex($fd: column, $g: 32px);
+    position: absolute;
+    bottom: -100%;
+    left: 300%;
+    z-index: 999;
+    width: 360px;
+    padding: 32px;
+    border: 1px solid $highlight-white;
+    border-radius: 4px;
+    background-color: $highlight-yellow;
+    color: $highlight-white;
+    transition: transform 200ms ease, opacity 200ms ease;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+    h4 {
+      text-align: center;
+    }
+    .overlay-content {
+      @include dFlex($fd: column, $g: 8px);
+      p {
+        text-align: justify;
+      }
+    }
+    .learning-skills {
+      @include dFlex($g: 40px);
+      width: 100%;
+    }
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .skills {
   @include dFlex($ai: self-start, $g: 40px);
