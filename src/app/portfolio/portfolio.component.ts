@@ -17,6 +17,8 @@ export class PortfolioComponent {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      details:
+        'Join: A short capsule describing how you participated in the development of this project.',
       github: 'https://github.com/TobiasKlanert',
       liveLink: 'https://github.com/TobiasKlanert',
       icon: '/assets/img/icon_join.svg',
@@ -29,6 +31,8 @@ export class PortfolioComponent {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       description:
         'A simple Jump-and-Run game based on an object-oriented approach.',
+      details:
+        'Sharkie: A short capsule describing how you participated in the development of this project.',
       github: 'https://github.com/TobiasKlanert/Sharkie',
       liveLink: 'https://github.com/TobiasKlanert',
       icon: '/assets/img/icon_shark.svg',
@@ -41,6 +45,8 @@ export class PortfolioComponent {
       technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
       description:
         'This App is a Slack Clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization',
+      details:
+        'DABubble: A short capsule describing how you participated in the development of this project.',
       github: 'https://github.com/TobiasKlanert',
       liveLink: 'https://github.com/TobiasKlanert',
       icon: '/assets/img/icon_dabubble.svg',

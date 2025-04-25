@@ -23,7 +23,12 @@
       <div class="project-description">
         <div class="project-header">
           <h4>{{ projects[currentProjectIndex].title }}</h4>
-          <img [src]="projects[currentProjectIndex].icon" alt="" />
+          <div class="overlay-wrapper">
+            <img [src]="projects[currentProjectIndex].icon" alt="" />
+            <div class="overlay">
+              <p>{{ projects[currentProjectIndex].details }}</p>
+            </div>
+          </div>
         </div>
         <p class="project-techstack">
           {{ projects[currentProjectIndex].technologies.join(" | ") }}
