@@ -79,6 +79,7 @@ section {
   margin-top: 16px;
   > a {
     @include standardButton();
+    gap: 4px;
     > img {
       transition: all 125ms ease-in-out;
     }
