@@ -1,0 +1,14 @@
+@import "../variables";
+@import "../mixins.scss";
+
+.wrapper {
+  @include dFlex();
+  min-height: 100vh;
+  width: 100vw;
+  background-color: $background-bright;
+}
+
+section {
+  @include standardSection();
+  color: $highlight-dark;
+}
