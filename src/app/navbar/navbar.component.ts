@@ -17,7 +17,7 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
     'hero',
     'aboutMe',
     'skills',
-    'portfolio',
+    'work',
     'references',
     'contact',
   ];

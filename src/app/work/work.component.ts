@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-work',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
+  templateUrl: './work.component.html',
+  styleUrls: ['./work.component.scss'],
 })
-export class PortfolioComponent {
+export class WorkComponent {
   currentProjectIndex = 0;
 
   projects = [

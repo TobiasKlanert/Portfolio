@@ -19,7 +19,7 @@ export class MenuOverlayComponent {
   hoverStates: { [key: string]: boolean } = {
     aboutMe: false,
     skills: false,
-    portfolio: false,
+    work: false,
     references: false,
     contact: false,
   };

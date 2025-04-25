@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { WorkComponent } from './work/work.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,7 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HeroComponent,
     AboutMeComponent,
     SkillsComponent,
-    PortfolioComponent,
+    WorkComponent,
     ReferencesComponent,
     ContactComponent,
   ],
@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   private colorObserver!: IntersectionObserver;
 
   ngAfterViewInit(): void {
-    const sectionsToWatch = ['aboutMe', 'portfolio'];
+    const sectionsToWatch = ['aboutMe', 'work'];
     this.colorObserver = new IntersectionObserver(
       (entries) => {
         const anyLightSectionVisible = entries.some(
