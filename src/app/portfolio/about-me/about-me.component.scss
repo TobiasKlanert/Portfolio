@@ -1,5 +1,5 @@
-@import "../mixins.scss";
-@import "../variables";
+@import "../../variables";
+@import "../../mixins.scss";
 
 section {
   @include standardSection();

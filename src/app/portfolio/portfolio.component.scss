@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins.scss";
+
+section {
+  @include dFlex();
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  @include standardButton;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll-container > * {
+  scroll-snap-align: start;
+  height: 100vh;
+}

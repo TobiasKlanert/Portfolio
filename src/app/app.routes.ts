@@ -1,9 +1,9 @@
 // app.routes.ts
 import { Routes } from '@angular/router';
 import { ImprintComponent } from './imprint/imprint.component';
-import { HeroComponent } from './hero/hero.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 export const routes: Routes = [
-    /* { path: '', component: HeroComponent },
-    { path: 'imprint', component: ImprintComponent } */
+    { path: '', component: PortfolioComponent },
+    { path: 'imprint', component: ImprintComponent }
 ];

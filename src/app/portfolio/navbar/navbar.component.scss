@@ -1,5 +1,5 @@
-@import "../variables";
-@import "../mixins.scss";
+@import "../../variables";
+@import "../../mixins.scss";
 
 nav {
   @include dFlex($fd: column, $g: 20px);
