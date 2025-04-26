@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../shared/components/header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
