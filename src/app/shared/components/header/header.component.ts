@@ -16,9 +16,11 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   isGerman = false;
 
   isFirstSectionVisible = true;
-  @Input() isLightText!: boolean;
+  isBackgroundTransparant = true;
 
   isMenuOpen = false;
+
+  @Input() isLightText!: boolean;
 
   private sectionObserver!: IntersectionObserver;
 
@@ -35,6 +37,7 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
           }
           if (entry.target.id === 'imprint' || entry.target.id === 'privacy-policy') {
             this.isFirstSectionVisible = false;
+            this.isBackgroundTransparant = false;
           }
         }
       },
