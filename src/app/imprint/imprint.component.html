@@ -1,16 +1,7 @@
-<div class="wrapper">
-  <header>
-    <div class="header-container">
-      <a class="logo-group" routerLink="/">
-        <img src="/assets/img/logo.svg" alt="Logo" />
-        <h4>Klanert</h4>
-      </a>
-      <button class="btn-language" (click)="switchLanguage()">
-        {{ isGerman ? "DE" : "EN" }}
-      </button>
-    </div>
-  </header>
+<app-header></app-header>
+<div class="wrapper" id="imprint">
   <section>
     <h2>Imprint</h2>
+    <app-footer></app-footer>
   </section>
 </div>

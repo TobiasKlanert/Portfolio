@@ -1,16 +1,9 @@
-<div class="wrapper">
-    <header>
-      <div class="header-container">
-        <a class="logo-group" routerLink="/">
-          <img src="/assets/img/logo.svg" alt="Logo" />
-          <h4>Klanert</h4>
-        </a>
-        <button class="btn-language" (click)="switchLanguage()">
-          {{ isGerman ? "DE" : "EN" }}
-        </button>
-      </div>
-    </header>
+<div class="scroll-container">
+  <app-header></app-header>
+  <div class="wrapper" id="privacy-policy">
     <section>
       <h2>Privacy Policy</h2>
+      <app-footer></app-footer>
     </section>
   </div>
+</div>
