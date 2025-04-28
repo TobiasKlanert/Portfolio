@@ -7,6 +7,7 @@ import {
   ViewChild,
   ElementRef,
 } from '@angular/core';
+import { TranslationService } from '../../../services/translation.service';
 
 @Component({
   selector: 'app-menu-overlay',
@@ -16,6 +17,9 @@ import {
   styleUrl: './menu-overlay.component.scss',
 })
 export class MenuOverlayComponent {
+  
+  constructor(public translationService: TranslationService) {}
+
   hoverStates: { [key: string]: boolean } = {
     aboutMe: false,
     skills: false,

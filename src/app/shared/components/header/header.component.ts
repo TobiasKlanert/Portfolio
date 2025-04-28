@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, OnDestroy, Input } from '@angular/core';
 import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
+import { TranslationService } from '../../../services/translation.service';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,9 @@ import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements AfterViewInit, OnDestroy {
+
+  constructor(public translationService: TranslationService) {}
+
   isHoveringGitHub = false;
   isHoveringLinkedIn = false;
   isHoveringMail = false;
@@ -53,10 +57,32 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.sectionObserver) this.sectionObserver.disconnect();
   }
-  
 
-  switchLanguage() {
+  ngOnInit() {
+    const savedLang = localStorage.getItem('selectedLanguage');
+    
+    if (savedLang === 'de' || savedLang === 'en') {
+      this.isGerman = savedLang === 'de';
+      this.translationService.switchLanguage(savedLang);
+    } else {
+      const browserLang = navigator.language.slice(0, 2);
+      if (browserLang === 'de' || browserLang === 'en') {
+        this.isGerman = browserLang === 'de';
+        this.translationService.switchLanguage(browserLang);
+        localStorage.setItem('selectedLanguage', browserLang);
+      } else {
+        this.isGerman = false;
+        this.translationService.switchLanguage('en');
+        localStorage.setItem('selectedLanguage', 'en');
+      }
+    }
+  }
+  
+  changeLanguage() {
     this.isGerman = !this.isGerman;
+    const lang = this.isGerman ? 'de' : 'en';
+    this.translationService.switchLanguage(lang);
+    localStorage.setItem('selectedLanguage', lang);
   }
 
   toggleMenu() {

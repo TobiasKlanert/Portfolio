@@ -1,46 +1,50 @@
 <section>
-  <h2>About me</h2>
+  <h2>{{ translationService.translate("aboutMe.headline") }}</h2>
   <img src="/assets/img/second-photo.png" alt="" />
   <div class="textbox">
     <p>
-      Hey there, I'm Tobias. Write some information about yourself that is IT
-      related. Why are you passionate about coding? What is your source of
-      inspiration for improving your programming skills? Do you learn from each
-      challenge as you search for the most efficient or elegant solution? Let's
-      connect and create something amazing together!
+      {{ translationService.translate("aboutMe.text") }}
     </p>
     <div class="textbox-footer">
-      <a href="#contact">Let's Talk</a>
+      <a href="#contact">{{
+        translationService.translate("aboutMe.button")
+      }}</a>
       <div class="overlay-wrapper">
         <img src="../../assets/img/icon_secret.svg" alt="" />
         <div class="overlay">
-          <h4>More about me</h4>
+          <h4>
+            {{ translationService.translate("aboutMe.hiddenMenu.headline") }}
+          </h4>
           <ul>
             <li>
-              <img src="/assets/img/check_circle.svg" alt="Checkmark" />Team
-              player
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.first")
+              }}
             </li>
             <li>
-              <img
-                src="/assets/img/check_circle.svg"
-                alt="Checkmark"
-              />Continuosly learning
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.second")
+              }}
             </li>
             <li>
-              <img src="/assets/img/check_circle.svg" alt="Checkmark" />Creative
-              Thinker
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.third")
+              }}
             </li>
             <li>
-              <img src="/assets/img/check_circle.svg" alt="Checkmark" />Based in
-              Saxony-Anhalt
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.thourth")
+              }}
             </li>
             <li>
-              <img src="/assets/img/check_circle.svg" alt="Checkmark" />Open to
-              work remote
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.fifth")
+              }}
             </li>
             <li>
-              <img src="/assets/img/check_circle.svg" alt="Checkmark" />Open to
-              relocate
+              <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
+                translationService.translate("aboutMe.hiddenMenu.sixth")
+              }}
             </li>
           </ul>
         </div>
