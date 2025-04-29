@@ -51,6 +51,22 @@
         "description": "This App is a Slack Clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization",
         "details": "DABubble: A short capsule describing how you participated in the development of this project."
       }
+    },
+    "references": {
+      "headline": "What my colleagues say about me",
+      "link": "To the LinkedIn profile",
+      "reference1": {
+        "feedback": "blabla",
+        "role": "Teamleader Frontend at Musterfirma GmbH"
+      },
+      "reference2": {
+        "feedback": "blablabla",
+        "role": "Projectmanager at Beispiel AG"
+      },
+      "reference3": {
+        "feedback": "blablablabla",
+        "role": "UX Designer at DesignCo"
+      }
     }
   },
   "de": {
@@ -104,6 +120,22 @@
       "project3": {
         "description": "Diese App ist ein Slack-Klon. Sie verbessert Teamkommunikation und Zusammenarbeit durch eine intuitive Oberfläche, Echtzeitnachrichten und eine strukturierte Kanalverwaltung.",
         "details": "DABubble: Eine kurze Zusammenfassung, in der Sie beschreiben, wie Sie an der Entwicklung dieses Projekts beteiligt waren."
+      }
+    },
+    "references": {
+      "headline": "Was Kolleg:innen über mich sagen",
+      "link": "Zum LinkedIn-Profil ",
+      "reference1": {
+        "feedback": "Die Zusammenarbeit mit dir war stets zuverlässig, kreativ und lösungsorientiert.",
+        "role": "Teamleiter Frontend bei Musterfirma GmbH"
+      },
+      "reference2": {
+        "feedback": "Besonders beeindruckt hat mich dein technisches Verständnis und deine Eigeninitiative.",
+        "role": "Projektmanagerin bei Beispiel AG"
+      },
+      "reference3": {
+        "feedback": "Deine strukturierte Arbeitsweise und dein Designgefühl haben das Projekt enorm bereichert.",
+        "role": "UX Designer bei DesignCo"
       }
     }
   }

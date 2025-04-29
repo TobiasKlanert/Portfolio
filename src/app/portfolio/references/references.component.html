@@ -1,5 +1,5 @@
 <section>
-  <h2>What my colleagues say about me</h2>
+  <h2>{{ translationService.translate("references.headline") }}</h2>
   <div class="ref-wrapper">
     @for (reference of references; let i = $index; track i) {
     <div class="ref-container">
@@ -8,10 +8,24 @@
           <h4>{{ reference.name }}</h4>
           <img src="/assets/img/spinning_shape.svg" alt="" />
         </div>
-        <p>{{ reference.feedback }}</p>
-        <h5>{{ reference.role }}</h5>
+        <p>
+          {{
+            translationService.translate(
+              "references.reference" + (i + 1) + ".feedback"
+            )
+          }}
+        </p>
+        <h5>
+          {{
+            translationService.translate(
+              "references.reference" + (i + 1) + ".role"
+            )
+          }}
+        </h5>
       </div>
-      <a [href]="reference.link" target="_blank">To the LinkedIn profile >></a>
+      <a [href]="reference.link" target="_blank"
+        >{{ translationService.translate("references.link") }} >></a
+      >
     </div>
     }
   </div>
