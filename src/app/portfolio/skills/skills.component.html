@@ -1,11 +1,8 @@
 <section>
-  <h2>Core Competencies</h2>
+  <h2>{{ translationService.translate('skills.headline') }}</h2>
   <div class="textbox">
     <p>
-      Emphasise that you have used a variety of front-end technologies in your
-      projects. Where have you used these skills: static or dynamic websites,
-      responsive layouts, data visualization interfaces, smooth user
-      experiences?
+      {{ translationService.translate('skills.text') }}
     </p>
   </div>
   <div class="secret-widget">
@@ -17,11 +14,10 @@
         alt="More Information"
       />
       <div class="overlay">
-        <h4>Don't see the skill you are looking for?</h4>
+        <h4>{{ translationService.translate('skills.hiddenMenu.headline') }}</h4>
         <div class="overlay-content">
           <p>
-            Feel free to contact me. I look forward to expanding on my previous
-            knowledge. Also I have a special interest in learning:
+            {{ translationService.translate('skills.hiddenMenu.text') }}
           </p>
           <div class="learning-skills">
             <div class="learning-item">

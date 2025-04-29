@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-skills',
@@ -20,4 +21,6 @@ export class SkillsComponent {
     'Scrum',
     'Material <br> Design',
   ];
+
+  constructor(public translationService: TranslationService) {}
 }
