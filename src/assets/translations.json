@@ -68,6 +68,36 @@
         "role": "UX Designer at DesignCo"
       }
     },
+    "contact": {
+      "headline": "Let's build something Cool together!",
+      "subheading": "Got a problem to solve?",
+      "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+      "form": {
+        "name": {
+          "headline": "What's your name?",
+          "placeholder": "Your name goes here",
+          "error": "Oops! It seems your name is missing."
+        },
+        "email": {
+          "headline": "What's your email?",
+          "placeholder": "youremail@email.com",
+          "error": "Hoppla! Your email is required."
+        },
+        "message": {
+          "headline": "How can I help you?",
+          "placeholder": "Hello Tobias, I am interested in...",
+          "error": "What do you need to develop?"
+        },
+        "privacyPolicy": {
+          "firstPart": "I've read the",
+          "link": "privacy policy",
+          "secondPart": "and agree to the processing of my data.",
+          "error": "Please accept the privacy policy."
+        },
+        "button": "Drop a Line",
+        "success": "Your message has been sent!"
+      }
+    },
     "footer": "Imprint"
   },
   "de": {
@@ -137,6 +167,36 @@
       "reference3": {
         "feedback": "Deine strukturierte Arbeitsweise und dein Designgefühl haben das Projekt enorm bereichert.",
         "role": "UX Designer bei DesignCo"
+      }
+    },
+    "contact": {
+      "headline": "Gemeinsam Großes schaffen!",
+      "subheading": "Haben Sie ein Problem zu lösen?",
+      "text": "Ermutigen Sie die Menschen, mit Ihnen in Kontakt zu treten und zu beschreiben, welche Rolle Sie übernehmen möchten. Zeigen Sie, dass Sie mit Ihrer Arbeit einen echten Mehrwert für ihre Projekte schaffen werden.",
+      "form": {
+        "name": {
+          "headline": "Wie lautet Ihr Name?",
+          "placeholder": "Ihr Name kommt hier hin",
+          "error": "Ups! Es scheint, als hätten Sie Ihren Namen vergessen."
+        },
+        "email": {
+          "headline": "Ihre E-Mail-Adresse?",
+          "placeholder": "ihre@email.de",
+          "error": "Hoppla! Ihre E-Mail-Adresse wird benötigt."
+        },
+        "message": {
+          "headline": "Wie kann ich Ihnen helfen?",
+          "placeholder": "Hallo Tobias, ich interessiere mich für ...",
+          "error": "Worum geht’s bei Ihrem Vorhaben?"
+        },
+        "privacyPolicy": {
+          "firstPart": "Ich habe die",
+          "link": "Datenschutzerklärung",
+          "secondPart": "gelesen und bin mit der Verarbeitung meiner Daten einverstanden.",
+          "error": "Bitte akzeptieren Sie die Datenschutzbestimmungen."
+        },
+        "button": "Nachricht senden",
+        "success": "Ihre Nachricht wurde gesendet!"
       }
     },
     "footer": "Impressum"

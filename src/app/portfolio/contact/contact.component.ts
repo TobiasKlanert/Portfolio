@@ -4,6 +4,7 @@ import { Component, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../../services/translation.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,6 +14,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+
+  constructor(public translationService: TranslationService) {}
+
   @ViewChild('agreement') agreementModel!: NgModel;
 
   http = inject(HttpClient);
