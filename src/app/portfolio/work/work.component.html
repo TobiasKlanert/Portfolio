@@ -1,13 +1,15 @@
 <section>
   <div class="headline">
-    <h2>My work</h2>
+    <h2>{{ translationService.translate("portfolio.headline") }}</h2>
     <p>
-      Explore a selection of my work here - Interact with the projects to see my
-      skills in action.
+      {{ translationService.translate("portfolio.introduction") }}
     </p>
   </div>
   <div class="projects">
-    <div [ngStyle]="{ 'background-color': projects[currentProjectIndex].bgColor }" class="screenshot-container">
+    <div
+      [ngStyle]="{ 'background-color': projects[currentProjectIndex].bgColor }"
+      class="screenshot-container"
+    >
       <img
         class="screenshot"
         [src]="projects[currentProjectIndex].screenshot"
@@ -26,14 +28,26 @@
           <div class="overlay-wrapper">
             <img [src]="projects[currentProjectIndex].icon" alt="" />
             <div class="overlay">
-              <p>{{ projects[currentProjectIndex].details }}</p>
+              <p>
+                {{
+                  translationService.translate(
+                    "portfolio.project" + (currentProjectIndex + 1) + ".details"
+                  )
+                }}
+              </p>
             </div>
           </div>
         </div>
         <p class="project-techstack">
           {{ projects[currentProjectIndex].technologies.join(" | ") }}
         </p>
-        <p>{{ projects[currentProjectIndex].description }}</p>
+        <p>
+          {{
+            translationService.translate(
+              "portfolio.project" + (currentProjectIndex + 1) + ".description"
+            )
+          }}
+        </p>
         <div class="project-buttons">
           <a [href]="projects[currentProjectIndex].github" target="_blank">
             GitHub
@@ -46,15 +60,11 @@
         </div>
       </div>
       <div class="project-switch">
-        <button
-          (click)="previousProject()"
-        >
-          << Previous project
+        <button (click)="previousProject()">
+          << {{ translationService.translate("portfolio.buttonPrevious") }}
         </button>
-        <button
-          (click)="nextProject()"
-        >
-          Next project >>
+        <button (click)="nextProject()">
+          {{ translationService.translate("portfolio.buttonNext") }} >>
         </button>
       </div>
     </div>
