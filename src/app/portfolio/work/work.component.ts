@@ -10,16 +10,9 @@ import { TranslationService } from '../../services/translation.service';
   styleUrls: ['./work.component.scss'],
 })
 export class WorkComponent {
-
   constructor(public translationService: TranslationService) {}
 
   currentProjectIndex = 0;
-  project1 = {
-    "description": this.translationService.translate('portfolio.project1.description'),
-    "details": this.translationService.translate('portfolio.project1.details')
-  }
-
-  description = this.translationService.translate('portfolio.project1.description');
 
   projects = [
     {
