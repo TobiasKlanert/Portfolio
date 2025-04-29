@@ -67,7 +67,8 @@
         "feedback": "blablablabla",
         "role": "UX Designer at DesignCo"
       }
-    }
+    },
+    "imprint": "Imprint"
   },
   "de": {
     "hero": {
@@ -137,6 +138,7 @@
         "feedback": "Deine strukturierte Arbeitsweise und dein Designgefühl haben das Projekt enorm bereichert.",
         "role": "UX Designer bei DesignCo"
       }
-    }
+    },
+    "imprint": "Impressum"
   }
 }

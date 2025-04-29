@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../../../services/translation.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  constructor(public translationService: TranslationService) {}
 }
