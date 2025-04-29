@@ -68,7 +68,7 @@
         "role": "UX Designer at DesignCo"
       }
     },
-    "imprint": "Imprint"
+    "footer": "Imprint"
   },
   "de": {
     "hero": {
@@ -139,6 +139,6 @@
         "role": "UX Designer bei DesignCo"
       }
     },
-    "imprint": "Impressum"
+    "footer": "Impressum"
   }
 }
