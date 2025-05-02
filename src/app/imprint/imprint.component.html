@@ -1,89 +1,77 @@
 <app-header></app-header>
 <div class="wrapper" id="imprint">
   <section>
-    <h2>Imprint</h2>
-    <p>Information according to § 5 DDG</p>
+    <h2>{{ translationService.translate("imprint.headline") }}</h2>
+    <p>
+      {{ translationService.translate("imprint.personalInformation.headline") }}
+    </p>
     <p>
       Tobias Klanert<br />
       <br />
       Carl-Christian-Agthe-Str. 12<br />
       06333 Hettstedt <br />
     </p>
-    <h4>Represented by:</h4>
+    <h4>
+      {{
+        translationService.translate("imprint.personalInformation.subheading")
+      }}
+    </h4>
     <p>Tobias Klanert<br /></p>
-    <h4>Contact:</h4>
+    <h4>
+      {{
+        translationService.translate(
+          "imprint.personalInformation.contact.headline"
+        )
+      }}
+    </h4>
     <p>
-      Phone: <a href="tel:+4915253562862">01525-3562862</a><br />
+      {{
+        translationService.translate(
+          "imprint.personalInformation.contact.phone"
+        )
+      }}
+      <a href="tel:+4915253562862">01525-3562862</a><br />
       E-Mail:
       <a href="mailto:tobias.klanert@t-online.de"
         >tobias.klanert&#64;t-online.de</a
       >
       <br />
     </p>
-    <h4>Disclaimer:</h4>
-    <h5>Liability for Content</h5>
+    <h4>{{ translationService.translate("imprint.disclaimer.headline") }}</h4>
+    <h5>
+      {{ translationService.translate("imprint.disclaimer.content.subheading") }}
+    </h5>
     <p>
-      The contents of this website were created with the greatest care. However,
-      I cannot guarantee the accuracy, completeness, or timeliness of the
-      content. As a service provider, I am responsible for my own content on
-      these pages according to § 7 (1) of the German Digital Services Act (DDG)
-      and general laws. However, according to §§ 8 to 10 DDG, I am not obligated
-      to monitor transmitted or stored third-party information or to investigate
-      circumstances that indicate illegal activity. Obligations to remove or
-      block the use of information under general laws remain unaffected.
-      Liability in this regard is, however, only possible from the time of
-      knowledge of a specific infringement. Upon becoming aware of such legal
-      violations, I will remove this content immediately.
+      {{ translationService.translate("imprint.disclaimer.content.text") }}
     </p>
-    <h5>Liability for Links</h5>
+    <h5>
+      {{ translationService.translate("imprint.disclaimer.links.subheading") }}
+    </h5>
     <p>
-      My website contains links to external websites of third parties, on whose
-      contents I have no influence. Therefore, I cannot accept any liability for
-      these external contents. The respective provider or operator of the linked
-      pages is always responsible for their contents. The linked pages were
-      checked for possible legal violations at the time of linking; no illegal
-      contents were recognizable at that time. A permanent control of the linked
-      pages is not reasonable without concrete evidence of a legal violation. If
-      I become aware of any infringements, I will remove such links immediately.
+      {{ translationService.translate("imprint.disclaimer.links.text") }}
     </p>
-    <h5>Copyright</h5>
+    <h5>
+      {{
+        translationService.translate("imprint.disclaimer.copyright.subheading")
+      }}
+    </h5>
     <p>
-      The content and works created by me on this website are subject to German
-      copyright law. The reproduction, editing, distribution, and any kind of
-      exploitation outside the limits of copyright require my written consent.
-      Downloads and copies of this website are only permitted for private,
-      non-commercial use. Insofar as content on this site was not created by me,
-      the copyrights of third parties are respected and such content is marked
-      accordingly. Should you nevertheless become aware of a copyright
-      infringement, please notify me accordingly. Upon becoming aware of legal
-      violations, I will remove such content immediately.
+      {{ translationService.translate("imprint.disclaimer.copyright.text") }}
     </p>
-    <h5>Data Protection</h5>
+    <h5>{{ translationService.translate("imprint.disclaimer.data.subheading") }}</h5>
     <p>
-      The use of my website is generally possible without providing personal
-      data. If personal data (such as name, address, or email addresses) is
-      collected on my pages, this is always done on a voluntary basis wherever
-      possible. This data will not be passed on to third parties without your
-      explicit consent. I point out that data transmission over the internet
-      (e.g., communication by email) can have security vulnerabilities. A
-      complete protection of the data against access by third parties is not
-      possible. The use of contact data published within the framework of the
-      legal notice obligation by third parties for the purpose of sending
-      unsolicited advertising and information materials is hereby expressly
-      prohibited. I expressly reserve the right to take legal action in the
-      event of the unsolicited sending of advertising information, such as spam
-      emails.
+      {{ translationService.translate("imprint.disclaimer.data.text") }}
     </p>
-    <h5>Design Template</h5>
+    <h5>{{ translationService.translate("imprint.disclaimer.design.subheading") }}</h5>
     <p>
-      The design used on this website was provided by
+      {{ translationService.translate("imprint.disclaimer.design.text") }}
       <a target="_blank" href="https://developerakademie.com/"
         >Developer Akademie</a
       >.
     </p>
 
     <p>
-      Imprint from
+      {{ translationService.translate("imprint.disclaimer.source") }}
       <a href="https://impressum-generator.de" target="_blank"
         >Impressum-Generator.de</a
       >. Powered by
