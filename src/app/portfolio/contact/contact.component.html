@@ -26,7 +26,13 @@
               type="text"
               id="name"
               name="name"
-              [placeholder]="getNamePlaceholder(name)"
+              [placeholder]="
+                !name.valid && name.touched && !name.disabled
+                  ? translationService.translate('contact.form.name.error')
+                  : translationService.translate(
+                      'contact.form.name.placeholder'
+                    )
+              "
               required
             />
           </div>
@@ -45,7 +51,13 @@
               type="email"
               id="email"
               name="email"
-              [placeholder]="getEmailPlaceholder(email)"
+              [placeholder]="
+                !email.valid && email.touched && !email.disabled
+                  ? translationService.translate('contact.form.email.error')
+                  : translationService.translate(
+                      'contact.form.email.placeholder'
+                    )
+              "
               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
               required
             />
@@ -66,7 +78,13 @@
             [ngClass]="{ invalid: !message.valid && message.touched }"
             id="message"
             name="message"
-            [placeholder]="getMessagePlaceholder(message)"
+            [placeholder]="
+                !message.valid && message.touched && !message.disabled
+                  ? translationService.translate('contact.form.message.error')
+                  : translationService.translate(
+                      'contact.form.message.placeholder'
+                    )
+              "
             required
           ></textarea>
         </div>
@@ -112,17 +130,19 @@
             class="checkbox-error"
             [class.visible]="agreement.invalid && agreement.touched"
           >
-          {{ translationService.translate('contact.form.privacyPolicy.error') }}
+            {{
+              translationService.translate("contact.form.privacyPolicy.error")
+            }}
           </p>
         </div>
 
         <button type="submit" [disabled]="!contactForm.valid">
-          {{ translationService.translate('contact.form.button') }}
+          {{ translationService.translate("contact.form.button") }}
         </button>
       </form>
     </div>
     <div class="success-toast" *ngIf="showSuccess">
-      {{ translationService.translate('contact.form.success') }}
+      {{ translationService.translate("contact.form.success") }}
     </div>
   </div>
   <app-footer></app-footer>

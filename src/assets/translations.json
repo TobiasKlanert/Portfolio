@@ -177,12 +177,12 @@
         "name": {
           "headline": "Wie lautet Ihr Name?",
           "placeholder": "Ihr Name kommt hier hin",
-          "error": "Ups! Es scheint, als hätten Sie Ihren Namen vergessen."
+          "error": "Ups! Ihr Name fehlt."
         },
         "email": {
           "headline": "Ihre E-Mail-Adresse?",
           "placeholder": "ihre@email.de",
-          "error": "Hoppla! Ihre E-Mail-Adresse wird benötigt."
+          "error": "Hoppla! Ihre E-Mail-Adresse fehlt."
         },
         "message": {
           "headline": "Wie kann ich Ihnen helfen?",
