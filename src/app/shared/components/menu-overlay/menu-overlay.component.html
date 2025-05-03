@@ -71,4 +71,44 @@
       <p>{{ translationService.translate("menu.contactMe") }}</p></a
     >
   </nav>
+  <div class="social-links">
+    <a
+      href="https://github.com/TobiasKlanert"
+      (mouseenter)="isHoveringGitHub = true"
+      (mouseleave)="isHoveringGitHub = false"
+      target="_blank"
+      ><img
+        [src]="
+          isHoveringGitHub
+            ? '/assets/img/contact_github_hover.svg'
+            : '/assets/img/contact_github_mobile.svg'
+        "
+        alt="GitHub"
+    /></a>
+    <a
+      href="https://www.linkedin.com/in/tobias-klanert-80563731a/"
+      (mouseenter)="isHoveringLinkedIn = true"
+      (mouseleave)="isHoveringLinkedIn = false"
+      target="_blank"
+      ><img
+        [src]="
+          isHoveringLinkedIn
+            ? '/assets/img/contact_linkedin_hover.svg'
+            : '/assets/img/contact_linkedin_mobile.svg'
+        "
+        alt="LinkedIn"
+    /></a>
+    <a
+      href="mailto:tobias.klanert@t-online.de"
+      (mouseenter)="isHoveringMail = true"
+      (mouseleave)="isHoveringMail = false"
+      ><img
+        [src]="
+          isHoveringMail
+            ? '/assets/img/contact_mail_hover.svg'
+            : '/assets/img/contact_mail_mobile.svg'
+        "
+        alt="E-Mail"
+    /></a>
+  </div>
 </div>

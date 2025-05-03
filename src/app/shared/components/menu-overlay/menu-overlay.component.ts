@@ -17,6 +17,10 @@ import { TranslationService } from '../../../services/translation.service';
   styleUrl: './menu-overlay.component.scss',
 })
 export class MenuOverlayComponent {
+
+  isHoveringGitHub = false;
+  isHoveringLinkedIn = false;
+  isHoveringMail = false;
   
   constructor(public translationService: TranslationService) {}
 

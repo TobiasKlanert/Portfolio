@@ -8,55 +8,59 @@
   background-color: $background-bright;
   border: 1px $highlight-dark solid;
   border-radius: 4px;
-}
-
-.menu-header {
-  @include dFlex($jc: space-between);
-  width: 100%;
-  > h4 {
-    color: $highlight-blue;
+  .menu-header {
+    @include dFlex($jc: space-between);
+    width: 100%;
+    > h4 {
+      color: $highlight-blue;
+    }
+    > button {
+      width: 32px;
+      height: 32px;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        svg {
+          color: $highlight-orange;
+        }
+      }
+      > svg {
+        color: $highlight-yellow;
+      }
+    }
   }
-  > button {
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border: none;
-    &:hover {
-      svg {
-        color: $highlight-orange;
+  nav {
+    @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+    > a {
+      @include dFlex();
+      > p {
+        @include standardText($fs: 18px, $fw: 700);
+        color: $highlight-dark;
+        transition: all 100ms ease-in-out;
+        transform: translateX(-20px);
       }
-    }
-    > svg {
-      color: $highlight-yellow;
+      > img {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+      }
+      &.hovered {
+        p {
+          transform: translateX(0);
+          color: $highlight-blue;
+          transition-delay: 100ms;
+        }
+        img {
+          opacity: 1;
+          transition-delay: 200ms;
+        }
+      }
     }
   }
-}
-
-nav {
-  @include dFlex($fd: column, $ai: flex-start, $g: 8px);
-  > a {
-    @include dFlex();
-    > p {
-      @include standardText($fs: 18px, $fw: 700);
-      color: $highlight-dark;
-      transition: all 100ms ease-in-out;
-      transform: translateX(-20px);
-    }
-    > img {
-      width: 20px;
-      height: 20px;
-      opacity: 0;
-    }
-    &.hovered {
-      p {
-        transform: translateX(0);
-        color: $highlight-blue;
-        transition-delay: 100ms;
-      }
-      img {
-        opacity: 1;
-        transition-delay: 200ms;
-      }
+  .social-links {
+    display: none;
+    @media screen and (max-width: 768px) {
+      @include dFlex($g: 8px);
     }
   }
 }
