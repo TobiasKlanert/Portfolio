@@ -8,6 +8,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
       SkillsComponent,
       WorkComponent,
       ReferencesComponent,
-      ContactComponent
+      ContactComponent,
+      FooterComponent
       ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
