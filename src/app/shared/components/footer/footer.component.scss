@@ -3,47 +3,78 @@
 
 section {
   @include dFlex($jc: space-between, $ai: flex-end);
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
   width: 100%;
   padding: 0 72px;
   color: $highlight-white;
-}
 
-a {
-  @include standardText();
-  color: $highlight-white;
-  transition: all 125ms ease-in-out;
-  &:hover {
-    color: $highlight-orange;
+  .hide {
+    display: none;
   }
-}
 
-p {
-  padding-bottom: 56px;
-}
+  a {
+    @include standardText();
+    color: $highlight-white;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      color: $highlight-orange;
+    }
+  }
+  
+  p {
+    padding-bottom: 56px;
+  }
+  
+  .spinner {
+    position: relative;
+  }
+  
+  .clockwise {
+    @include rotate-image();
+    width: 180px;
+    height: 180px;
+  }
+  
+  .counterclockwise {
+    @include rotate-image-negative();
+    width: 263px;
+    height: 263px;
+    position: absolute;
+    left: 110px;
+    bottom: 0;
+  }
+  
+  .links {
+    @include dFlex($g: 32px);
+    padding-bottom: 56px;
+  }
 
-.spinner {
-  position: relative;
-}
-
-.clockwise {
-  @include rotate-image();
-  width: 180px;
-  height: 180px;
-}
-
-.counterclockwise {
-  @include rotate-image-negative();
-  width: 263px;
-  height: 263px;
-  position: absolute;
-  left: 110px;
-  bottom: 0;
-}
-
-.links {
-  @include dFlex($g: 32px);
-  padding-bottom: 56px;
+  @media screen and (max-width: 1220px) {
+    @include dFlex($fd: column, $ai: center);
+    gap: 24px;
+    p {
+      padding-bottom: 0;
+      order: 1;
+    }
+    .spinner {
+      order: 3;
+    }
+    .clockwise {
+      width: 170px;
+      height: 170px;
+    }
+    .counterclockwise {
+      position: static;
+      width: 250px;
+      height: 250px;
+    }
+    .links {
+      padding-bottom: 0;
+      order: 2;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 }
