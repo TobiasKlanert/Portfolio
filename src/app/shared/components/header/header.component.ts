@@ -16,8 +16,10 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   isHoveringLinkedIn = false;
   isHoveringMail = false;
   isGerman = false;
+  isLegals = false;
 
   socialLinksVisible = false;
+  pointerEventsDisabled = false;
   isBackgroundTransparant = true;
 
   isMenuOpen = false;
@@ -76,12 +78,15 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
           if (entry.target.id === 'hero') {
             this.socialLinksVisible =
               entry.isIntersecting && window.innerWidth >= 768;
+            this.pointerEventsDisabled = entry.isIntersecting;
           }
           if (
             entry.target.id === 'imprint' ||
             entry.target.id === 'privacy-policy'
           ) {
-            this.socialLinksVisible = false;
+            this.isLegals = true;
+            this.isBackgroundTransparant = false;
+            this.pointerEventsDisabled = false;
           }
         }
       },

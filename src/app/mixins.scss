@@ -21,6 +21,9 @@
   height: $h;
   max-width: $mw;
   padding: $pt $pr $pb $pl;
+  @media screen and (max-width: 768px) {
+    padding: $pt 16px $pb 16px;
+  }
 }
 
 @mixin standardButton($ptb: 12px, $plr: 24px, $g: 10px) {

@@ -1,15 +1,13 @@
 <header
   [class.first]="socialLinksVisible"
+  [class.pointer]="pointerEventsDisabled"
   [class.light-text]="isLightText"
   [class.dark-text]="!isLightText"
   [class.bg-transparent]="isBackgroundTransparant"
   [class.bg-color]="!isBackgroundTransparant"
 >
   <div class="header-container">
-    <div
-      class="social-links"
-      *ngIf="socialLinksVisible"
-    >
+    <div class="social-links" *ngIf="socialLinksVisible">
       <a
         href="https://github.com/TobiasKlanert"
         (mouseenter)="isHoveringGitHub = true"
@@ -19,6 +17,8 @@
           [src]="
             isHoveringGitHub
               ? '/assets/img/contact_github_hover.svg'
+              : isLegals
+              ? '/assets/img/contact_github_black.svg'
               : '/assets/img/contact_github.svg'
           "
           alt="GitHub"
@@ -29,11 +29,13 @@
         (mouseleave)="isHoveringLinkedIn = false"
         target="_blank"
         ><img
-          [src]="
-            isHoveringLinkedIn
-              ? '/assets/img/contact_linkedin_hover.svg'
-              : '/assets/img/contact_linkedin.svg'
-          "
+        [src]="
+        isHoveringLinkedIn
+          ? '/assets/img/contact_linkedin_hover.svg'
+          : isLegals
+          ? '/assets/img/contact_linkedin_black.svg'
+          : '/assets/img/contact_linkedin.svg'
+      "
           alt="LinkedIn"
       /></a>
       <a
@@ -41,11 +43,13 @@
         (mouseenter)="isHoveringMail = true"
         (mouseleave)="isHoveringMail = false"
         ><img
-          [src]="
-            isHoveringMail
-              ? '/assets/img/contact_mail_hover.svg'
-              : '/assets/img/contact_mail.svg'
-          "
+        [src]="
+        isHoveringMail
+          ? '/assets/img/contact_mail_hover.svg'
+          : isLegals
+          ? '/assets/img/contact_mail_black.svg'
+          : '/assets/img/contact_mail.svg'
+      "
           alt="E-Mail"
       /></a>
     </div>
