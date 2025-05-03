@@ -22,6 +22,8 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
     'contact',
   ];
   ngAfterViewInit(): void {
+    if (window.innerWidth <= 992) return;
+
     const sectionElements = this.sectionsToWatch
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => el !== null);

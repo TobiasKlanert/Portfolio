@@ -23,6 +23,14 @@ nav {
       color: $highlight-orange;
     }
   }
+
+  @media screen and (max-width: 1440px) {
+    right: 72px;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }
 
 .arrow-up {
