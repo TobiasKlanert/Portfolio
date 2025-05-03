@@ -28,17 +28,10 @@ button {
     position: relative;
     overflow-y: auto;
     scroll-snap-type: none;
-    app-footer {
-      display: block;
-    }
   }
 }
 
 .scroll-container > * {
   scroll-snap-align: start;
   height: 100vh;
-}
-
-app-footer {
-  display: none;
 }
