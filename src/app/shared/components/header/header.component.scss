@@ -151,3 +151,12 @@ header {
     pointer-events: none;
   }
 }
+
+//Mobile
+@media screen and (max-width: 480px) {
+  header {
+    .header-container {
+      padding: 24px 24px;
+    }
+  }
+}

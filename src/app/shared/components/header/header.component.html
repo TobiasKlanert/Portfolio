@@ -1,5 +1,5 @@
 <header
-  [class.first]="isFirstSectionVisible"
+  [class.first]="socialLinksVisible"
   [class.light-text]="isLightText"
   [class.dark-text]="!isLightText"
   [class.bg-transparent]="isBackgroundTransparant"
@@ -8,8 +8,7 @@
   <div class="header-container">
     <div
       class="social-links"
-      *ngIf="isFirstSectionVisible"
-      [ngStyle]="{ 'gap.px': 32 }"
+      *ngIf="socialLinksVisible"
     >
       <a
         href="https://github.com/TobiasKlanert"

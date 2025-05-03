@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit, OnDestroy, Input } from '@angular/core';
 import { MenuOverlayComponent } from '../menu-overlay/menu-overlay.component';
 import { TranslationService } from '../../../services/translation.service';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,56 +12,25 @@ import { TranslationService } from '../../../services/translation.service';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements AfterViewInit, OnDestroy {
-
-  constructor(public translationService: TranslationService) {}
-
   isHoveringGitHub = false;
   isHoveringLinkedIn = false;
   isHoveringMail = false;
   isGerman = false;
 
-  isFirstSectionVisible = true;
+  socialLinksVisible = false;
   isBackgroundTransparant = true;
 
   isMenuOpen = false;
 
-  @Input() isLightText!: boolean;
-
   private sectionObserver!: IntersectionObserver;
 
-  ngAfterViewInit(): void {
-    const sections = ['hero', 'imprint', 'privacy-policy']
-      .map(id => document.getElementById(id))
-      .filter((el): el is HTMLElement => !!el); // Type narrowing
-  
-    this.sectionObserver = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.target.id === 'hero') {
-            this.isFirstSectionVisible = entry.isIntersecting;
-          }
-          if (entry.target.id === 'imprint' || entry.target.id === 'privacy-policy') {
-            this.isFirstSectionVisible = false;
-            this.isBackgroundTransparant = false;
-          }
-        }
-      },
-      {
-        root: document.querySelector('.scroll-container'),
-        threshold: 0.5,
-      }
-    );
-  
-    sections.forEach(section => this.sectionObserver.observe(section));
-  }
-  
-  ngOnDestroy(): void {
-    if (this.sectionObserver) this.sectionObserver.disconnect();
+  constructor(public translationService: TranslationService) {
+    this.setInitialVisibility();
   }
 
   ngOnInit() {
     const savedLang = localStorage.getItem('selectedLanguage');
-    
+
     if (savedLang === 'de' || savedLang === 'en') {
       this.isGerman = savedLang === 'de';
       this.translationService.switchLanguage(savedLang);
@@ -76,8 +46,58 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
         localStorage.setItem('selectedLanguage', 'en');
       }
     }
+
+    this.setInitialVisibility();
   }
-  
+
+  private setInitialVisibility(): void {
+    if (window.innerWidth < 768) {
+      this.socialLinksVisible = false;
+    } else {
+      this.socialLinksVisible = true;
+    }
+  }
+
+  @Input() isLightText!: boolean;
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.setInitialVisibility();
+  }
+
+  ngAfterViewInit(): void {
+    const sections = ['hero', 'imprint', 'privacy-policy']
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+
+    this.sectionObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.target.id === 'hero') {
+            this.socialLinksVisible =
+              entry.isIntersecting && window.innerWidth >= 768;
+          }
+          if (
+            entry.target.id === 'imprint' ||
+            entry.target.id === 'privacy-policy'
+          ) {
+            this.socialLinksVisible = false;
+          }
+        }
+      },
+      {
+        root: document.querySelector('.scroll-container'),
+        threshold: 0.5,
+      }
+    );
+
+    sections.forEach((section) => this.sectionObserver.observe(section));
+  }
+
+  ngOnDestroy(): void {
+    if (this.sectionObserver) this.sectionObserver.disconnect();
+  }
+
   changeLanguage() {
     this.isGerman = !this.isGerman;
     const lang = this.isGerman ? 'de' : 'en';
