@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../shared/components/header/header.component';
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
@@ -27,6 +27,16 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class PortfolioComponent implements AfterViewInit, OnDestroy {
   isLightText = true;
+  isHeaderVisible: boolean = true;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const heroSection = document.getElementById('hero');
+    const heroBottom = heroSection?.getBoundingClientRect().bottom || 0;
+
+    this.isHeaderVisible = heroBottom > 0;
+  }
+
   private colorObserver!: IntersectionObserver;
 
   ngAfterViewInit(): void {

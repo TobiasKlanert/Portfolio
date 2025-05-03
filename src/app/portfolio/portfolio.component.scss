@@ -25,6 +25,7 @@ button {
   }
 
   @media screen and (max-width: 992px) {
+    position: relative;
     overflow-y: auto;
     scroll-snap-type: none;
   }
@@ -33,8 +34,4 @@ button {
 .scroll-container > * {
   scroll-snap-align: start;
   height: 100vh;
-}
-
-#hero {
-  position: relative;
 }
