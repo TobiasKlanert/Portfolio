@@ -10,7 +10,7 @@
 }
 
 section {
-  @include standardSection($h: 100%, $pb: 160px);
+  @include standardSection($h: 100%);
   @include dFlex($fd: column, $ai: flex-start, $g: 16px);
 }
 
@@ -21,4 +21,9 @@ a {
   &:hover {
     color: $highlight-orange;
   }
+}
+
+app-footer {
+  width: 100%;
+  padding-top: 32px;
 }

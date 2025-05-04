@@ -1,10 +1,24 @@
 @import "../../../variables";
 @import "../../../mixins.scss";
 
-section {
+footer {
   @include dFlex($jc: space-between, $ai: flex-end);
   width: 100%;
-  color: $highlight-white;
+  /* color: $highlight-white; */
+
+  &.light-text {
+    color: $highlight-white;
+    a {
+      color: $highlight-white;
+    }
+  }
+
+  &.dark-text {
+    color: $highlight-dark;
+    a {
+      color: $highlight-dark;
+    }
+  }
 
   .spinner {
     position: relative;
@@ -54,7 +68,7 @@ section {
       padding-bottom: 56px;
       a {
         @include standardText();
-        color: $highlight-white;
+        /* color: $highlight-white; */
         transition: all 125ms ease-in-out;
         &:hover {
           color: $highlight-orange;
