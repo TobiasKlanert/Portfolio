@@ -84,7 +84,7 @@ section {
       .clockwise,
       .counterclockwise {
         left: 50%;
-        transform: translateX(-50%);
+        /* transform: translateX(-50%); */
       }
 
       .clockwise {
@@ -121,6 +121,7 @@ section {
       .counterclockwise {
         width: 190px;
         height: 190px;
+        transform: translateX(-50%) translateX(35px);
       }
     }
   }
