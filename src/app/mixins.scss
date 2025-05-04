@@ -21,6 +21,10 @@
   height: $h;
   max-width: $mw;
   padding: $pt $pr $pb $pl;
+  @media screen and (max-width: 992px) {
+    min-height: 100vh;
+    height: 100%;
+  }
   @media screen and (max-width: 768px) {
     padding: $pt 16px $pb 16px;
   }

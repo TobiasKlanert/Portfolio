@@ -3,11 +3,7 @@
 
 section {
   @include dFlex($jc: space-between, $ai: flex-end);
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  padding: 0 72px;
   color: $highlight-white;
 
   .spinner {
