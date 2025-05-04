@@ -13,6 +13,7 @@ button {
 
 .scroll-container {
   height: 100vh;
+  background-color: $background-dark;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
