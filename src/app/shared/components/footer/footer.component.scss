@@ -9,30 +9,39 @@ section {
   .spinner {
     position: relative;
     height: 250px;
-  
+
     .clockwise,
     .counterclockwise {
       position: absolute;
       bottom: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        animation: none;
+        display: block;
+      }
     }
-  
+
     .clockwise {
-      @include rotate-image;
       left: 0;
       width: 180px;
       height: 180px;
       z-index: 2;
+      img {
+        @include rotate-image;
+      }
     }
-  
+
     .counterclockwise {
-      @include rotate-image-negative;
       left: 65px;
       width: 263px;
       height: 263px;
       z-index: 1;
+      img {
+        @include rotate-image-negative;
+      }
     }
   }
-  
 
   .text-container {
     @include dFlex($jc: space-between);
@@ -71,19 +80,19 @@ section {
       justify-content: center;
       align-items: flex-end;
       order: 2;
-  
+
       .clockwise,
       .counterclockwise {
         left: 50%;
         transform: translateX(-50%);
       }
-  
+
       .clockwise {
-        width: 170px;
-        height: 170px;
+        width: 171px;
+        height: 171px;
         transform: translateX(-50%) translateX(-65px);
       }
-  
+
       .counterclockwise {
         width: 250px;
         height: 250px;
@@ -97,6 +106,21 @@ section {
         justify-content: space-between;
         width: 100%;
         padding-bottom: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .spinner {
+      height: 190px;
+      .clockwise {
+        width: 130px;
+        height: 130px;
+      }
+
+      .counterclockwise {
+        width: 190px;
+        height: 190px;
       }
     }
   }
