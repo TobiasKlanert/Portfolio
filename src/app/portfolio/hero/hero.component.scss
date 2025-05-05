@@ -66,15 +66,17 @@ section {
         bottom: 9px;
       }
     }
+
     .right-side {
       .profile-picture {
         width: 555px;
         height: 555px;
       }
+
       .background-object {
         width: 383px;
         height: 383px;
-        top: 150px
+        top: 150px;
       }
     }
   }
@@ -82,18 +84,19 @@ section {
   @media screen and (max-width: 992px) {
     flex-direction: column;
     align-items: space-between;
+
     .right-side {
       .background-object {
         top: 0;
       }
     }
+
     .left-side {
       width: 100%;
       justify-content: center;
+      
       .scroll-widget {
         position: absolute;
-        /* bottom: 9px; */
-        /* padding-bottom: 0; */
         z-index: 999;
       }
     }
@@ -103,13 +106,6 @@ section {
     .left-side {
       .scroll-widget {
         left: 9px;
-        /* .scroll-down {
-          width: 80px;
-          height: 80px;
-        }
-        .arrow-down {
-          height: 32px;
-        } */
       }
     }
   }
@@ -121,16 +117,19 @@ section {
           width: 80px;
           height: 80px;
         }
+
         .arrow-down {
           height: 32px;
         }
       }
     }
+
     .right-side {
       .profile-picture {
         width: 390px;
         height: 390px;
       }
+
       .background-object {
         width: 266px;
         height: 266px;
