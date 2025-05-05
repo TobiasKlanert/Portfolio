@@ -20,9 +20,6 @@ h1 {
 h2 {
   font-family: "Eczar";
   font-size: 72px;
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
 }
 
 h3 {
@@ -97,14 +94,22 @@ p {
     format("woff2");
 }
 
-/* //Laptop
+//Laptop
 @media screen and (max-width: 1200px) {
 
 }
 
 //Tablet
 @media screen and (max-width: 992px) {
-
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
 
 //Mobile Landscape
@@ -115,4 +120,4 @@ p {
 //Mobile
 @media screen and (max-width: 480px) {
 
-} */
+}

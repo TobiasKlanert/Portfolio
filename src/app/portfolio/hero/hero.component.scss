@@ -6,57 +6,135 @@ section {
   @include dFlex($jc: space-between);
   background-color: $background-blue;
   color: $highlight-white;
-}
 
-a {
-  @include standardButton();
-  margin-top: 16px;
-}
+  .left-side {
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+    height: 100%;
 
-.left-side {
-  @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
-  height: 100%;
-}
+    .introduction {
+      @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+      a {
+        @include standardButton();
+        margin-top: 16px;
+      }
+    }
 
-.right-side {
-  @include dFlex($ai: flex-end);
-  position: relative;
-  height: 100%;
-}
+    .scroll-widget {
+      @include dFlex();
+      position: relative;
+      padding-bottom: 100px;
 
-.introduction {
-  @include dFlex($fd: column, $ai: flex-start, $g: 8px);
-}
+      .scroll-down {
+        @include rotate-image();
+        width: 144px;
+        height: 144px;
+      }
 
-.scroll-widget {
-  @include dFlex();
-  position: relative;
-  padding-bottom: 100px;
-}
+      .arrow-down {
+        position: absolute;
+        height: 40px;
+        z-index: 99;
+      }
+    }
+  }
 
-.scroll-down {
-  @include rotate-image();
-  width: 144px;
-  height: 144px;
-}
+  .right-side {
+    @include dFlex($ai: flex-end);
+    position: relative;
+    height: 100%;
 
-.arrow-down {
-  position: absolute;
-  height: 40px;
-  z-index: 99;
-}
+    .profile-picture {
+      z-index: 99;
+      width: 720px;
+      height: 720px;
+    }
 
-.profile-picture {
-  z-index: 99;
-  width: 720px;
-  height: 720px;
-}
+    .background-object {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: -10px;
+      width: 500px;
+      height: 500px;
+    }
+  }
 
-.background-object {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: -10px;
-  width: 500px;
-  height: 500px;
+  @media screen and (max-width: 1200px) {
+    .left-side {
+      .scroll-widget {
+        padding-bottom: 0px;
+        bottom: 9px;
+      }
+    }
+    .right-side {
+      .profile-picture {
+        width: 555px;
+        height: 555px;
+      }
+      .background-object {
+        width: 383px;
+        height: 383px;
+        top: 150px
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: space-between;
+    .right-side {
+      .background-object {
+        top: 0;
+      }
+    }
+    .left-side {
+      width: 100%;
+      justify-content: center;
+      .scroll-widget {
+        position: absolute;
+        /* bottom: 9px; */
+        /* padding-bottom: 0; */
+        z-index: 999;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .left-side {
+      .scroll-widget {
+        left: 9px;
+        /* .scroll-down {
+          width: 80px;
+          height: 80px;
+        }
+        .arrow-down {
+          height: 32px;
+        } */
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .left-side {
+      .scroll-widget {
+        .scroll-down {
+          width: 80px;
+          height: 80px;
+        }
+        .arrow-down {
+          height: 32px;
+        }
+      }
+    }
+    .right-side {
+      .profile-picture {
+        width: 390px;
+        height: 390px;
+      }
+      .background-object {
+        width: 266px;
+        height: 266px;
+      }
+    }
+  }
 }
