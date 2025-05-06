@@ -3,17 +3,40 @@
 
 section {
   @include standardSection();
+  @include dFlex($jc: space-between);
   background-color: $background-bright;
   position: relative;
-  > h2 {
-    position: absolute;
-    top: 160px;
-    right: 112px;
+  .img-container,
+  .headline-container {
+    height: 100%;
   }
-  > img {
-    position: absolute;
-    left: 112px;
-    bottom: 0;
+  .img-container {
+    @include dFlex($ai: flex-end);
+  }
+  .headline-container {
+    @include dFlex($ai: flex-start);
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    .headline-container {
+      order: 1;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    .img-container {
+      order: 2;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .textbox {
+      position: static;
+      order: 3;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .img-container > img {
+      width: 240px;
+    }
   }
 }
 
@@ -45,6 +68,10 @@ section {
         transform: translateY(0);
         opacity: 1;
       }
+    }
+    @media screen and (max-width: 1300px) {
+      left: unset;
+      right: 160px;
     }
   }
   .overlay {
