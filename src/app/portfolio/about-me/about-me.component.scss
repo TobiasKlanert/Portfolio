@@ -1,79 +1,102 @@
 @import "../../variables";
 @import "../../mixins.scss";
 
+// =======================
+// SECTION
+// =======================
 section {
   @include standardSection();
-  @include dFlex($jc: space-between);
+  @include dFlex($jc: flex-start, $g: 32px);
   background-color: $background-bright;
   position: relative;
+
   .img-container,
   .headline-container {
     height: 100%;
   }
+
   .img-container {
     @include dFlex($ai: flex-end);
   }
+
   .headline-container {
     @include dFlex($ai: flex-start);
   }
+
   @media screen and (max-width: 1200px) {
+    .headline-container h2 {
+      font-size: 62px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
     flex-direction: column;
+
     .headline-container {
       order: 1;
       width: 100%;
       justify-content: flex-end;
     }
+
     .img-container {
       order: 2;
-      width: 100%;
       justify-content: flex-start;
+      width: 100%;
+
+      img {
+        width: 240px;
+      }
     }
-    .textbox {
-      position: static;
+
+    .textbox-wrapper {
+      /* @include dFlex($jc: flex-end); */
+      position: relative;
       order: 3;
-    }
-  }
-  @media screen and (max-width: 992px) {
-    .img-container > img {
-      width: 240px;
+      width: 100%;
     }
   }
 }
 
+// =======================
+// TEXTBOX
+// =======================
 .textbox {
   @include dFlex($fd: column, $jc: space-between, $g: 32px);
   position: absolute;
   top: 350px;
   left: 554px;
-  width: 600px;
-  height: 250px;
+  width: clamp(240px, 41.67vw, 600px);
+  min-height: 250px;
   background-color: $background-dark;
   color: $highlight-white;
   padding: 32px;
   border-radius: 4px;
+
   .textbox-footer {
     @include dFlex($jc: space-between);
     width: 100%;
+
     > a {
       @include standardButton();
     }
+
     .overlay-wrapper {
       position: relative;
       display: inline-block;
+
       > img {
         @include floating-icon();
         cursor: pointer;
       }
+
       &:hover .overlay {
         transform: translateY(0);
         opacity: 1;
       }
     }
-    @media screen and (max-width: 1300px) {
-      left: unset;
-      right: 160px;
-    }
   }
+
   .overlay {
     @include dFlex($fd: column, $g: 16px);
     position: absolute;
@@ -90,16 +113,31 @@ section {
     transform: translateY(100%);
     opacity: 0;
     pointer-events: none;
+
     > ul {
       @include dFlex($fd: column, $ai: flex-start, $g: 8px);
       list-style-type: none;
       width: 100%;
       padding: 0;
       margin: 0;
+
       > li {
         @include dFlex($jc: flex-start, $g: 8px);
         @include standardText();
       }
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+    left: unset;
+    right: 160px;
+    top: 400px;
+  }
+
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    right: 0;
+    top: -94px;
+    padding: 16px;
   }
 }
