@@ -64,7 +64,18 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
 
   @HostListener('window:resize', [])
   onResize() {
-    this.setInitialVisibility();
+    // Prüfe, ob eine der relevanten Sections im Viewport ist
+    const relevantSections = ['hero', 'imprint', 'privacy-policy'];
+    const isRelevantSectionVisible = relevantSections.some((id) => {
+      const el = document.getElementById(id);
+      if (!el) return false;
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
+    });
+
+    if (isRelevantSectionVisible) {
+      this.setInitialVisibility();
+    }
   }
 
   ngAfterViewInit(): void {
