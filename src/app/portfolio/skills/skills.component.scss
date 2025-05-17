@@ -6,103 +6,126 @@ section {
   position: relative;
   background-color: $background-dark;
   color: $highlight-white;
-}
 
-.textbox {
-  width: 600px;
-  background-color: $background-blue;
-  padding: 32px;
-  border-radius: 4px;
-  > p {
-    @include standardText();
-  }
-}
-
-.secret-widget {
-  @include dFlex();
-  position: absolute;
-  bottom: 100px;
-  left: 112px;
-  width: 120px;
-  height: 120px;
-}
-
-.rotate-shape {
-  @include rotate-image();
-  width: 144px;
-  height: 144px;
-}
-.overlay-wrapper {
-  position: absolute;
-  display: inline-block;
-
-  .learning-icon {
-    width: 40px;
-    height: 40px;
-    z-index: 99;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .overlay {
-    @include dFlex($fd: column, $g: 32px);
-    position: absolute;
-    bottom: -100%;
-    left: 300%;
-    z-index: 999;
-    width: 360px;
+  .textbox {
+    width: clamp(288px, 92vw, 600px);;
+    background-color: $background-blue;
     padding: 32px;
-    border: 1px solid $highlight-white;
     border-radius: 4px;
-    background-color: $highlight-yellow;
-    color: $highlight-white;
-    transition: transform 200ms ease, opacity 200ms ease;
-    transform: translateY(100%);
-    opacity: 0;
-    pointer-events: none;
-    h4 {
-      text-align: center;
+    > p {
+      @include standardText();
     }
-    .overlay-content {
-      @include dFlex($fd: column, $g: 8px);
-      p {
-        text-align: justify;
+  }
+
+  .secret-widget {
+    @include dFlex();
+    position: absolute;
+    bottom: 100px;
+    left: 112px;
+    width: 120px;
+    height: 120px;
+
+    .rotate-shape {
+      @include rotate-image();
+      width: 144px;
+      height: 144px;
+    }
+
+    .overlay-wrapper {
+      position: absolute;
+      display: inline-block;
+
+      .learning-icon {
+        width: 40px;
+        height: 40px;
+        z-index: 99;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .overlay {
+        @include dFlex($fd: column, $g: 32px);
+        position: absolute;
+        bottom: -100%;
+        left: 300%;
+        z-index: 999;
+        width: 360px;
+        padding: 32px;
+        border: 1px solid $highlight-white;
+        border-radius: 4px;
+        background-color: $highlight-yellow;
+        color: $highlight-white;
+        transition: transform 200ms ease, opacity 200ms ease;
+        transform: translateY(100%);
+        opacity: 0;
+        pointer-events: none;
+        h4 {
+          text-align: center;
+        }
+        .overlay-content {
+          @include dFlex($fd: column, $g: 8px);
+          p {
+            text-align: justify;
+          }
+        }
+        .learning-skills {
+          @include dFlex($g: 40px);
+          width: 100%;
+        }
+      }
+
+      &:hover .overlay {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
-    .learning-skills {
-      @include dFlex($g: 40px);
-      width: 100%;
+  }
+
+  .skills {
+    @include dFlex($ai: self-start, $g: 40px);
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 100px;
+    right: 112px;
+    width: clamp(288px, 92vw, 640px);
+
+    .skill-item {
+      @include dFlex($fd: column, $g: 8px);
+
+      img {
+        width: 96px;
+        flex: 0 0 calc(20% - 40px);
+        transition: transform 200ms ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      p {
+        text-align: center;
+      }
     }
   }
 
-  &:hover .overlay {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.skills {
-  @include dFlex($ai: self-start, $g: 40px);
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: 100px;
-  right: 112px;
-  width: 640px;
-}
-
-.skill-item {
-  @include dFlex($fd: column, $g: 8px);
-
-  img {
-    width: 96px;
-    flex: 0 0 calc(20% - 40px);
-    transition: transform 200ms ease-in-out;
-    &:hover {
-      transform: scale(1.2);
+  @media screen and (max-width: 992px) {
+    @include dFlex($fd: column, $jc: flex-start, $g: 32px);
+    padding-top: 80px;
+    .skills, .secret-widget {
+      position: static;
+      bottom: auto;
+      right: auto;
+      .skill-item img {
+        width: 72px;
+      }
+    }
+    .secret-widget {
+      order: 4;
     }
   }
 
-  p {
-    text-align: center;
+  @media screen and (max-width: 768px) {
+    .skills {
+      gap: 12px;
+    }
   }
 }
