@@ -5,124 +5,221 @@ section {
   @include standardSection();
   background-color: $background-bright;
   color: $highlight-dark;
-}
 
-.headline {
-  @include dFlex($jc: flex-start, $g: 40px);
-  > p {
-    padding: 32px;
-  }
-}
+  .headline {
+    @include dFlex($jc: flex-start, $g: 40px);
 
-.projects {
-  @include dFlex($jc: space-between, $g: 40px);
-  width: 100%;
-  height: 488px;
-}
-
-.screenshot-container {
-  @include dFlex();
-  position: relative;
-  height: 100%;
-  width: 488px;
-  border: 1px solid $highlight-dark;
-  border-radius: 4px;
-}
-
-.screenshot {
-  width: 85%;
-  z-index: 99;
-}
-
-.spinner {
-  @include rotate-image();
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.project-container {
-  @include dFlex($fd: column, $g: 32px);
-  height: 100%;
-  width: 688px;
-}
-
-.project-description {
-  @include dFlex($fd: column, $ai: flex-start, $g: 16px);
-  background-color: $background-dark;
-  color: $highlight-white;
-  padding: 64px 32px;
-  border-radius: 4px;
-  width: 100%;
-  height: 368px;
-}
-
-.project-header {
-  @include dFlex($jc: space-between);
-  width: 100%;
-  .overlay-wrapper {
-    position: relative;
-    display: inline-block;
-    img {
-      @include floating-icon();
-      cursor: pointer;
-    }
-    .overlay {
-      position: absolute;
-      bottom: 60px;
-      right: 0;
-      width: 520px;
+    p {
       padding: 32px;
-      border: 1px solid $highlight-white;
-      border-radius: 4px;
-      color: $highlight-white;
-      background-color: $background-blue;
-      transition: opacity 125ms ease;
-      opacity: 0;
-      pointer-events: none;
-    }
-    &:hover .overlay {
-      opacity: 1;
     }
   }
-}
 
-.project-techstack {
-  color: #679aac;
-}
+  .projects {
+    @include dFlex($jc: space-between, $g: 40px);
+    width: 100%;
+    height: 488px;
 
-.project-buttons {
-  @include dFlex($jc: flex-start, $g: 32px);
-  width: 100%;
-  margin-top: 16px;
-  > a {
-    @include standardButton();
-    gap: 4px;
-    > img {
-      transition: all 125ms ease-in-out;
+    .screenshot-container {
+      @include dFlex();
+      position: relative;
+      height: 100%;
+      width: 488px;
+      border: 1px solid $highlight-dark;
+      border-radius: 4px;
+
+      .screenshot {
+        width: 85%;
+        max-width: 413px;
+        z-index: 99;
+      }
+
+      .spinner {
+        @include rotate-image();
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
     }
-    &:hover {
-      img {
-        transform: rotate(-45deg);
+
+    .project-container {
+      @include dFlex($fd: column, $g: 32px);
+      height: 100%;
+      width: 688px;
+
+      .project-description {
+        @include dFlex($fd: column, $ai: flex-start, $g: 16px);
+        background-color: $background-dark;
+        color: $highlight-white;
+        padding: 64px 32px;
+        border-radius: 4px;
+        width: 100%;
+        height: 368px;
+
+        .project-header {
+          @include dFlex($jc: space-between);
+          width: 100%;
+
+          .overlay-wrapper {
+            position: relative;
+            display: inline-block;
+            img {
+              @include floating-icon();
+              cursor: pointer;
+            }
+
+            .overlay {
+              position: absolute;
+              bottom: 60px;
+              right: 0;
+              width: clamp(288px, 92vw, 520px);
+              padding: 32px;
+              border: 1px solid $highlight-white;
+              border-radius: 4px;
+              color: $highlight-white;
+              background-color: $background-blue;
+              transition: opacity 125ms ease;
+              opacity: 0;
+              pointer-events: none;
+              z-index: 999;
+
+              .btn-container {
+                @include dFlex($jc: flex-end);
+                width: 100%;
+
+                .btn-close-overlay {
+                  display: none;
+                  background: none;
+                  border: none;
+                  svg {
+                    color: $highlight-white;
+                  }
+                  &:hover {
+                    svg {
+                      color: $highlight-orange;
+                    }
+                  }
+                }
+              }
+            }
+            &:hover .overlay {
+              opacity: 1;
+            }
+          }
+        }
+
+        .project-techstack {
+          color: #679aac;
+        }
+
+        .project-buttons {
+          @include dFlex($jc: flex-start, $g: 32px);
+          width: 100%;
+          margin-top: 16px;
+
+          a {
+            @include standardButton();
+            gap: 4px;
+
+            img {
+              transition: all 125ms ease-in-out;
+            }
+
+            &:hover {
+              img {
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
+      }
+
+      .project-switch {
+        @include dFlex($jc: space-between);
+        width: 100%;
+
+        button {
+          @include standardText($fs: 18px, $fw: 700);
+          color: $highlight-dark;
+          border: none;
+          background: none;
+          transition: all 125ms ease-in-out;
+          &:hover {
+            color: $highlight-orange;
+          }
+        }
       }
     }
   }
-}
 
-.project-switch {
-  @include dFlex($jc: space-between);
-  width: 100%;
-  > button {
-    @include standardText($fs: 18px, $fw: 700);
-    color: $highlight-dark;
-    border: none;
-    background: none;
-    transition: all 125ms ease-in-out;
-    &:hover {
-      color: $highlight-orange;
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .headline {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+
+      p {
+        padding: 32px 0;
+      }
+    }
+
+    .projects {
+      flex-direction: column;
+
+      .screenshot-container {
+        width: 100%;
+        padding: 71px 0;
+      }
+
+      .project-container {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+
+        .project-description {
+          padding: 16px;
+
+          .project-header .overlay-wrapper .overlay {
+            right: -16px;
+            bottom: 100px;
+            padding: 16px 16px 32px 16px;
+
+            .btn-container > .btn-close-overlay {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .projects {
+      .screenshot-container .spinner {
+        width: 132px;
+        height: 132px;
+      }
+      .project-container {
+        .project-description .project-buttons {
+          gap: 0;
+          justify-content: space-between;
+
+          a {
+            padding: 6px 12px;
+          }
+        }
+
+        .project-switch {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+      }
     }
   }
 }
