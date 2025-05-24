@@ -170,6 +170,7 @@ section {
 
     .projects {
       flex-direction: column;
+      height: auto;
 
       .screenshot-container {
         width: 100%;
@@ -183,6 +184,7 @@ section {
 
         .project-description {
           padding: 16px;
+          height: auto;
 
           .project-header .overlay-wrapper .overlay {
             right: -16px;

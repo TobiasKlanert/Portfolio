@@ -28,15 +28,25 @@ button {
   &::-webkit-scrollbar {
     display: none;
   }
-
-  @media screen and (max-width: 992px) {
-    position: relative;
-    overflow-y: auto;
-    scroll-snap-type: none;
-  }
 }
 
 .scroll-container > * {
   scroll-snap-align: start;
   height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    height: auto;
+    min-height: 100vh; // Optional, damit jede Section mindestens Viewport-Höhe hat
+  }
+  .scroll-container {
+    position: relative;
+    overflow-y: auto;
+    scroll-snap-type: none;
+    > * {
+      height: auto;
+      min-height: 100vh; // Optional
+    }
+  }
 }

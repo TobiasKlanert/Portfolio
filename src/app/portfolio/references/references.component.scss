@@ -51,6 +51,8 @@ section {
 
   @media screen and (max-width: 992px) {
     @include dFlex($fd: column);
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     .ref-wrapper {
       flex-direction: column;
