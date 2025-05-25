@@ -97,3 +97,15 @@
 @mixin floating-icon {
   animation: floatSmooth 1s ease-in-out infinite;
 }
+
+@keyframes arrowPulse {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-31px) scaleY(1.5);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}

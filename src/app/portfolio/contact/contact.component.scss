@@ -234,6 +234,39 @@ app-footer {
   width: 100%;
 }
 
+.form-actions {
+  .arrow-up-responsive {
+    display: none;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    .arrow-up-responsive {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 30px;
+      color: $highlight-white;
+      text-align: center;
+      z-index: 999;
+      > svg {
+        animation: arrowPulse 1.2s ease-in-out infinite;
+        transform-origin: center;
+      }
+      &:hover {
+        color: $highlight-orange;
+        border-bottom: 1px solid $highlight-orange;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   section {
     padding-top: 80px;
