@@ -6,10 +6,11 @@ section {
   @include dFlex($fd: column, $ai: flex-start);
   background-color: $background-dark;
   position: relative;
-  > div {
-    @include dFlex($ai: flex-start, $g: 64px);
-    height: 100%;
-  }
+}
+
+.section-container {
+  @include dFlex($ai: flex-start, $g: 64px);
+  height: 100%;
 }
 
 .left-side {
@@ -227,4 +228,30 @@ textarea:-webkit-autofill {
 
 app-footer {
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    padding-top: 80px;
+  }
+  
+  .section-container,
+  .form-group {
+    flex-direction: column;
+  }
+
+  .section-container {
+    padding-bottom: 80px;
+  }
+
+  form,
+  .right-side,
+  .left-side,
+  .input-wrapper {
+    width: 100%;
+  }
+
+  h2 {
+    width: 75%;
+  }
 }
