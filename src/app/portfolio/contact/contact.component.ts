@@ -71,24 +71,6 @@ export class ContactComponent {
     }
   }
 
-  /* getNamePlaceholder(name: NgModel): string {
-    return !name.valid && name.touched && !name.disabled
-      ? 'Oops! it seems your name is missing'
-      : 'Your name goes here';
-  }
-
-  getEmailPlaceholder(email: NgModel): string {
-    return !email.valid && email.touched && !email.disabled
-      ? 'Hoppla! your email is required'
-      : 'youremail@email.com';
-  }
-
-  getMessagePlaceholder(message: NgModel): string {
-    return !message.valid && message.touched && !message.disabled
-      ? 'What do you need to develop?'
-      : 'Hello Tobias, I am interested in...';
-  }
- */
   toggleCheckbox() {
     this.isChecked = !this.isChecked;
     if (this.agreementModel && !this.agreementModel.touched) {
