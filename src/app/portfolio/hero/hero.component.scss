@@ -52,7 +52,7 @@ section {
     .background-object {
       position: absolute;
       z-index: 1;
-      top: 0;
+      bottom: 290px;
       right: -10px;
       width: 500px;
       height: 500px;
@@ -76,7 +76,8 @@ section {
       .background-object {
         width: 383px;
         height: 383px;
-        top: 150px;
+        bottom: 200px;
+        /* top: 150px; */
       }
     }
   }

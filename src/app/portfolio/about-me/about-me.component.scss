@@ -106,6 +106,7 @@ section {
       > img {
         @include floating-icon();
         cursor: pointer;
+        z-index: 1;
       }
 
       &:hover .overlay {
@@ -120,7 +121,7 @@ section {
     position: absolute;
     bottom: -285px;
     right: -210px;
-    z-index: 999;
+    z-index: 10;
     width: 272px;
     padding-top: 32px;
     border: 1px solid $highlight-dark;
@@ -140,6 +141,7 @@ section {
         display: none;
         background: none;
         border: none;
+        z-index: 10;
         svg {
           color: $highlight-white;
         }
