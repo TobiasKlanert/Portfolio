@@ -23,7 +23,25 @@ a {
   }
 }
 
+ul,
+li {
+  @include standardText();
+}
+
+li {
+  max-width: 100%;
+  word-break: break-word;      // Bricht lange Wörter/URLs um
+  overflow-wrap: break-word;   // Alternative für bessere Browser-Kompatibilität
+  white-space: normal;         // Falls irgendwo white-space: nowrap gesetzt ist
+}
+
 app-footer {
   width: 100%;
   padding-top: 32px;
+}
+
+@media screen and (max-width: 480px) {
+  ul {
+    padding-inline-start: 16px;
+  }
 }
