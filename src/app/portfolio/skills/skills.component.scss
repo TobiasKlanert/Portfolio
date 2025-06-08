@@ -7,6 +7,10 @@ section {
   background-color: $background-dark;
   color: $highlight-white;
 
+  h2 {
+    margin-bottom: 45px;
+  }
+
   .textbox {
     width: clamp(288px, 92vw, 600px);
     background-color: $background-blue;
@@ -137,6 +141,10 @@ section {
     @include dFlex($fd: column, $jc: flex-start, $g: 32px);
     padding-top: 80px;
     padding-bottom: 80px;
+
+    h2 {
+      margin-bottom: 0;
+    }
 
     .skills,
     .secret-widget {

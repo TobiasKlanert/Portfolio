@@ -6,12 +6,17 @@ section {
   background-color: $background-blue;
   color: $highlight-white;
 
+  h2 {
+    margin-bottom: 45px;
+  }
+
   .ref-wrapper {
     @include dFlex($ai: flex-start, $g: 32px);
     margin-top: 48px;
 
     .ref-container {
       @include dFlex($fd: column, $ai: flex-end, $g: 32px);
+      width: clamp(100px,100%, 384px);
       > a {
         @include standardText($fs: 18px, $fw: 700);
         color: $highlight-white;
@@ -26,7 +31,7 @@ section {
         border: 1px solid $highlight-white;
         border-radius: 4px;
         padding: 32px;
-        width: 384px;
+        width: 100%;
         &:hover {
           .ref-header {
             > img {
@@ -54,6 +59,10 @@ section {
     @include dFlex($fd: column);
     padding-top: 80px;
     padding-bottom: 80px;
+
+    h2 {
+      margin-bottom: 0;
+    }
 
     .ref-wrapper {
       flex-direction: column;
