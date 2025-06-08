@@ -18,7 +18,7 @@ export class WorkComponent {
     {
       title: 'Join',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-      github: 'https://github.com/TobiasKlanert',
+      github: 'https://github.com/TobiasKlanert/Join',
       liveLink: 'https://github.com/TobiasKlanert',
       icon: '/assets/img/icon_join.svg',
       screenshot: '/assets/img/screenshot-join.png',

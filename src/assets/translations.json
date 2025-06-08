@@ -14,7 +14,7 @@
     },
     "aboutMe": {
       "headline": "About Me",
-      "text": "Hey there, I'm Tobias. Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills? Do you learn from each challenge as you search for the most efficient or elegant solution? Let's connect and create something amazing together!",
+      "text": "Hey there, I'm Tobias. I have been working as an IT systems administrator for over 10 years, during which I discovered my passion for programming. What fascinates me most is the creative yet analytical challenge of developing functional and user-friendly solutions. I see every new task as an opportunity to further enhance my skills and to find more efficient and elegant approaches. Let's connect and create something amazing together!",
       "button": "Let's Talk",
       "hiddenMenu": {
         "headline": "More about me",
@@ -28,7 +28,7 @@
     },
     "skills": {
       "headline": "Core Competencies",
-      "text": "Emphasise that you have used a variety of front-end technologies in your projects. Where have you used these skills: static or dynamic websites, responsive layouts, data visualization interfaces, smooth user experiences?",
+      "text": "In my projects, I have worked with a wide range of modern front-end technologies to develop both static and dynamic websites. My focus is on creating responsive layouts, intuitive user interfaces, and smooth user experiences. I place great importance on clean, maintainable code and a user-centered design approach.",
       "hiddenMenu": {
         "headline": "Don't see the skill you are looking for?",
         "text": "Feel free to contact me. I look forward to expanding on my previous knowledge. Also I have a special interest in learning:"
@@ -56,8 +56,8 @@
       "headline": "What my colleagues say about me",
       "link": "To the LinkedIn profile",
       "reference1": {
-        "feedback": "blabla",
-        "role": "Teamleader Frontend at Musterfirma GmbH"
+        "feedback": "Tobias consistently demonstrated strong teamwork and reliability throughout our collaboration. Communication was always clear and productive.",
+        "role": "Frontend Developer"
       },
       "reference2": {
         "feedback": "blablabla",
@@ -71,7 +71,7 @@
     "contact": {
       "headline": "Let's build something Cool together!",
       "subheading": "Got a problem to solve?",
-      "text": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+      "text": "I look forward to collaborating on exciting projects and bringing your ideas to life with my frontend development expertise. Feel free to get in touch so we can find practical and tailored solutions for your projects together.",
       "form": {
         "name": {
           "headline": "What's your name?",
@@ -150,7 +150,7 @@
     },
     "aboutMe": {
       "headline": "Über mich",
-      "text": "bla bla bla",
+      "text": "Hallo, ich bin Tobias! Ich bin seit über 10 Jahren als IT-Systemadministrator tätig und habe dabei meine Leidenschaft für das Programmieren entdeckt. Besonders fasziniert mich die kreative und zugleich analytische Herausforderung, funktionale und benutzerfreundliche Lösungen zu entwickeln. Jede neue Aufgabe sehe ich als Chance, meine Fähigkeiten weiterzuentwickeln und effizientere sowie elegantere Ansätze zu finden. Lassen Sie uns in Kontakt treten und gemeinsam Großartiges schaffen!",
       "button": "Zeit für ein Gespräch",
       "hiddenMenu": {
         "headline": "Mehr über mich",
@@ -164,7 +164,7 @@
     },
     "skills": {
       "headline": "Kernkompetenzen",
-      "text": "bla bla bla",
+      "text": "In meinen Projekten habe ich eine Vielzahl moderner Front-End-Technologien eingesetzt, um sowohl statische als auch dynamische Websites zu realisieren. Mein Fokus liegt auf der Entwicklung responsiver Layouts, intuitiver Benutzeroberflächen und reibungsloser Nutzererfahrungen. Dabei lege ich besonderen Wert auf sauberen, wartbaren Code und eine zielgerichtete User Experience.",
       "hiddenMenu": {
         "headline": "Nicht die passende Fähigkeit gefunden?",
         "text": "Melden Sie sich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen. Besonders interessiert bin ich an folgenden Lernfeldern:"
@@ -192,8 +192,8 @@
       "headline": "Was Kolleg:innen über mich sagen",
       "link": "Zum LinkedIn-Profil ",
       "reference1": {
-        "feedback": "Die Zusammenarbeit mit dir war stets zuverlässig, kreativ und lösungsorientiert.",
-        "role": "Teamleiter Frontend bei Musterfirma GmbH"
+        "feedback": "Tobias hat sich während unserer Zusammenarbeit als sehr teamorientiert und zuverlässig erwiesen. Die Kommunikation war stets klar und produktiv.",
+        "role": "Frontend-Entwicklerin"
       },
       "reference2": {
         "feedback": "Besonders beeindruckt hat mich dein technisches Verständnis und deine Eigeninitiative.",
@@ -207,7 +207,7 @@
     "contact": {
       "headline": "Gemeinsam Großes schaffen!",
       "subheading": "Haben Sie ein Problem zu lösen?",
-      "text": "Ermutigen Sie die Menschen, mit Ihnen in Kontakt zu treten und zu beschreiben, welche Rolle Sie übernehmen möchten. Zeigen Sie, dass Sie mit Ihrer Arbeit einen echten Mehrwert für ihre Projekte schaffen werden.",
+      "text": "Ich freue mich darauf, gemeinsam an spannenden Projekten zu arbeiten und Ihre Ideen mit meiner Expertise im Frontend-Development zum Leben zu erwecken. Kontaktieren Sie mich gerne, um gemeinsam passende und praxisnahe Lösungen für Ihre Projekte zu finden.",
       "form": {
         "name": {
           "headline": "Wie lautet Ihr Name?",

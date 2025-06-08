@@ -15,8 +15,8 @@ export class ReferencesComponent {
 
   references = [
     {
-      name: 'Max Mustermann',
-      link: 'https://de.linkedin.com/'
+      name: 'Milica Pesic',
+      link: 'https://www.linkedin.com/in/milicapesic-mp/'
     },
     {
       name: 'Anna Beispiel',
