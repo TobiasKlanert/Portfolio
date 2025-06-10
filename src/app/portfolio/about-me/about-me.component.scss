@@ -58,11 +58,10 @@ section {
 
     .textbox-wrapper {
       @include dFlex($jc: flex-end);
-      position: absolute;
+      position: static;
       width: 100%;
-      left: unset;
-      right: 16px;
-      top: 50%;
+      transform: translateY(-50%);
+      order: 3;
     }
   }
 
@@ -74,7 +73,7 @@ section {
 
   @media screen and (max-width: 480px) {
     .textbox-wrapper {
-      top: 40%;
+      transform: translateY(-25%);
     }
   }
 }

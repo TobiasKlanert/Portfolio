@@ -10,16 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-  showOverlay = false;
-
   constructor(public translationService: TranslationService) {}
-
-  openOverlay() {
-    this.showOverlay = true;
-    console.log(this.showOverlay);
-  }
-
-  closeOverlay() {
-    this.showOverlay = false;
-  }
 }
