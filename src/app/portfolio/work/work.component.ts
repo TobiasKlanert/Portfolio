@@ -16,7 +16,6 @@ export class WorkComponent {
 
   projects = [
     {
-      title: 'Join',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       github: 'https://github.com/TobiasKlanert/Join',
       liveLink: 'https://github.com/TobiasKlanert',
@@ -26,7 +25,6 @@ export class WorkComponent {
       spinner: '/assets/img/spinning_shape.svg',
     },
     {
-      title: 'Sharkie',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/TobiasKlanert/Sharkie',
       liveLink: 'https://github.com/TobiasKlanert',
@@ -36,7 +34,6 @@ export class WorkComponent {
       spinner: '/assets/img/spinning_shape_yellow.svg',
     },
     {
-      title: 'DABubble',
       technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
       github: 'https://github.com/TobiasKlanert',
       liveLink: 'https://github.com/TobiasKlanert',

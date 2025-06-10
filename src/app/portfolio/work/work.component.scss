@@ -32,6 +32,7 @@ section {
         width: 85%;
         max-width: 413px;
         z-index: 99;
+        border-radius: 4px;
       }
 
       .spinner {
@@ -190,7 +191,6 @@ section {
 
           .project-header .overlay-wrapper .overlay {
             right: -16px;
-            bottom: 100px;
             padding: 16px 16px 32px 16px;
 
             .btn-container > .btn-close-overlay {

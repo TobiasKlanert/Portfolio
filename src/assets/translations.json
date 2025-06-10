@@ -40,16 +40,19 @@
       "buttonNext": "Next project",
       "buttonPrevious": "Previous project",
       "project1": {
+        "title": "Join",
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "details": "Join: A short capsule describing how you participated in the development of this project."
+        "details": "Join is a collaboratively developed project management tool. I was primarily responsible for setting up the Firebase database, developing the interfaces to the web application, and implementing user registration, login, and the task board."
       },
       "project2": {
+        "title": "Sharkie",
         "description": "A simple Jump-and-Run game based on an object-oriented approach.",
-        "details": "Sharkie: A short capsule describing how you participated in the development of this project."
+        "details": "Sharkie is a browser game that I implemented independently. The focus was on object-oriented programming with JavaScript – a technical challenge that I thoroughly enjoyed."
       },
       "project3": {
+        "title": "Coming soon: DABubble",
         "description": "This App is a Slack Clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization",
-        "details": "DABubble: A short capsule describing how you participated in the development of this project."
+        "details": "This project is being developed as part of a group collaboration and is currently in progress. The goal is to create a Slack-like messenger built with Angular."
       }
     },
     "references": {
@@ -143,10 +146,10 @@
     },
     "menu": {
       "aboutMe": "Über mich",
-      "skillset": "Fähigkeiten",
+      "skillset": "Kompetenzen",
       "portfolio": "Portfolio",
       "references": "Referenzen",
-      "contactMe": "Kontakt aufnehmen"
+      "contactMe": "Kontakt"
     },
     "aboutMe": {
       "headline": "Über mich",
@@ -163,7 +166,7 @@
       }
     },
     "skills": {
-      "headline": "Kernkompetenzen",
+      "headline": "Kompetenzen",
       "text": "In meinen Projekten habe ich eine Vielzahl moderner Front-End-Technologien eingesetzt, um sowohl statische als auch dynamische Websites zu realisieren. Mein Fokus liegt auf der Entwicklung responsiver Layouts, intuitiver Benutzeroberflächen und reibungsloser Nutzererfahrungen. Dabei lege ich besonderen Wert auf sauberen, wartbaren Code und eine zielgerichtete User Experience.",
       "hiddenMenu": {
         "headline": "Nicht die passende Fähigkeit gefunden?",
@@ -176,16 +179,19 @@
       "buttonNext": "Nächstes Projekt",
       "buttonPrevious": "Vorheriges Projekt",
       "project1": {
+        "title": "Join",
         "description": "Ein Aufgabenmanager inspiriert vom Kanban-System. Aufgaben lassen sich per Drag & Drop erstellen, organisieren, Nutzern und Kategorien zuweisen.",
-        "details": "Join: Eine kurze Zusammenfassung, in der Sie beschreiben, wie Sie an der Entwicklung dieses Projekts beteiligt waren."
+        "details": "Join ist ein gemeinschaftlich entwickeltes Projektmanagement-Tool. Ich war dabei maßgeblich für die Einrichtung der Firebase-Datenbank, die Schnittstellen zur Webanwendung sowie die Implementierung von Registrierung, Login und Task-Board verantwortlich."
       },
       "project2": {
+        "title": "Sharkie",
         "description": "Ein einfaches Jump-and-Run-Spiel, entwickelt mit einem objektorientierten Ansatz.",
-        "details": "Sharkie: Eine kurze Zusammenfassung, in der Sie beschreiben, wie Sie an der Entwicklung dieses Projekts beteiligt waren."
+        "details": "Sharkie ist ein Browser-Game, das ich eigenständig umgesetzt habe. Der Fokus lag auf objektorientierter Programmierung mit JavaScript – eine technische Herausforderung, die mir großen Spaß gemacht hat."
       },
       "project3": {
+        "title": "In Entwicklung: DABubble",
         "description": "Diese App ist ein Slack-Klon. Sie verbessert Teamkommunikation und Zusammenarbeit durch eine intuitive Oberfläche, Echtzeitnachrichten und eine strukturierte Kanalverwaltung.",
-        "details": "DABubble: Eine kurze Zusammenfassung, in der Sie beschreiben, wie Sie an der Entwicklung dieses Projekts beteiligt waren."
+        "details": "Dieses Projekt entsteht im Rahmen einer Gruppenarbeit und befindet sich derzeit in der Entwicklung. Ziel ist es, einen Slack-ähnlichen Messenger auf Basis von Angular umzusetzen."
       }
     },
     "references": {

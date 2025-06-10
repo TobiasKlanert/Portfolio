@@ -24,7 +24,13 @@
     <div class="project-container">
       <div class="project-description">
         <div class="project-header">
-          <h4>{{ projects[currentProjectIndex].title }}</h4>
+          <h4>
+            {{
+              translationService.translate(
+                "portfolio.project" + (currentProjectIndex + 1) + ".title"
+              )
+            }}
+          </h4>
           <div class="overlay-wrapper">
             <img [src]="projects[currentProjectIndex].icon" alt="" />
             <div class="overlay">

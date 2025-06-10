@@ -152,6 +152,16 @@ section {
       bottom: auto;
       right: auto;
 
+      .overlay-wrapper > .overlay {
+        padding: 16px;
+        bottom: 200%;
+        left: -56px;
+
+        .overlay-header > .btn-container > .btn-close-overlay {
+          display: block;
+        }
+      }
+
       .skill-item img {
         width: 72px;
       }
@@ -168,16 +178,6 @@ section {
   @media screen and (max-width: 768px) {
     .skills {
       gap: 12px;
-    }
-
-    .secret-widget > .overlay-wrapper > .overlay {
-      padding: 16px;
-      bottom: 200%;
-      left: -56px;
-
-      .overlay-header > .btn-container > .btn-close-overlay {
-        display: block;
-      }
     }
   }
 }

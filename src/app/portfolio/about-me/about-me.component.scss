@@ -181,12 +181,19 @@ section {
     .overlay {
       right: unset;
       left: unset;
-      bottom: -700%;
+      top: -120px;
+      height: 284px;
       .overlay-header {
         .btn-close-overlay {
           display: block;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .overlay {
+      top: -150px;
     }
   }
 }
