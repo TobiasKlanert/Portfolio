@@ -59,16 +59,16 @@
       "headline": "What my colleagues say about me",
       "link": "To the LinkedIn profile",
       "reference1": {
-        "feedback": "Tobias consistently demonstrated strong teamwork and reliability throughout our collaboration. Communication was always clear and productive.",
+        "feedback": "Tobias is a reliable and communicative person, and I truly enjoyed working with him! He's always approachable and helpful, especially when a project doesn’t go exactly as planned. Thank you for the pleasant collaboration!",
         "role": "Frontend Developer"
       },
       "reference2": {
-        "feedback": "blablabla",
-        "role": "Projectmanager at Beispiel AG"
+        "feedback": "I’ve had the great pleasure of working with Tobias Klanert and can wholeheartedly recommend him as an IT colleague. He is highly competent, reliable, and solution-oriented – even in high-pressure situations. Both professionally and personally, he is a valued team member, and working with him is always a positive and enriching experience.",
+        "role": "Human Resources Manager at CJD Saxony-Anhalt"
       },
       "reference3": {
-        "feedback": "blablablabla",
-        "role": "UX Designer at DesignCo"
+        "feedback": "Tobias consistently demonstrated strong teamwork and reliability throughout our collaboration. Communication was always clear and productive.",
+        "role": "Frontend Developer"
       }
     },
     "contact": {
@@ -198,16 +198,16 @@
       "headline": "Was Kolleg:innen über mich sagen",
       "link": "Zum LinkedIn-Profil ",
       "reference1": {
-        "feedback": "Tobias hat sich während unserer Zusammenarbeit als sehr teamorientiert und zuverlässig erwiesen. Die Kommunikation war stets klar und produktiv.",
-        "role": "Frontend-Entwicklerin"
+        "feedback": "Tobias ist ein verlässlicher und kommunikativer Mensch, mit dem ich sehr gerne zusammengearbeitet habe! Er hat immer ein offenes Ohr und ist hilfsbereit, wenn ein Projekt ggf. nicht so läuft wie geplant. Vielen Dank für die angenehme Zusammenarbeit!",
+        "role": "Frontend-Entwickler"
       },
       "reference2": {
-        "feedback": "Besonders beeindruckt hat mich dein technisches Verständnis und deine Eigeninitiative.",
-        "role": "Projektmanagerin bei Beispiel AG"
+        "feedback": "Ich habe das große Glück, mit Tobias Klanert zusammenzuarbeiten, und kann ihn uneingeschränkt als IT-Kollegen empfehlen. Er arbeitet äußerst zuverlässig, kompetent und lösungsorientiert – auch in stressigen Situationen. Im Team ist er fachlich wie menschlich sehr geschätzt, die Zusammenarbeit mit ihm ist stets angenehm und bereichernd.",
+        "role": "Personalmanagerin im CJD Sachsen-Anhalt"
       },
       "reference3": {
-        "feedback": "Deine strukturierte Arbeitsweise und dein Designgefühl haben das Projekt enorm bereichert.",
-        "role": "UX Designer bei DesignCo"
+        "feedback": "Tobias hat sich während unserer Zusammenarbeit als sehr teamorientiert und zuverlässig erwiesen. Die Kommunikation war stets klar und produktiv.",
+        "role": "Frontend-Entwicklerin"
       }
     },
     "contact": {
