@@ -84,6 +84,7 @@ section {
   @media screen and (max-width: 992px) {
     flex-direction: column;
     align-items: space-between;
+    padding-top: 84px;
 
     .right-side {
       .background-object {
@@ -134,6 +135,12 @@ section {
         width: 266px;
         height: 266px;
       }
+    }
+  }
+
+  @media screen and (max-height: 768px) {
+    .left-side > .scroll-widget {
+      display: none;
     }
   }
 }
