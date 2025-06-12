@@ -7,6 +7,7 @@ import {
   ViewChild,
   ElementRef,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
@@ -17,12 +18,14 @@ import { TranslationService } from '../../../services/translation.service';
   styleUrl: './menu-overlay.component.scss',
 })
 export class MenuOverlayComponent {
-
   isHoveringGitHub = false;
   isHoveringLinkedIn = false;
   isHoveringMail = false;
-  
-  constructor(public translationService: TranslationService) {}
+
+  constructor(
+    public translationService: TranslationService,
+    private router: Router
+  ) {}
 
   hoverStates: { [key: string]: boolean } = {
     aboutMe: false,
@@ -49,26 +52,34 @@ export class MenuOverlayComponent {
   }
 
   scrollToSection(id: string) {
-    const el = document.getElementById(id);
-    console.log('Scroll to: ', el);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (location.pathname === '/' || location.pathname === '/index.html') {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      setTimeout(() => {
+        this.closeMenu();
+      }, 750);
+    } else {
+      this.router.navigate(['/'], { fragment: id }).then(() => {
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+          this.closeMenu();
+        }, 300);
+      });
     }
-    setTimeout(() => {
-      this.closeMenu();
-    }, 750);
   }
-  
-  
-  
+
   @HostListener('document:mousedown', ['$event'])
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     const clickedInside = this.menuElement?.nativeElement.contains(target);
-  
+
     if (!clickedInside && this.isMenuOpen) {
       this.closeMenu();
     }
   }
-  
 }
