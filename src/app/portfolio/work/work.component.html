@@ -71,14 +71,22 @@
           }}
         </p>
         <div class="project-buttons">
-          <a [href]="projects[currentProjectIndex].github" target="_blank">
+          <button
+            [disabled]="!projects[currentProjectIndex].linksActive"
+            (click)="openLink(projects[currentProjectIndex].github)"
+            type="button"
+          >
             GitHub
             <img src="/assets/img/arrow_outward.svg" alt="" />
-          </a>
-          <a [href]="projects[currentProjectIndex].liveLink" target="_blank">
+          </button>
+          <button
+            [disabled]="!projects[currentProjectIndex].linksActive"
+            (click)="openLink(projects[currentProjectIndex].liveLink)"
+            type="button"
+          >
             Live Test
             <img src="/assets/img/arrow_outward.svg" alt="" />
-          </a>
+          </button>
         </div>
       </div>
       <div class="project-switch">

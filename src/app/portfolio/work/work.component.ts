@@ -23,6 +23,7 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-join.png',
       bgColor: '#F9AF42',
       spinner: '/assets/img/spinning_shape.svg',
+      linksActive: true,
     },
     {
       technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -32,6 +33,7 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-sharkie.png',
       bgColor: '#FF834F',
       spinner: '/assets/img/spinning_shape_yellow.svg',
+      linksActive: true,
     },
     {
       technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
@@ -41,8 +43,15 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-dabubble.png',
       bgColor: '#679AAC',
       spinner: '/assets/img/spinning_shape.svg',
+      linksActive: false,
     },
   ];
+
+  openLink(url: string) {
+    if (this.projects[this.currentProjectIndex].linksActive) {
+      window.open(url, '_blank');
+    }
+  }
 
   nextProject() {
     this.currentProjectIndex =
