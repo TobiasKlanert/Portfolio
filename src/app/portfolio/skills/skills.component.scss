@@ -164,6 +164,7 @@ section {
 
       .skill-item img {
         width: 72px;
+        @include wobbling-animation;
       }
     }
 

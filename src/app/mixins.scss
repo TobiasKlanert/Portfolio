@@ -109,3 +109,19 @@
     transform: translateY(0) scaleY(1);
   }
 }
+
+@keyframes wobbling {
+  0%, 100% {
+    transform: scale(1.0);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: scale(1.2);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@mixin wobbling-animation {
+  animation: wobbling 2s ease-in-out infinite;
+}
