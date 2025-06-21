@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../shared/components/header/header.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -11,6 +12,9 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
   styleUrl: './privacy-policy.component.scss',
 })
 export class PrivacyPolicyComponent {
+  
+  constructor(public translationService: TranslationService) {}
+
   isGerman = false;
 
   switchLanguage() {

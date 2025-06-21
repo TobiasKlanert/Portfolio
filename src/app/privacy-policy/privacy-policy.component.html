@@ -2,25 +2,33 @@
   <app-header></app-header>
   <div class="wrapper" id="privacy-policy">
     <section>
-      <h2>Datenschutz-<br />erklärung</h2>
-      <h4 id="m4158">Präambel</h4>
+      <h2>
+        {{ translationService.translate("privacyPolicy.headline1") }}<br />{{
+          translationService.translate("privacyPolicy.headline2")
+        }}
+      </h2>
+      <h4 id="m4158">
+        {{ translationService.translate("privacyPolicy.preambleTitle") }}
+      </h4>
       <p>
-        Mit der folgenden Datenschutzerklärung möchten wir Sie darüber
-        aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch
-        kurz als "Daten" bezeichnet) wir zu welchen Zwecken und in welchem
-        Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.
+        {{ translationService.translate("privacyPolicy.preambleText") }}
       </p>
-      <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
+      <p>{{ translationService.translate("privacyPolicy.genderNote") }}</p>
 
-      <p>Stand: 27. April 2025</p>
-      <h4>Inhaltsübersicht</h4>
+      <p>
+        {{ translationService.translate("privacyPolicy.status") }}: 27. April
+        2025
+      </p>
+      <h4>{{ translationService.translate("privacyPolicy.contents") }}</h4>
       <ul class="index">
         <li>
-          <a class="index-link" (click)="scrollTo('m4158', $event)">Präambel</a>
+          <a class="index-link" (click)="scrollTo('m4158', $event)">{{
+            translationService.translate("privacyPolicy.preambleTitle")
+          }}</a>
         </li>
         <li>
           <a class="index-link" (click)="scrollTo('m3', $event)"
-            >Verantwortlicher</a
+            >{{ translationService.translate("privacyPolicy.responsible") }}</a
           >
         </li>
         <li>
@@ -94,7 +102,7 @@
           >
         </li>
       </ul>
-      <h4 id="m3">Verantwortlicher</h4>
+      <h4 id="m3">{{ translationService.translate("privacyPolicy.responsible") }}</h4>
       <p>
         Tobias Klanert<br />Carl-Christian-Agthe-Str. 12<br />06333 Hettstedt
       </p>

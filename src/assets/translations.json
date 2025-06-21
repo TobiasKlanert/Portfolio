@@ -136,6 +136,16 @@
         "source": "Imprint from"
       }
     },
+    "privacyPolicy": {
+      "headline1": "Privacy",
+      "headline2": "Policy",
+      "preambleTitle": "Preamble",
+      "preambleText": "With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to simply as \"data\") that we process, for what purposes, and to what extent, in the context of providing our application.",
+      "genderNote": "The terms used are not gender-specific.",
+      "status": "Status",
+      "contents": "Table of contents",
+      "responsible": "Responsible person"
+    },
     "footer": "Imprint"
   },
   "de": {
@@ -274,6 +284,16 @@
         },
         "source": "Impressum von"
       }
+    },
+    "privacyPolicy": {
+      "headline1": "Datenschutz-",
+      "headline2": "erklärung",
+      "preambleTitle": "Präambel",
+      "preambleText": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten\" bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.",
+      "genderNote": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+      "status": "Stand",
+      "contents": "Inhaltsübersicht",
+      "responsible": "Verantwortlicher"
     },
     "footer": "Impressum"
   }
