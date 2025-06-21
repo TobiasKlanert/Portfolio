@@ -65,6 +65,11 @@ section {
       .profile-picture {
         height: 555px;
       }
+      .background-object {
+        width: 383px;
+        height: 383px;
+        bottom: 200px;
+      }
     }
 
     @media screen and (max-width: 1200px) {
@@ -73,12 +78,6 @@ section {
           padding-bottom: 0px;
           bottom: 9px;
         }
-      }
-
-      .background-object {
-        width: 383px;
-        height: 383px;
-        bottom: 200px;
       }
     }
   }
