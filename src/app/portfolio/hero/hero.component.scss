@@ -45,8 +45,9 @@ section {
 
     .profile-picture {
       z-index: 99;
-      width: 720px;
       height: 720px;
+      position: absolute;
+      right: -50px;
     }
 
     .background-object {
@@ -59,18 +60,19 @@ section {
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    .left-side {
-      .scroll-widget {
-        padding-bottom: 0px;
-        bottom: 9px;
+  @media screen and (max-width: 1440px) {
+    .right-side {
+      .profile-picture {
+        height: 555px;
       }
     }
 
-    .right-side {
-      .profile-picture {
-        width: 555px;
-        height: 555px;
+    @media screen and (max-width: 1200px) {
+      .left-side {
+        .scroll-widget {
+          padding-bottom: 0px;
+          bottom: 9px;
+        }
       }
 
       .background-object {
@@ -87,6 +89,9 @@ section {
     padding-top: 84px;
 
     .right-side {
+      .profile-picture {
+        position: static;
+      }
       .background-object {
         top: 0;
       }
@@ -95,7 +100,7 @@ section {
     .left-side {
       width: 100%;
       justify-content: center;
-      
+
       .scroll-widget {
         position: absolute;
         z-index: 999;
@@ -127,7 +132,6 @@ section {
 
     .right-side {
       .profile-picture {
-        width: 390px;
         height: 390px;
       }
 
