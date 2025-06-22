@@ -44,19 +44,21 @@
           }}</a>
         </li>
         <li>
-          <a class="index-link" (click)="scrollTo('m27', $event)"
-            >Sicherheitsmaßnahmen</a
-          >
+          <a class="index-link" (click)="scrollTo('m27', $event)">{{
+            translationService.translate("privacyPolicy.security.title")
+          }}</a>
         </li>
         <li>
-          <a class="index-link" (click)="scrollTo('m25', $event)"
-            >Übermittlung von personenbezogenen Daten</a
-          >
+          <a class="index-link" (click)="scrollTo('m25', $event)">{{
+            translationService.translate("privacyPolicy.dataTransmission.title")
+          }}</a>
         </li>
         <li>
-          <a class="index-link" (click)="scrollTo('m24', $event)"
-            >Internationale Datentransfers</a
-          >
+          <a class="index-link" (click)="scrollTo('m24', $event)">{{
+            translationService.translate(
+              "privacyPolicy.internationalData.title"
+            )
+          }}</a>
         </li>
         <li>
           <a class="index-link" (click)="scrollTo('m12', $event)"
@@ -233,113 +235,82 @@
         >{{ translationService.translate("privacyPolicy.legalBasis.text2") }}
       </p>
 
-      <h4 id="m27">Sicherheitsmaßnahmen</h4>
+      <h4 id="m27">
+        {{ translationService.translate("privacyPolicy.security.title") }}
+      </h4>
       <p>
-        Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter
-        Berücksichtigung des Stands der Technik, der Implementierungskosten und
-        der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie
-        der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der
-        Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete
-        technische und organisatorische Maßnahmen, um ein dem Risiko
-        angemessenes Schutzniveau zu gewährleisten.
+        {{ translationService.translate("privacyPolicy.security.text1") }}
       </p>
       <p>
-        Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit,
-        Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen
-        und elektronischen Zugangs zu den Daten als auch des sie betreffenden
-        Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit
-        und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die
-        eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und
-        Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner
-        berücksichtigen wir den Schutz personenbezogener Daten bereits bei der
-        Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren
-        entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und
-        durch datenschutzfreundliche Voreinstellungen.
+        {{ translationService.translate("privacyPolicy.security.text2") }}
       </p>
       <p>
-        Sicherung von Online-Verbindungen durch
-        TLS-/SSL-Verschlüsselungstechnologie (HTTPS): Um die Daten der Nutzer,
-        die über unsere Online-Dienste übertragen werden, vor unerlaubten
-        Zugriffen zu schützen, setzen wir auf die
-        TLS-/SSL-Verschlüsselungstechnologie. Secure Sockets Layer (SSL) und
-        Transport Layer Security (TLS) sind die Eckpfeiler der sicheren
-        Datenübertragung im Internet. Diese Technologien verschlüsseln die
-        Informationen, die zwischen der Website oder App und dem Browser des
-        Nutzers (oder zwischen zwei Servern) übertragen werden, wodurch die
-        Daten vor unbefugtem Zugriff geschützt sind. TLS, als die
-        weiterentwickelte und sicherere Version von SSL, gewährleistet, dass
-        alle Datenübertragungen den höchsten Sicherheitsstandards entsprechen.
-        Wenn eine Website durch ein SSL-/TLS-Zertifikat gesichert ist, wird dies
-        durch die Anzeige von HTTPS in der URL signalisiert. Dies dient als ein
-        Indikator für die Nutzer, dass ihre Daten sicher und verschlüsselt
-        übertragen werden.
+        {{ translationService.translate("privacyPolicy.security.text3") }}
       </p>
 
-      <h4 id="m25">Übermittlung von personenbezogenen Daten</h4>
+      <h4 id="m25">
+        {{
+          translationService.translate("privacyPolicy.dataTransmission.title")
+        }}
+      </h4>
       <p>
-        Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor,
-        dass diese an andere Stellen, Unternehmen, rechtlich selbstständige
-        Organisationseinheiten oder Personen übermittelt beziehungsweise ihnen
-        gegenüber offengelegt werden. Zu den Empfängern dieser Daten können
-        z. B. mit IT-Aufgaben beauftragte Dienstleister gehören oder Anbieter
-        von Diensten und Inhalten, die in eine Website eingebunden sind. In
-        solchen Fällen beachten wir die gesetzlichen Vorgaben und schließen
-        insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz
-        Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab.
+        {{
+          translationService.translate("privacyPolicy.dataTransmission.text")
+        }}
       </p>
 
-      <h4 id="m24">Internationale Datentransfers</h4>
+      <h4 id="m24">
+        {{
+          translationService.translate("privacyPolicy.internationalData.title")
+        }}
+      </h4>
       <p>
-        Datenverarbeitung in Drittländern: Sofern wir Daten in ein Drittland (d.
-        h. außerhalb der Europäischen Union (EU) oder des Europäischen
-        Wirtschaftsraums (EWR)) übermitteln oder dies im Rahmen der Nutzung von
-        Diensten Dritter oder der Offenlegung bzw. Übermittlung von Daten an
-        andere Personen, Stellen oder Unternehmen geschieht (was erkennbar wird
-        anhand der Postadresse des jeweiligen Anbieters oder wenn in der
-        Datenschutzerklärung ausdrücklich auf den Datentransfer in Drittländer
-        hingewiesen wird), erfolgt dies stets im Einklang mit den gesetzlichen
-        Vorgaben.
+        {{
+          translationService.translate("privacyPolicy.internationalData.text1")
+        }}
       </p>
       <p>
-        Für Datenübermittlungen in die USA stützen wir uns vorrangig auf das
-        Data Privacy Framework (DPF), welches durch einen
-        Angemessenheitsbeschluss der EU-Kommission vom 10.07.2023 als sicherer
-        Rechtsrahmen anerkannt wurde. Zusätzlich haben wir mit den jeweiligen
-        Anbietern Standardvertragsklauseln abgeschlossen, die den Vorgaben der
-        EU-Kommission entsprechen und vertragliche Verpflichtungen zum Schutz
-        Ihrer Daten festlegen.
+        {{
+          translationService.translate("privacyPolicy.internationalData.text2")
+        }}
       </p>
       <p>
-        Diese zweifache Absicherung gewährleistet einen umfassenden Schutz Ihrer
-        Daten: Das DPF bildet die primäre Schutzebene, während die
-        Standardvertragsklauseln als zusätzliche Sicherheit dienen. Sollten sich
-        Änderungen im Rahmen des DPF ergeben, greifen die
-        Standardvertragsklauseln als zuverlässige Rückfalloption ein. So stellen
-        wir sicher, dass Ihre Daten auch bei etwaigen politischen oder
-        rechtlichen Veränderungen stets angemessen geschützt bleiben.
+        {{
+          translationService.translate("privacyPolicy.internationalData.text3")
+        }}
       </p>
       <p>
-        Bei den einzelnen Diensteanbietern informieren wir Sie darüber, ob sie
-        nach dem DPF zertifiziert sind und ob Standardvertragsklauseln
-        vorliegen. Weitere Informationen zum DPF und eine Liste der
-        zertifizierten Unternehmen finden Sie auf der Website des
-        <a href="https://www.dataprivacyframework.gov/" target="_blank"
-          >US-Handelsministeriums</a
-        >
-        (in englischer Sprache).
+        {{
+          translationService.translate(
+            "privacyPolicy.internationalData.text4.text"
+          )
+        }}
+        <a href="https://www.dataprivacyframework.gov/" target="_blank">{{
+          translationService.translate(
+            "privacyPolicy.internationalData.text4.link"
+          )
+        }}</a>
+        {{
+          translationService.translate(
+            "privacyPolicy.internationalData.text4.languageInfo"
+          )
+        }}.
       </p>
       <p>
-        Für Datenübermittlungen in andere Drittländer gelten entsprechende
-        Sicherheitsmaßnahmen, insbesondere Standardvertragsklauseln,
-        ausdrückliche Einwilligungen oder gesetzlich erforderliche
-        Übermittlungen. Informationen zu Drittlandtransfers und geltenden
-        Angemessenheitsbeschlüssen können Sie dem Informationsangebot der
+        {{
+          translationService.translate(
+            "privacyPolicy.internationalData.text5.text"
+          )
+        }}
         <a
           href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de"
           target="_blank"
-          >EU-Kommission</a
-        >
-        entnehmen.
+          >{{
+            translationService.translate(
+              "privacyPolicy.internationalData.text5.link"
+            )
+          }}</a
+        >.
       </p>
 
       <h4 id="m12">

@@ -194,6 +194,31 @@
         },
         "subheading2": "National data protection regulations in Germany: ",
         "text2": "In addition to the data protection provisions of the GDPR, national data protection regulations apply in Germany. This includes in particular the Federal Data Protection Act (Bundesdatenschutzgesetz – BDSG), which contains specific provisions regarding the right to access, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes, and the transfer and automated decision-making in individual cases including profiling. Furthermore, data protection laws of the individual federal states may apply."
+      },
+      "security": {
+        "title": "Security Measures",
+        "text1": "In accordance with legal requirements, we take appropriate technical and organizational measures to ensure a level of protection appropriate to the risk. These measures take into account the state of the art, the implementation costs, the nature, scope, circumstances, and purposes of the processing, as well as the varying likelihood and severity of the risks to the rights and freedoms of natural persons.",
+        "text2": "These measures include, in particular, safeguarding the confidentiality, integrity, and availability of data by controlling physical and electronic access to the data, as well as access, input, transfer, availability, and separation of the data itself. We have also established procedures to ensure the exercise of data subject rights, the deletion of data, and responses to data threats. Furthermore, we take into account the protection of personal data already during the development or selection of hardware, software, and procedures in accordance with the principles of data protection by design and by default.",
+        "text3": "Securing online connections with TLS/SSL encryption technology (HTTPS): To protect users' data transmitted via our online services from unauthorized access, we use TLS/SSL encryption technology. Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are fundamental technologies for secure data transmission on the internet. These technologies encrypt the information transmitted between the website or app and the user's browser (or between two servers), thereby protecting the data from unauthorized access. TLS, as the advanced and more secure version of SSL, ensures that all data transfers meet the highest security standards. A website secured with an SSL/TLS certificate is indicated by the display of HTTPS in the URL, which serves as a signal to users that their data is being transmitted securely and in encrypted form."
+      },
+      "dataTransmission": {
+        "title": "Transfer of Personal Data",
+        "text": "In the course of processing personal data, it may occur that such data is transmitted to, or disclosed to, other entities, companies, legally independent organizational units, or individuals. Recipients of this data may include, for example, service providers tasked with IT operations or providers of services and content integrated into a website. In such cases, we comply with the legal requirements and, in particular, enter into appropriate contracts or agreements with the recipients of your data to ensure its protection."
+      },
+      "internationalData": {
+        "title": "International Data Transfers",
+        "text1": "Data processing in third countries: If we transfer data to a third country (i.e., outside the European Union (EU) or the European Economic Area (EEA)), or if this occurs in the context of using third-party services or disclosing or transmitting data to other persons, entities, or companies (which can be identified by the provider's postal address or if the privacy policy explicitly refers to data transfers to third countries), such transfers are always carried out in compliance with legal requirements.",
+        "text2": "For data transfers to the United States, we primarily rely on the Data Privacy Framework (DPF), which was recognized as a secure legal framework by an adequacy decision of the European Commission dated July 10, 2023. In addition, we have concluded standard contractual clauses with the respective providers that comply with the EU Commission’s requirements and define contractual obligations to protect your data.",
+        "text3": "This dual safeguard ensures comprehensive protection of your data: the DPF serves as the primary level of protection, while the standard contractual clauses provide an additional layer of security. Should changes occur regarding the DPF, the standard contractual clauses serve as a reliable fallback mechanism. In this way, we ensure that your data remains adequately protected even amid political or legal shifts.",
+        "text4": {
+          "text": "For each individual service provider, we inform you whether they are certified under the DPF and whether standard contractual clauses are in place. Further information about the DPF and a list of certified companies can be found on the website of the",
+          "link": "U.S. Department of Commerce",
+          "languageInfo": "(in English)"
+        },
+        "text5": {
+          "text": "For data transfers to other third countries, appropriate safeguards apply, in particular standard contractual clauses, explicit consents, or legally required transfers. Information about third-country transfers and applicable adequacy decisions can be found on the website of the",
+          "link": "European Commission"
+        }
       }
     },
     "footer": "Imprint"
@@ -393,6 +418,31 @@
         },
         "subheading2": "Nationale Datenschutzregelungen in Deutschland: ",
         "text2": "Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen."
+      },
+      "security": {
+        "title": "Sicherheitsmaßnahmen",
+        "text1": "Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
+        "text2": "Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.",
+        "text3": "Sicherung von Online-Verbindungen durch TLS-/SSL-Verschlüsselungstechnologie (HTTPS): Um die Daten der Nutzer, die über unsere Online-Dienste übertragen werden, vor unerlaubten Zugriffen zu schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Secure Sockets Layer (SSL) und Transport Layer Security (TLS) sind die Eckpfeiler der sicheren Datenübertragung im Internet. Diese Technologien verschlüsseln die Informationen, die zwischen der Website oder App und dem Browser des Nutzers (oder zwischen zwei Servern) übertragen werden, wodurch die Daten vor unbefugtem Zugriff geschützt sind. TLS, als die weiterentwickelte und sicherere Version von SSL, gewährleistet, dass alle Datenübertragungen den höchsten Sicherheitsstandards entsprechen. Wenn eine Website durch ein SSL-/TLS-Zertifikat gesichert ist, wird dies durch die Anzeige von HTTPS in der URL signalisiert. Dies dient als ein Indikator für die Nutzer, dass ihre Daten sicher und verschlüsselt übertragen werden."
+      },
+      "dataTransmission": {
+        "title": "Übermittlung von personenbezogenen Daten",
+        "text": "Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass diese an andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder Personen übermittelt beziehungsweise ihnen gegenüber offengelegt werden. Zu den Empfängern dieser Daten können z. B. mit IT-Aufgaben beauftragte Dienstleister gehören oder Anbieter von Diensten und Inhalten, die in eine Website eingebunden sind. In solchen Fällen beachten wir die gesetzlichen Vorgaben und schließen insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab."
+      },
+      "internationalData": {
+        "title": "Internationale Datentransfers",
+        "text1": "Datenverarbeitung in Drittländern: Sofern wir Daten in ein Drittland (d.h. außerhalb der Europäischen Union (EU) oder des Europäischen Wirtschaftsraums (EWR)) übermitteln oder dies im Rahmen der Nutzung von Diensten Dritter oder der Offenlegung bzw. Übermittlung von Daten an andere Personen, Stellen oder Unternehmen geschieht (was erkennbar wird anhand der Postadresse des jeweiligen Anbieters oder wenn in der Datenschutzerklärung ausdrücklich auf den Datentransfer in Drittländer hingewiesen wird), erfolgt dies stets im Einklang mit den gesetzlichen Vorgaben.",
+        "text2": "Für Datenübermittlungen in die USA stützen wir uns vorrangig auf das Data Privacy Framework (DPF), welches durch einen Angemessenheitsbeschluss der EU-Kommission vom 10.07.2023 als sicherer Rechtsrahmen anerkannt wurde. Zusätzlich haben wir mit den jeweiligen Anbietern Standardvertragsklauseln abgeschlossen, die den Vorgaben der EU-Kommission entsprechen und vertragliche Verpflichtungen zum Schutz Ihrer Daten festlegen.",
+        "text3": "Diese zweifache Absicherung gewährleistet einen umfassenden Schutz Ihrer Daten: Das DPF bildet die primäre Schutzebene, während die Standardvertragsklauseln als zusätzliche Sicherheit dienen. Sollten sich Änderungen im Rahmen des DPF ergeben, greifen die Standardvertragsklauseln als zuverlässige Rückfalloption ein. So stellen wir sicher, dass Ihre Daten auch bei etwaigen politischen oder rechtlichen Veränderungen stets angemessen geschützt bleiben.",
+        "text4": {
+          "text": "Bei den einzelnen Diensteanbietern informieren wir Sie darüber, ob sie nach dem DPF zertifiziert sind und ob Standardvertragsklauseln vorliegen. Weitere Informationen zum DPF und eine Liste der zertifizierten Unternehmen finden Sie auf der Website des",
+          "link": "US-Handelsministeriums",
+          "languageInfo": "(in englischer Sprache)"
+        },
+        "text5": {
+          "text": "Für Datenübermittlungen in andere Drittländer gelten entsprechende Sicherheitsmaßnahmen, insbesondere Standardvertragsklauseln, ausdrückliche Einwilligungen oder gesetzlich erforderliche Übermittlungen. Informationen zu Drittlandtransfers und geltenden Angemessenheitsbeschlüssen entnehmen Sie dem Informationsangebot der",
+          "link": "EU-Kommission"
+        }
       }
     },
     "footer": "Impressum"
