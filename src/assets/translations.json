@@ -139,12 +139,62 @@
     "privacyPolicy": {
       "headline1": "Privacy",
       "headline2": "Policy",
-      "preambleTitle": "Preamble",
-      "preambleText": "With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to simply as \"data\") that we process, for what purposes, and to what extent, in the context of providing our application.",
-      "genderNote": "The terms used are not gender-specific.",
-      "status": "Status",
+      "preamble": {
+        "title": "Preamble",
+        "text": "With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to simply as \"data\") that we process, for what purposes, and to what extent, in the context of providing our application.",
+        "genderNote": "The terms used are not gender-specific.",
+        "status": "Status"
+      },
       "contents": "Table of contents",
-      "responsible": "Responsible person"
+      "responsible": "Responsible person",
+      "representatives": "Authorized representatives",
+      "overview": {
+        "title": "Overview of processing",
+        "text": "The following overview provides an overview of the types of data processed and the purposes of their processing and refers to the data subjects.",
+        "subheading1": "Types of data processed",
+        "ul1": {
+          "li1": "Inventory data",
+          "li2": "Contact details",
+          "li3": "Content data",
+          "li4": "Usage data",
+          "li5": "Meta, communication and process data",
+          "li6": "Protocol data"
+        },
+        "subheading2": "Categories of affected persons",
+        "ul2": {
+          "li1": "Communication partners",
+          "li2": "Users"
+        },
+        "subheading3": "Purposes of the processing",
+        "ul3": {
+          "li1": "Communication",
+          "li2": "Security measures",
+          "li3": "Organizational and administrative procedures",
+          "li4": "Feedback",
+          "li5": "Provision of our online services and user-friendliness",
+          "li6": "Information technology infrastructure",
+          "li7": "Public relations"
+        }
+      },
+      "legalBasis": {
+        "title": "Applicable Legal Bases",
+        "subheading1": "Applicable legal bases under the GDPR:",
+        "text1": "Below you will find an overview of the legal bases of the GDPR on which we process personal data. Please note that, in addition to the provisions of the GDPR, national data protection regulations may apply in your country of residence or ours. If, in individual cases, more specific legal bases are relevant, we will inform you of these in this privacy policy.",
+        "li1": {
+          "subheading": "Consent (Art. 6 para. 1 sentence 1 lit. a) GDPR)",
+          "text": "The data subject has given consent to the processing of their personal data for one or more specific purposes."
+        },
+        "li2": {
+          "subheading": "Performance of a contract and pre-contractual inquiries (Art. 6 para. 1 sentence 1 lit. b) GDPR)",
+          "text": "Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract."
+        },
+        "li3": {
+          "subheading": "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f) GDPR)",
+          "text": "Processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, provided that such interests are not overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data."
+        },
+        "subheading2": "National data protection regulations in Germany: ",
+        "text2": "In addition to the data protection provisions of the GDPR, national data protection regulations apply in Germany. This includes in particular the Federal Data Protection Act (Bundesdatenschutzgesetz – BDSG), which contains specific provisions regarding the right to access, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes, and the transfer and automated decision-making in individual cases including profiling. Furthermore, data protection laws of the individual federal states may apply."
+      }
     },
     "footer": "Imprint"
   },
@@ -288,12 +338,62 @@
     "privacyPolicy": {
       "headline1": "Datenschutz-",
       "headline2": "erklärung",
-      "preambleTitle": "Präambel",
-      "preambleText": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten\" bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.",
-      "genderNote": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
-      "status": "Stand",
+      "preamble": {
+        "title": "Präambel",
+        "text": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten\" bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen der Bereitstellung unserer Applikation verarbeiten.",
+        "genderNote": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+        "status": "Stand"
+      },
       "contents": "Inhaltsübersicht",
-      "responsible": "Verantwortlicher"
+      "responsible": "Verantwortlicher",
+      "representatives": "Vertretungsberechtigte Personen",
+      "overview": {
+        "title": "Übersicht der Verarbeitungen",
+        "text": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+        "subheading1": "Arten der verarbeiteten Daten",
+        "ul1": {
+          "li1": "Bestandsdaten",
+          "li2": "Kontaktdaten",
+          "li3": "Inhaltsdaten",
+          "li4": "Nutzungsdaten",
+          "li5": "Meta-, Kommunikations- und Verfahrensdaten",
+          "li6": "Protokolldaten"
+        },
+        "subheading2": "Kategorien betroffener Personen",
+        "ul2": {
+          "li1": "Kommunikationspartner",
+          "li2": "Nutzer"
+        },
+        "subheading3": "Zwecke der Verarbeitung",
+        "ul3": {
+          "li1": "Kommunikation",
+          "li2": "Sicherheitsmaßnahmen",
+          "li3": "Organisations- und Verwaltungsverfahren",
+          "li4": "Feedback",
+          "li5": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
+          "li6": "Informationstechnische Infrastruktur",
+          "li7": "Öffentlichkeitsarbeit"
+        }
+      },
+      "legalBasis": {
+        "title": "Maßgebliche Rechtsgrundlagen",
+        "subheading1": "Maßgebliche Rechtsgrundlagen nach der DSGVO:",
+        "text1": "Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+        "li1": {
+          "subheading": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)",
+          "text": "Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben."
+        },
+        "li2": {
+          "subheading": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
+          "text": "Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen."
+        },
+        "li3": {
+          "subheading": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
+          "text": "die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen."
+        },
+        "subheading2": "Nationale Datenschutzregelungen in Deutschland: ",
+        "text2": "Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen."
+      }
     },
     "footer": "Impressum"
   }
