@@ -219,6 +219,158 @@
           "text": "For data transfers to other third countries, appropriate safeguards apply, in particular standard contractual clauses, explicit consents, or legally required transfers. Information about third-country transfers and applicable adequacy decisions can be found on the website of the",
           "link": "European Commission"
         }
+      },
+      "dataStorage": {
+        "title": "General Information on Data Storage and Deletion",
+        "text1": "We delete personal data that we process in accordance with legal requirements as soon as the underlying consents are revoked or no further legal basis for processing exists. This applies in cases where the original purpose of processing no longer applies or the data is no longer needed. Exceptions to this rule may apply if legal obligations or specific interests require a longer retention or archiving of the data.",
+        "text2": "In particular, data that must be retained for commercial or tax-related reasons, or whose storage is necessary for legal prosecution or to protect the rights of other natural or legal persons, must be archived accordingly.",
+        "text3": "Our privacy notices contain additional information on data retention and deletion that applies specifically to certain processing activities.",
+        "text4": "If multiple retention periods or deletion deadlines apply to a data item, the longest period is always binding.",
+        "text5": "If a retention period does not explicitly begin on a specific date and lasts at least one year, it automatically starts at the end of the calendar year in which the triggering event occurred. In the case of ongoing contractual relationships in which data is stored, the triggering event is the date of termination or other conclusion of the legal relationship.",
+        "text6": "Data that is no longer stored for its original intended purpose but must be retained due to legal requirements or other reasons is processed exclusively for the reasons that justify its retention.",
+        "subheading": "Further Notes on Processing Activities, Procedures, and Services:",
+        "ul": {
+          "title": "Data Retention and Deletion:",
+          "subheading": "The following general retention and archiving periods apply under German law:",
+          "li1": "10 years - Retention period for books and records, annual financial statements, inventories, management reports, opening balance sheets as well as related instructions and other organizational documents necessary for their understanding (§ 147 (1) No. 1 in conjunction with (3) AO, § 14b (1) UStG, § 257 (1) No. 1 in conjunction with (4) HGB).",
+          "li2": "8 years - Accounting documents such as invoices and cost records (§ 147 (1) Nos. 4 and 4a in conjunction with (3) Sentence 1 AO, § 257 (1) No. 4 in conjunction with (4) HGB).",
+          "li3": "6 years - Other business documents: received commercial or business letters, copies of sent commercial or business letters, and other documents relevant for taxation such as timesheets, operating cost statements, calculation documents, pricing materials, as well as payroll records if not already considered accounting documents, and cash register receipts (§ 147 (1) Nos. 2, 3, 5 in conjunction with (3) AO, § 257 (1) Nos. 2 and 3 in conjunction with (4) HGB).",
+          "li4": "3 years - Data required to consider potential warranty and damage claims or similar contractual claims and rights, as well as to handle related inquiries, will be stored for the duration of the standard statutory limitation period of three years based on past business experience and standard industry practices (§§ 195, 199 BGB)."
+        }
+      },
+      "rights": {
+        "title": "Rights of Data Subjects",
+        "text": "Rights of data subjects under the GDPR: As a data subject, you are entitled to various rights under the GDPR, particularly those set out in Articles 15 to 21 GDPR:",
+        "ul": {
+          "li1": "Right to object: You have the right, on grounds relating to your particular situation, to object at any time to the processing of your personal data that is based on Article 6(1)(e) or (f) GDPR; this also applies to profiling based on these provisions. If your personal data is processed for direct marketing purposes, you have the right to object at any time to the processing of your personal data for such marketing; this also applies to profiling, to the extent that it is related to such direct marketing.",
+          "li2": {
+            "subheading": "Right to withdraw consent:",
+            "text": "You have the right to withdraw any consent given at any time."
+          },
+          "li3": {
+            "subheading": "Right of access:",
+            "text": "You have the right to obtain confirmation as to whether personal data concerning you is being processed and to receive information about such data as well as further details and a copy of the data in accordance with legal requirements."
+          },
+          "li4": {
+            "subheading": "Right to rectification:",
+            "text": "In accordance with legal requirements, you have the right to request the completion of your data or the correction of inaccurate data concerning you."
+          },
+          "li5": {
+            "subheading": "Right to erasure and restriction of processing:",
+            "text": "In accordance with legal requirements, you have the right to request the immediate deletion of data concerning you, or alternatively, to request restriction of the processing of the data."
+          },
+          "li6": {
+            "subheading": "Right to data portability:",
+            "text": "You have the right to receive the data concerning you, which you have provided to us, in a structured, commonly used and machine-readable format, or to request the transmission of such data to another controller, in accordance with legal requirements."
+          },
+          "li7": {
+            "subheading": "Right to lodge a complaint with a supervisory authority:",
+            "text": "Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work or place of the alleged infringement, if you believe that the processing of your personal data infringes the provisions of the GDPR."
+          }
+        }
+      },
+      "webhosting": {
+        "title": "Provision of Online Services and Web Hosting",
+        "text": "We process user data in order to provide them with our online services. For this purpose, we process the user's IP address, which is necessary to transmit the content and functions of our online services to the user's browser or device.",
+        "ul1": {
+          "li1": {
+            "subheading": "Types of data processed:",
+            "text": "Usage data (e.g., page views and duration, click paths, usage intensity and frequency, types of devices and operating systems used, interactions with content and features); Meta, communication, and procedural data (e.g., IP addresses, timestamps, identification numbers, involved individuals); Log data (e.g., log files regarding logins or data retrievals or access times); Content data (e.g., textual or visual messages and posts, and related information such as authorship or creation timestamps)."
+          },
+          "li2": {
+            "subheading": "Data subjects:",
+            "text": "Users (e.g., website visitors, users of online services)."
+          },
+          "li3": {
+            "subheading": "Purposes of processing:",
+            "text": "Provision of our online services and user-friendliness; IT infrastructure (operation and provision of information systems and technical devices such as computers, servers, etc.); Security measures."
+          },
+          "li4": {
+            "subheading": "Storage and deletion:",
+            "text": "Deletion in accordance with the section \"General Information on Data Storage and Deletion.\""
+          },
+          "li5": {
+            "subheading": "Legal bases:",
+            "text": "Legitimate interests (Art. 6(1)(1)(f) GDPR)."
+          }
+        },
+        "subheading": "Further information on processing activities, procedures, and services:",
+        "ul2": {
+          "legalBasis": "Legal bases:",
+          "li1": {
+            "subheading1": "Provision of online services on rented server space:",
+            "text1": "To provide our online services, we use storage space, computing capacity, and software obtained from a corresponding server provider (also referred to as a \"web host\");",
+            "text2": "Legitimate interests (Art. 6(1)(1)(f) GDPR)."
+          },
+          "li2": {
+            "subheading1": "Collection of access data and log files:",
+            "text1": "Access to our online services is logged in the form of so-called \"server log files.\" These may include the address and name of the accessed webpages and files, date and time of access, amount of data transferred, messages about successful access, browser type and version, the user’s operating system, referrer URL (previously visited page), and typically IP addresses and the requesting provider. Server log files are used for security purposes, for example, to prevent server overload (especially in the case of abusive attacks such as DDoS attacks), and also to ensure server utilization and stability;",
+            "text2": "Legitimate interests (Art. 6(1)(1)(f) GDPR).",
+            "subheading3": "Deletion of data:",
+            "text3": "Log file information is stored for a maximum of 30 days and then deleted or anonymized. Data that must be retained for evidentiary purposes are excluded from deletion until the incident in question has been conclusively resolved."
+          },
+          "li3": {
+            "subheading1": "Email transmission and hosting:",
+            "text1": "The web hosting services we use also include the sending, receiving, and storage of emails. For these purposes, the addresses of senders and recipients as well as other information related to email transmission (e.g., involved providers) and the contents of the respective emails are processed. This data may also be processed for the purpose of SPAM detection. Please note that emails are generally not encrypted on the internet. Typically, emails are encrypted during transmission but not on the servers from which they are sent and received (unless end-to-end encryption is used). We therefore cannot assume responsibility for the transmission path between the sender and the reception on our server;",
+            "text2": "Legitimate interests (Art. 6(1)(1)(f) GDPR)."
+          },
+          "li4": {
+            "text1": "Services in the area of IT infrastructure provision and associated services (e.g., storage space and/or computing capacities);",
+            "subheading2": "Service provider:",
+            "text2": "ALL-INKL.COM - Neue Medien Münnich, Owner: René Münnich, Hauptstraße 68, 02742 Friedersdorf, Germany;",
+            "text3": "Legitimate interests (Art. 6(1)(1)(f) GDPR);",
+            "subheading4": "Privacy policy:",
+            "subheading5": "Data processing agreement:",
+            "text5": "Provided by the service provider."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Use of Cookies",
+        "text": "The term \"cookies\" refers to functions that store information on users' devices and read it from them. Cookies may be used for various purposes, such as functionality, security, and user convenience of online services, as well as to analyze visitor traffic. We use cookies in accordance with legal requirements. Where necessary, we obtain users' consent in advance. If consent is not required, we rely on our legitimate interests. This applies where storing and reading information is essential to provide expressly requested content and functions. This includes saving settings and ensuring the functionality and security of our online services. Consent can be revoked at any time. We clearly inform users about the scope of use and which cookies are used.",
+        "subheading": "Further information on processing activities, procedures, and services:",
+        "p1": {
+          "subheading": "Notes on data protection legal bases:",
+          "text": "Whether we process personal data using cookies depends on the presence of consent. Where consent has been given, it serves as the legal basis. In the absence of consent, we rely on our legitimate interests, as described in this section and in the context of the respective services and procedures."
+        },
+        "p2": {
+          "subheading": "Storage duration:",
+          "text": "The following types of cookies are distinguished in terms of their storage duration:"
+        },
+        "p3": {
+          "subheading": "General information on withdrawal and objection (opt-out):",
+          "text": "Users may withdraw their consent at any time and also object to processing in accordance with legal requirements, including via their browser’s privacy settings."
+        },
+        "ul1": {
+          "li1": {
+            "subheading": "Temporary cookies (also: session cookies):",
+            "text": "Temporary cookies are deleted at the latest after a user leaves an online service and closes their device (e.g., browser or mobile app)."
+          },
+          "li2": {
+            "subheading": "Permanent cookies:",
+            "text": "Permanent cookies remain stored even after the device is closed. For example, login status can be saved and preferred content displayed directly when a user revisits a website. User data collected through cookies may also be used for reach measurement. If we do not provide specific information about the type and duration of cookies (e.g., when obtaining consent), users should assume that the cookies are permanent and may be stored for up to two years."
+          }
+        },
+        "ul2": {
+          "li1": {
+            "subheading": "Types of data processed:",
+            "text": "Meta, communication, and procedural data (e.g., IP addresses, timestamps, identification numbers, involved individuals)."
+          },
+          "li2": {
+            "subheading": "Data subjects:",
+            "text": "Users (e.g., website visitors, users of online services)."
+          },
+          "li3": {
+            "subheading": "Legal bases:",
+            "text": "Legitimate interests (Art. 6(1)(1)(f) GDPR). Consent (Art. 6(1)(1)(a) GDPR)."
+          }
+        },
+        "ul3": {
+          "subheading1": "Processing of cookie data based on consent:",
+          "text1": "We use a consent management solution that obtains users' consent to the use of cookies or to the procedures and providers mentioned in the consent management system. This procedure is used to obtain, log, manage, and revoke consents—particularly regarding the use of cookies and similar technologies used to store, read, and process information on users' devices. As part of this process, users’ consents for the use of cookies and associated information processing (including specific processing activities and providers mentioned in the system) are obtained. Users are also given the ability to manage and revoke their consents. Consent declarations are stored to prevent repeated requests and to provide evidence of consent in compliance with legal requirements. Storage takes place server-side and/or in a cookie (so-called opt-in cookie) or using comparable technologies to associate consent with a specific user or device. If no specific providers of consent management services are indicated, the following general notes apply: The storage duration of consent is up to two years. A pseudonymous user identifier is created and stored along with the timestamp of consent, information on the scope of consent (e.g., categories of cookies and/or service providers), and data about the browser, system, and device used;",
+          "subheading2": "Legal bases:",
+          "text2": "Consent (Art. 6(1)(1)(a) GDPR)."
+        }
       }
     },
     "footer": "Imprint"
@@ -442,6 +594,158 @@
         "text5": {
           "text": "Für Datenübermittlungen in andere Drittländer gelten entsprechende Sicherheitsmaßnahmen, insbesondere Standardvertragsklauseln, ausdrückliche Einwilligungen oder gesetzlich erforderliche Übermittlungen. Informationen zu Drittlandtransfers und geltenden Angemessenheitsbeschlüssen entnehmen Sie dem Informationsangebot der",
           "link": "EU-Kommission"
+        }
+      },
+      "dataStorage": {
+        "title": "Allgemeine Informationen zur Datenspeicherung und Löschung",
+        "text1": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Ausnahmen von dieser Regelung bestehen, wenn gesetzliche Pflichten oder besondere Interessen eine längere Aufbewahrung oder Archivierung der Daten erfordern.",
+        "text2": "Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert werden.",
+        "text3": "Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten.",
+        "text4": "Bei mehreren Angaben zur Aufbewahrungsdauer oder Löschungsfristen eines Datums, ist stets die längste Frist maßgeblich.",
+        "text5": "Beginnt eine Frist nicht ausdrücklich zu einem bestimmten Datum und beträgt sie mindestens ein Jahr, so startet sie automatisch am Ende des Kalenderjahres, in dem das fristauslösende Ereignis eingetreten ist. Im Fall laufender Vertragsverhältnisse, in deren Rahmen Daten gespeichert werden, ist das fristauslösende Ereignis der Zeitpunkt des Wirksamwerdens der Kündigung oder sonstige Beendigung des Rechtsverhältnisses.",
+        "text6": "Daten, die nicht mehr für den ursprünglich vorgesehenen Zweck, sondern aufgrund gesetzlicher Vorgaben oder anderer Gründe aufbewahrt werden, verarbeiten wir ausschließlich zu den Gründen, die ihre Aufbewahrung rechtfertigen.",
+        "subheading": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:",
+        "ul": {
+          "title": "Aufbewahrung und Löschung von Daten: ",
+          "subheading": "Die folgenden allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:",
+          "li1": "10 Jahre - Aufbewahrungsfrist für Bücher und Aufzeichnungen, Jahresabschlüsse, Inventare, Lageberichte, Eröffnungsbilanz sowie die zu ihrem Verständnis erforderlichen Arbeitsanweisungen und sonstigen Organisationsunterlagen (§ 147 Abs. 1 Nr. 1 i.V.m. Abs. 3 AO, § 14b Abs. 1 UStG, § 257 Abs. 1 Nr. 1 i.V.m. Abs. 4 HGB).",
+          "li2": "8 Jahre - Buchungsbelege, wie z. B. Rechnungen und Kostenbelege (§147 Abs. 1 Nr. 4 und 4a i.V.m. Abs. 3 Satz 1 AO sowie § 257 Abs. 1 Nr. 4 i.V.m. Abs. 4 HGB).",
+          "li3": "6 Jahre - Übrige Geschäftsunterlagen: empfangene Handels- oder Geschäftsbriefe, Wiedergaben der abgesandten Handels- oder Geschäftsbriefe, sonstige Unterlagen, soweit sie für die Besteuerung von Bedeutung sind, z. B. Stundenlohnzettel, Betriebsabrechnungsbögen, Kalkulationsunterlagen, Preisauszeichnungen, aber auch Lohnabrechnungsunterlagen, soweit sie nicht bereits Buchungsbelege sind und Kassenstreifen (§ 147 Abs. 1 Nr. 2, 3, 5 i.V.m. Abs. 3 AO, § 257 Abs. 1 Nr. 2 u. 3 i.V.m. Abs. 4 HGB).",
+          "li4": "3 Jahre - Daten, die erforderlich sind, um potenzielle Gewährleistungs- und Schadensersatzansprüche oder ähnliche vertragliche Ansprüche und Rechte zu berücksichtigen sowie damit verbundene Anfragen zu bearbeiten, basierend auf früheren Geschäftserfahrungen und üblichen Branchenpraktiken, werden für die Dauer der regulären gesetzlichen Verjährungsfrist von drei Jahren gespeichert (§§ 195, 199 BGB)."
+        }
+      },
+      "rights": {
+        "title": "Rechte der betroffenen Personen",
+        "text": "Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach der DSGVO verschiedene Rechte zu, die sich insbesondere aus Art. 15 bis 21 DSGVO ergeben:",
+        "ul": {
+          "li1": "Widerspruchsrecht: Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht.",
+          "li2": {
+            "subheading": "Widerrufsrecht bei Einwilligungen: ",
+            "text": "Sie haben das Recht, erteilte Einwilligungen jederzeit zu widerrufen."
+          },
+          "li3": {
+            "subheading": "Auskunftsrecht: ",
+            "text": "Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen Vorgaben."
+          },
+          "li4": {
+            "subheading": "Recht auf Berichtigung: ",
+            "text": "Sie haben entsprechend den gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie betreffenden Daten oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen."
+          },
+          "li5": {
+            "subheading": "Recht auf Löschung und Einschränkung der Verarbeitung: ",
+            "text": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen."
+          },
+          "li6": {
+            "subheading": "Recht auf Datenübertragbarkeit: ",
+            "text": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern."
+          },
+          "li7": {
+            "subheading": "Beschwerde bei Aufsichtsbehörde: ",
+            "text": "Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die Vorgaben der DSGVO verstößt."
+          }
+        }
+      },
+      "webhosting": {
+        "title": "Bereitstellung des Onlineangebots und Webhosting",
+        "text": "Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu übermitteln.",
+        "ul1": {
+          "li1": {
+            "subheading": "Verarbeitete Datenarten: ",
+            "text": "Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen); Protokolldaten (z. B. Logfiles betreffend Logins oder den Abruf von Daten oder Zugriffszeiten.). Inhaltsdaten (z. B. textliche oder bildliche Nachrichten und Beiträge sowie die sie betreffenden Informationen, wie z. B. Angaben zur Autorenschaft oder Zeitpunkt der Erstellung)."
+          },
+          "li2": {
+            "subheading": "Betroffene Personen: ",
+            "text": "Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten)."
+          },
+          "li3": {
+            "subheading": "Zwecke der Verarbeitung: ",
+            "text": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Informationstechnische Infrastruktur (Betrieb und Bereitstellung von Informationssystemen und technischen Geräten (Computer, Server etc.)). Sicherheitsmaßnahmen."
+          },
+          "li4": {
+            "subheading": "Aufbewahrung und Löschung: ",
+            "text": "Löschung entsprechend Angaben im Abschnitt \"Allgemeine Informationen zur Datenspeicherung und Löschung\"."
+          },
+          "li5": {
+            "subheading": "Rechtsgrundlagen: ",
+            "text": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          }
+        },
+        "subheading": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:",
+        "ul2": {
+          "legalBasis": "Rechtsgrundlagen: ",
+          "li1": {
+            "subheading1": "Bereitstellung Onlineangebot auf gemietetem Speicherplatz: ",
+            "text1": "Für die Bereitstellung unseres Onlineangebotes nutzen wir Speicherplatz, Rechenkapazität und Software, die wir von einem entsprechenden Serveranbieter (auch \"Webhoster\" genannt) mieten oder anderweitig beziehen;",
+            "text2": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          },
+          "li2": {
+            "subheading1": "Erhebung von Zugriffsdaten und Logfiles: ",
+            "text1": "Der Zugriff auf unser Onlineangebot wird in Form von sogenannten \"Server-Logfiles\" protokolliert. Zu den Serverlogfiles können die Adresse und der Name der abgerufenen Webseiten und Dateien, Datum und Uhrzeit des Abrufs, übertragene Datenmengen, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite) und im Regelfall IP-Adressen und der anfragende Provider gehören. Die Serverlogfiles können zum einen zu Sicherheitszwecken eingesetzt werden, z. B. um eine Überlastung der Server zu vermeiden (insbesondere im Fall von missbräuchlichen Angriffen, sogenannten DDoS-Attacken), und zum anderen, um die Auslastung der Server und ihre Stabilität sicherzustellen;",
+            "text2": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). ",
+            "subheading3": "Löschung von Daten: ",
+            "text3": "Logfile-Informationen werden für die Dauer von maximal 30 Tagen gespeichert und danach gelöscht oder anonymisiert. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweilige Vorfalls von der Löschung ausgenommen."
+          },
+          "li3": {
+            "subheading1": "E-Mail-Versand und -Hosting: ",
+            "text1": "Die von uns in Anspruch genommenen Webhosting-Leistungen umfassen ebenfalls den Versand, den Empfang sowie die Speicherung von E-Mails. Zu diesen Zwecken werden die Adressen der Empfänger sowie Absender als auch weitere Informationen betreffend den E-Mailversand (z. B. die beteiligten Provider) sowie die Inhalte der jeweiligen E-Mails verarbeitet. Die vorgenannten Daten können ferner zu Zwecken der Erkennung von SPAM verarbeitet werden. Wir bitten darum, zu beachten, dass E-Mails im Internet grundsätzlich nicht verschlüsselt versendet werden. Im Regelfall werden E-Mails zwar auf dem Transportweg verschlüsselt, aber (sofern kein sogenanntes Ende-zu-Ende-Verschlüsselungsverfahren eingesetzt wird) nicht auf den Servern, von denen sie abgesendet und empfangen werden. Wir können daher für den Übertragungsweg der E-Mails zwischen dem Absender und dem Empfang auf unserem Server keine Verantwortung übernehmen;",
+            "text2": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
+          },
+          "li4": {
+            "text1": "Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten); ",
+            "subheading2": "Dienstanbieter: ",
+            "text2": "ALL-INKL.COM - Neue Medien Münnich, Inhaber: René Münnich, Hauptstraße 68, 02742 Friedersdorf, Deutschland;",
+            "text3": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); ",
+            "subheading4": "Datenschutzerklärung: ",
+            "subheading5": "Auftragsverarbeitungsvertrag: ",
+            "text5": "Wird vom Dienstanbieter bereitgestellt."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Einsatz von Cookies",
+        "text": "Unter dem Begriff \"Cookies\" werden Funktionen, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden. Cookies können ferner in Bezug auf unterschiedliche Anliegen Einsatz finden, etwa zu Zwecken der Funktionsfähigkeit, der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen der Besucherströme. Wir verwenden Cookies gemäß den gesetzlichen Vorschriften. Dazu holen wir, wenn erforderlich, vorab die Zustimmung der Nutzer ein. Ist eine Zustimmung nicht notwendig, setzen wir auf unsere berechtigten Interessen. Dies gilt, wenn das Speichern und Auslesen von Informationen unerlässlich ist, um ausdrücklich angeforderte Inhalte und Funktionen bereitstellen zu können. Dazu zählen etwa die Speicherung von Einstellungen sowie die Sicherstellung der Funktionalität und Sicherheit unseres Onlineangebots. Die Einwilligung kann jederzeit widerrufen werden. Wir informieren klar über deren Umfang und welche Cookies genutzt werden.",
+        "subheading": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:",
+        "p1": {
+          "subheading": "Hinweise zu datenschutzrechtlichen Rechtsgrundlagen: ",
+          "text": "Ob wir personenbezogene Daten mithilfe von Cookies verarbeiten, hängt von einer Einwilligung ab. Liegt eine Einwilligung vor, dient sie als Rechtsgrundlage. Ohne Einwilligung stützen wir uns auf unsere berechtigten Interessen, die vorstehend in diesem Abschnitt und im Kontext der jeweiligen Dienste und Verfahren erläutert sind."
+        },
+        "p2": {
+          "subheading": "Speicherdauer: ",
+          "text": "Im Hinblick auf die Speicherdauer werden die folgenden Arten von Cookies unterschieden: "
+        },
+        "p3": {
+          "subheading": "Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out): ",
+          "text": "Nutzer können die von ihnen abgegebenen Einwilligungen jederzeit widerrufen und zudem einen Widerspruch gegen die Verarbeitung entsprechend den gesetzlichen Vorgaben, auch mittels der Privatsphäre-Einstellungen ihres Browsers, erklären."
+        },
+        "ul1": {
+          "li1": {
+            "subheading": "Temporäre Cookies (auch: Session- oder Sitzungscookies): ",
+            "text": "Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und sein Endgerät (z. B. Browser oder mobile Applikation) geschlossen hat."
+          },
+          "li2": {
+            "subheading": "Permanente Cookies: ",
+            "text": "Permanente Cookies bleiben auch nach dem Schließen des Endgeräts gespeichert. So können beispielsweise der Log-in-Status gespeichert und bevorzugte Inhalte direkt angezeigt werden, wenn der Nutzer eine Website erneut besucht. Ebenso können die mithilfe von Cookies erhobenen Nutzerdaten zur Reichweitenmessung Verwendung finden. Sofern wir Nutzern keine expliziten Angaben zur Art und Speicherdauer von Cookies mitteilen (z. B. im Rahmen der Einholung der Einwilligung), sollten sie davon ausgehen, dass diese permanent sind und die Speicherdauer bis zu zwei Jahre betragen kann."
+          }
+        },
+        "ul2": {
+          "li1": {
+            "subheading": "Verarbeitete Datenarten: ",
+            "text": "Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen)."
+          },
+          "li2": {
+            "subheading": "Betroffene Personen: ",
+            "text": "Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten)."
+          },
+          "li3": {
+            "subheading": "Rechtsgrundlagen: ",
+            "text": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
+          }
+        },
+        "ul3": {
+          "subheading1": "Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung: ",
+          "text1": "Wir setzen eine Einwilligungs-Management-Lösung ein, bei der die Einwilligung der Nutzer zur Verwendung von Cookies oder zu den im Rahmen der Einwilligungs-Management-Lösung genannten Verfahren und Anbietern eingeholt wird. Dieses Verfahren dient der Einholung, Protokollierung, Verwaltung und dem Widerruf von Einwilligungen, insbesondere bezogen auf den Einsatz von Cookies und vergleichbaren Technologien, die zur Speicherung, zum Auslesen und zur Verarbeitung von Informationen auf den Endgeräten der Nutzer eingesetzt werden. Im Rahmen dieses Verfahrens werden die Einwilligungen der Nutzer für die Nutzung von Cookies und die damit verbundenen Verarbeitungen von Informationen, einschließlich der im Einwilligungs-Management-Verfahren genannten spezifischen Verarbeitungen und Anbieter, eingeholt. Die Nutzer haben zudem die Möglichkeit, ihre Einwilligungen zu verwalten und zu widerrufen. Die Einwilligungserklärungen werden gespeichert, um eine erneute Abfrage zu vermeiden und den Nachweis der Einwilligung gemäß der gesetzlichen Anforderungen führen zu können. Die Speicherung erfolgt serverseitig und/oder in einem Cookie (sogenanntes Opt-In-Cookie) oder mittels vergleichbarer Technologien, um die Einwilligung einem spezifischen Nutzer oder dessen Gerät zuordnen zu können. Sofern keine spezifischen Angaben zu den Anbietern von Einwilligungs-Management-Diensten vorliegen, gelten folgende allgemeine Hinweise: Die Dauer der Speicherung der Einwilligung beträgt bis zu zwei Jahre. Dabei wird ein pseudonymer Nutzer-Identifikator erstellt, der zusammen mit dem Zeitpunkt der Einwilligung, den Angaben zum Umfang der Einwilligung (z. B. betreffende Kategorien von Cookies und/oder Diensteanbieter) sowie Informationen über den Browser, das System und das verwendete Endgerät gespeichert wird;",
+          "subheading2": "Rechtsgrundlagen: ",
+          "text2": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
         }
       }
     },
