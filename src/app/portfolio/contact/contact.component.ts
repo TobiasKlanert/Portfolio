@@ -27,12 +27,12 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
   isChecked = false;
   showSuccess = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://tobias-klanert.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
