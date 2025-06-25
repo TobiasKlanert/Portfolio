@@ -54,6 +54,10 @@ header {
     }
   }
 
+  .logo {
+    height: 40px;
+  }
+
   .right-group {
     @include dFlex($jc: flex-end);
     gap: 16px;
