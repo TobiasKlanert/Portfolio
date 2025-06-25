@@ -327,50 +327,7 @@
       },
       "cookies": {
         "title": "Use of Cookies",
-        "text": "The term \"cookies\" refers to functions that store information on users' devices and read it from them. Cookies may be used for various purposes, such as functionality, security, and user convenience of online services, as well as to analyze visitor traffic. We use cookies in accordance with legal requirements. Where necessary, we obtain users' consent in advance. If consent is not required, we rely on our legitimate interests. This applies where storing and reading information is essential to provide expressly requested content and functions. This includes saving settings and ensuring the functionality and security of our online services. Consent can be revoked at any time. We clearly inform users about the scope of use and which cookies are used.",
-        "subheading": "Further information on processing activities, procedures, and services:",
-        "p1": {
-          "subheading": "Notes on data protection legal bases:",
-          "text": "Whether we process personal data using cookies depends on the presence of consent. Where consent has been given, it serves as the legal basis. In the absence of consent, we rely on our legitimate interests, as described in this section and in the context of the respective services and procedures."
-        },
-        "p2": {
-          "subheading": "Storage duration:",
-          "text": "The following types of cookies are distinguished in terms of their storage duration:"
-        },
-        "p3": {
-          "subheading": "General information on withdrawal and objection (opt-out):",
-          "text": "Users may withdraw their consent at any time and also object to processing in accordance with legal requirements, including via their browser’s privacy settings."
-        },
-        "ul1": {
-          "li1": {
-            "subheading": "Temporary cookies (also: session cookies):",
-            "text": "Temporary cookies are deleted at the latest after a user leaves an online service and closes their device (e.g., browser or mobile app)."
-          },
-          "li2": {
-            "subheading": "Permanent cookies:",
-            "text": "Permanent cookies remain stored even after the device is closed. For example, login status can be saved and preferred content displayed directly when a user revisits a website. User data collected through cookies may also be used for reach measurement. If we do not provide specific information about the type and duration of cookies (e.g., when obtaining consent), users should assume that the cookies are permanent and may be stored for up to two years."
-          }
-        },
-        "ul2": {
-          "li1": {
-            "subheading": "Types of data processed:",
-            "text": "Meta, communication, and procedural data (e.g., IP addresses, timestamps, identification numbers, involved individuals)."
-          },
-          "li2": {
-            "subheading": "Data subjects:",
-            "text": "Users (e.g., website visitors, users of online services)."
-          },
-          "li3": {
-            "subheading": "Legal bases:",
-            "text": "Legitimate interests (Art. 6(1)(1)(f) GDPR). Consent (Art. 6(1)(1)(a) GDPR)."
-          }
-        },
-        "ul3": {
-          "subheading1": "Processing of cookie data based on consent:",
-          "text1": "We use a consent management solution that obtains users' consent to the use of cookies or to the procedures and providers mentioned in the consent management system. This procedure is used to obtain, log, manage, and revoke consents—particularly regarding the use of cookies and similar technologies used to store, read, and process information on users' devices. As part of this process, users’ consents for the use of cookies and associated information processing (including specific processing activities and providers mentioned in the system) are obtained. Users are also given the ability to manage and revoke their consents. Consent declarations are stored to prevent repeated requests and to provide evidence of consent in compliance with legal requirements. Storage takes place server-side and/or in a cookie (so-called opt-in cookie) or using comparable technologies to associate consent with a specific user or device. If no specific providers of consent management services are indicated, the following general notes apply: The storage duration of consent is up to two years. A pseudonymous user identifier is created and stored along with the timestamp of consent, information on the scope of consent (e.g., categories of cookies and/or service providers), and data about the browser, system, and device used;",
-          "subheading2": "Legal bases:",
-          "text2": "Consent (Art. 6(1)(1)(a) GDPR)."
-        }
+        "text": "The term \"cookies\" refers to functions that store information on users' devices and read it from them. Cookies may be used for various purposes, such as functionality, security, and user convenience of online services, as well as to analyze visitor traffic. We use cookies in accordance with legal requirements. Where necessary, we obtain users' consent in advance. If consent is not required, we rely on our legitimate interests. This applies where storing and reading information is essential to provide expressly requested content and functions. This includes saving settings and ensuring the functionality and security of our online services. Consent can be revoked at any time. We clearly inform users about the scope of use and which cookies are used."
       },
       "contact": {
         "title": "Contact and Inquiry Management",
@@ -867,50 +824,7 @@
       },
       "cookies": {
         "title": "Einsatz von Cookies",
-        "text": "Unter dem Begriff \"Cookies\" werden Funktionen, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden. Cookies können ferner in Bezug auf unterschiedliche Anliegen Einsatz finden, etwa zu Zwecken der Funktionsfähigkeit, der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen der Besucherströme. Wir verwenden Cookies gemäß den gesetzlichen Vorschriften. Dazu holen wir, wenn erforderlich, vorab die Zustimmung der Nutzer ein. Ist eine Zustimmung nicht notwendig, setzen wir auf unsere berechtigten Interessen. Dies gilt, wenn das Speichern und Auslesen von Informationen unerlässlich ist, um ausdrücklich angeforderte Inhalte und Funktionen bereitstellen zu können. Dazu zählen etwa die Speicherung von Einstellungen sowie die Sicherstellung der Funktionalität und Sicherheit unseres Onlineangebots. Die Einwilligung kann jederzeit widerrufen werden. Wir informieren klar über deren Umfang und welche Cookies genutzt werden.",
-        "subheading": "Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:",
-        "p1": {
-          "subheading": "Hinweise zu datenschutzrechtlichen Rechtsgrundlagen: ",
-          "text": "Ob wir personenbezogene Daten mithilfe von Cookies verarbeiten, hängt von einer Einwilligung ab. Liegt eine Einwilligung vor, dient sie als Rechtsgrundlage. Ohne Einwilligung stützen wir uns auf unsere berechtigten Interessen, die vorstehend in diesem Abschnitt und im Kontext der jeweiligen Dienste und Verfahren erläutert sind."
-        },
-        "p2": {
-          "subheading": "Speicherdauer: ",
-          "text": "Im Hinblick auf die Speicherdauer werden die folgenden Arten von Cookies unterschieden: "
-        },
-        "p3": {
-          "subheading": "Allgemeine Hinweise zum Widerruf und Widerspruch (Opt-out): ",
-          "text": "Nutzer können die von ihnen abgegebenen Einwilligungen jederzeit widerrufen und zudem einen Widerspruch gegen die Verarbeitung entsprechend den gesetzlichen Vorgaben, auch mittels der Privatsphäre-Einstellungen ihres Browsers, erklären."
-        },
-        "ul1": {
-          "li1": {
-            "subheading": "Temporäre Cookies (auch: Session- oder Sitzungscookies): ",
-            "text": "Temporäre Cookies werden spätestens gelöscht, nachdem ein Nutzer ein Onlineangebot verlassen und sein Endgerät (z. B. Browser oder mobile Applikation) geschlossen hat."
-          },
-          "li2": {
-            "subheading": "Permanente Cookies: ",
-            "text": "Permanente Cookies bleiben auch nach dem Schließen des Endgeräts gespeichert. So können beispielsweise der Log-in-Status gespeichert und bevorzugte Inhalte direkt angezeigt werden, wenn der Nutzer eine Website erneut besucht. Ebenso können die mithilfe von Cookies erhobenen Nutzerdaten zur Reichweitenmessung Verwendung finden. Sofern wir Nutzern keine expliziten Angaben zur Art und Speicherdauer von Cookies mitteilen (z. B. im Rahmen der Einholung der Einwilligung), sollten sie davon ausgehen, dass diese permanent sind und die Speicherdauer bis zu zwei Jahre betragen kann."
-          }
-        },
-        "ul2": {
-          "li1": {
-            "subheading": "Verarbeitete Datenarten: ",
-            "text": "Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen)."
-          },
-          "li2": {
-            "subheading": "Betroffene Personen: ",
-            "text": "Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten)."
-          },
-          "li3": {
-            "subheading": "Rechtsgrundlagen: ",
-            "text": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO). Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
-          }
-        },
-        "ul3": {
-          "subheading1": "Verarbeitung von Cookie-Daten auf Grundlage einer Einwilligung: ",
-          "text1": "Wir setzen eine Einwilligungs-Management-Lösung ein, bei der die Einwilligung der Nutzer zur Verwendung von Cookies oder zu den im Rahmen der Einwilligungs-Management-Lösung genannten Verfahren und Anbietern eingeholt wird. Dieses Verfahren dient der Einholung, Protokollierung, Verwaltung und dem Widerruf von Einwilligungen, insbesondere bezogen auf den Einsatz von Cookies und vergleichbaren Technologien, die zur Speicherung, zum Auslesen und zur Verarbeitung von Informationen auf den Endgeräten der Nutzer eingesetzt werden. Im Rahmen dieses Verfahrens werden die Einwilligungen der Nutzer für die Nutzung von Cookies und die damit verbundenen Verarbeitungen von Informationen, einschließlich der im Einwilligungs-Management-Verfahren genannten spezifischen Verarbeitungen und Anbieter, eingeholt. Die Nutzer haben zudem die Möglichkeit, ihre Einwilligungen zu verwalten und zu widerrufen. Die Einwilligungserklärungen werden gespeichert, um eine erneute Abfrage zu vermeiden und den Nachweis der Einwilligung gemäß der gesetzlichen Anforderungen führen zu können. Die Speicherung erfolgt serverseitig und/oder in einem Cookie (sogenanntes Opt-In-Cookie) oder mittels vergleichbarer Technologien, um die Einwilligung einem spezifischen Nutzer oder dessen Gerät zuordnen zu können. Sofern keine spezifischen Angaben zu den Anbietern von Einwilligungs-Management-Diensten vorliegen, gelten folgende allgemeine Hinweise: Die Dauer der Speicherung der Einwilligung beträgt bis zu zwei Jahre. Dabei wird ein pseudonymer Nutzer-Identifikator erstellt, der zusammen mit dem Zeitpunkt der Einwilligung, den Angaben zum Umfang der Einwilligung (z. B. betreffende Kategorien von Cookies und/oder Diensteanbieter) sowie Informationen über den Browser, das System und das verwendete Endgerät gespeichert wird;",
-          "subheading2": "Rechtsgrundlagen: ",
-          "text2": "Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO)."
-        }
+        "text": "Unter dem Begriff \"Cookies\" werden Funktionen, die Informationen auf Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden. Cookies können ferner in Bezug auf unterschiedliche Anliegen Einsatz finden, etwa zu Zwecken der Funktionsfähigkeit, der Sicherheit und des Komforts von Onlineangeboten sowie der Erstellung von Analysen der Besucherströme. Wir verwenden Cookies gemäß den gesetzlichen Vorschriften. Dazu holen wir, wenn erforderlich, vorab die Zustimmung der Nutzer ein. Ist eine Zustimmung nicht notwendig, setzen wir auf unsere berechtigten Interessen. Dies gilt, wenn das Speichern und Auslesen von Informationen unerlässlich ist, um ausdrücklich angeforderte Inhalte und Funktionen bereitstellen zu können. Dazu zählen etwa die Speicherung von Einstellungen sowie die Sicherstellung der Funktionalität und Sicherheit unseres Onlineangebots. Die Einwilligung kann jederzeit widerrufen werden. Wir informieren klar über deren Umfang und welche Cookies genutzt werden."
       },
       "contact": {
         "title": "Kontakt- und Anfrageverwaltung",
