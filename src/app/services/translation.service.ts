@@ -8,7 +8,7 @@ import translationsJson from '../../assets/translations.json';
 export class TranslationService {
   private languageSubject = new BehaviorSubject<'de' | 'en'>('en');
   language$ = this.languageSubject.asObservable();
-  currentLanguage = 'en';
+  currentLanguage = 'de';
 
   private translations: Record<string, any> = translationsJson
 
