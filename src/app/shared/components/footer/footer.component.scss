@@ -4,7 +4,6 @@
 footer {
   @include dFlex($jc: space-between, $ai: flex-end);
   width: 100%;
-  /* color: $highlight-white; */
 
   &.light-text {
     color: $highlight-white;

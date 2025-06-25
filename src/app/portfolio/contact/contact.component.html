@@ -47,16 +47,17 @@
             <input
               #email="ngModel"
               [(ngModel)]="contactData.email"
-              [ngClass]="{ invalid: !email.valid && email.touched }"
+              [ngClass]="{ 
+                invalid: (!email.valid && email.touched) || 
+                         (email.errors && email.errors['pattern'] && email.touched) 
+              }"
               type="email"
               id="email"
               name="email"
               [placeholder]="
                 !email.valid && email.touched && !email.disabled
                   ? translationService.translate('contact.form.email.error')
-                  : translationService.translate(
-                      'contact.form.email.placeholder'
-                    )
+                  : translationService.translate('contact.form.email.placeholder')
               "
               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
               required

@@ -291,3 +291,7 @@ app-footer {
     width: 75%;
   }
 }
+
+input.invalid[type="email"] {
+  color: #ec7b7b;
+}

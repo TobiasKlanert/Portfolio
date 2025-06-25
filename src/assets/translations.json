@@ -504,8 +504,8 @@
     },
     "menu": {
       "aboutMe": "Über mich",
-      "skillset": "Kompetenzen",
-      "portfolio": "Portfolio",
+      "skillset": "Meine Skills",
+      "portfolio": "Meine Projekte",
       "references": "Referenzen",
       "contactMe": "Kontakt"
     },
@@ -524,7 +524,7 @@
       }
     },
     "skills": {
-      "headline": "Kompetenzen",
+      "headline": "Meine Skills",
       "text": "In meinen Projekten habe ich eine Vielzahl moderner Front-End-Technologien eingesetzt, um sowohl statische als auch dynamische Websites zu realisieren. Mein Fokus liegt auf der Entwicklung responsiver Layouts, intuitiver Benutzeroberflächen und reibungsloser Nutzererfahrungen. Dabei lege ich besonderen Wert auf sauberen, wartbaren Code und eine zielgerichtete User Experience.",
       "hiddenMenu": {
         "headline": "Nicht die passende Fähigkeit gefunden?",
