@@ -18,7 +18,7 @@ export class WorkComponent {
     {
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       github: 'https://github.com/TobiasKlanert/Join',
-      liveLink: 'https://github.com/TobiasKlanert',
+      liveLink: 'https://join.tobias-klanert.de',
       icon: '/assets/img/icon_join.svg',
       screenshot: '/assets/img/screenshot-join.png',
       bgColor: '#F9AF42',
@@ -28,7 +28,7 @@ export class WorkComponent {
     {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/TobiasKlanert/Sharkie',
-      liveLink: 'https://github.com/TobiasKlanert',
+      liveLink: 'https://sharkie.tobias-klanert.de',
       icon: '/assets/img/icon_shark.svg',
       screenshot: '/assets/img/screenshot-sharkie.png',
       bgColor: '#FF834F',
@@ -38,7 +38,7 @@ export class WorkComponent {
     {
       technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
       github: 'https://github.com/TobiasKlanert',
-      liveLink: 'https://github.com/TobiasKlanert',
+      liveLink: 'https://dabubble.tobias-klanert.de',
       icon: '/assets/img/icon_dabubble.svg',
       screenshot: '/assets/img/screenshot-dabubble.png',
       bgColor: '#679AAC',
