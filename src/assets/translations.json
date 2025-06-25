@@ -487,6 +487,54 @@
           "subheading3": "Legal bases:",
           "text3": "Legitimate interests (Art. 6(1)(1)(f) GDPR)."
         }
+      },
+      "update": {
+        "title": "Changes and Updates",
+        "p1": "We kindly ask you to regularly check the content of our privacy policy. We update this privacy policy whenever changes in our data processing activities make it necessary. We will inform you if such changes require any cooperation on your part (e.g., consent) or other individual notification.",
+        "p2": "If we provide addresses and contact details of companies and organizations in this privacy policy, please note that such information may change over time. Therefore, we ask you to verify these details before making contact."
+      },
+      "definition": {
+        "title": "Definitions of Terms",
+        "text": "This section provides an overview of the terminology used in this privacy policy. Where terms are defined by law, their legal definitions apply. The explanations below are intended primarily to aid understanding.",
+        "ul": {
+          "li1": {
+            "subheading": "Inventory Data:",
+            "text": "Inventory data includes essential information required to identify and manage contracting parties, user accounts, profiles, and similar associations. This data may include personal and demographic details such as names, contact information (addresses, phone numbers, email addresses), dates of birth, and specific identifiers (user IDs). Inventory data forms the basis for any formal interaction between individuals and services, institutions, or systems by enabling unique assignment and communication."
+          },
+          "li2": {
+            "subheading": "Content Data:",
+            "text": "Content data includes information generated during the creation, editing, and publication of content of all kinds. This category may encompass texts, images, videos, audio files, and other multimedia content published across various platforms and media. Content data is not limited to the content itself but also includes metadata that provides information about the content, such as tags, descriptions, author details, and publication dates."
+          },
+          "li3": {
+            "subheading": "Contact Data:",
+            "text": "Contact data consists of essential information that enables communication with individuals or organizations. This includes, for example, phone numbers, postal addresses, and email addresses, as well as communication channels such as social media handles and instant messaging identifiers."
+          },
+          "li4": {
+            "subheading": "Meta, Communication and Process Data:",
+            "text": "Meta, communication, and process data include information about how data is processed, transmitted, and managed. Metadata, also known as data about data, describes the context, origin, and structure of other data. It may include file size, creation date, document author, and change histories. Communication data captures exchanges between users via various channels, such as emails, call logs, messages on social networks, and chat histories, including involved persons, timestamps, and transmission paths. Process data describes procedures and workflows within systems or organizations, including workflow documentation, transaction logs, and activity logs used for auditing and monitoring."
+          },
+          "li5": {
+            "subheading": "Usage Data:",
+            "text": "Usage data refers to information that records how users interact with digital products, services, or platforms. This includes a wide range of details such as which features users engage with, time spent on specific pages, navigation paths, usage frequency, timestamps, IP addresses, device information, and location data. Usage data is particularly valuable for analyzing user behavior, optimizing user experience, personalizing content, and improving products or services. Additionally, it plays a crucial role in identifying trends, preferences, and potential problem areas in digital offerings."
+          },
+          "li6": {
+            "subheading": "Personal Data:",
+            "text": "\"Personal data\" refers to any information relating to an identified or identifiable natural person (hereinafter \"data subject\"). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, identification number, location data, online identifier (e.g., cookie), or one or more characteristics specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person."
+          },
+          "li7": {
+            "subheading": "Log Data:",
+            "text": "Log data consists of information about events or activities that have been recorded within a system or network. These typically include details such as timestamps, IP addresses, user actions, error messages, and other information concerning the use or operation of a system. Log data is often used for troubleshooting, security monitoring, or performance reporting."
+          },
+          "li8": {
+            "subheading": "Controller:",
+            "text": "The term \"controller\" refers to the natural or legal person, authority, agency, or other body that alone or jointly with others determines the purposes and means of the processing of personal data."
+          },
+          "li9": {
+            "subheading": "Processing:",
+            "text": "\"Processing\" means any operation or set of operations which is performed on personal data, whether or not by automated means. This term is broad and includes virtually any handling of data, such as collection, evaluation, storage, transmission, or deletion."
+          }
+        },
+        "a": "Created with the free privacy policy generator by Dr. Thomas Schwenke"
       }
     },
     "footer": "Imprint"
@@ -979,6 +1027,54 @@
           "subheading3": "Rechtsgrundlagen: ",
           "text3": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)."
         }
+      },
+      "update": {
+        "title": "Änderung und Aktualisierung",
+        "p1": "Wir bitten Sie, sich regelmäßig über den Inhalt unserer Datenschutzerklärung zu informieren. Wir passen die Datenschutzerklärung an, sobald die Änderungen der von uns durchgeführten Datenverarbeitungen dies erforderlich machen. Wir informieren Sie, sobald durch die Änderungen eine Mitwirkungshandlung Ihrerseits (z. B. Einwilligung) oder eine sonstige individuelle Benachrichtigung erforderlich wird.",
+        "p2": "Sofern wir in dieser Datenschutzerklärung Adressen und Kontaktinformationen von Unternehmen und Organisationen angeben, bitten wir zu beachten, dass die Adressen sich über die Zeit ändern können und bitten die Angaben vor Kontaktaufnahme zu prüfen."
+      },
+      "definition": {
+        "title": "Begriffsdefinitionen",
+        "text": "In diesem Abschnitt erhalten Sie eine Übersicht über die in dieser Datenschutzerklärung verwendeten Begrifflichkeiten. Soweit die Begrifflichkeiten gesetzlich definiert sind, gelten deren gesetzliche Definitionen. Die nachfolgenden Erläuterungen sollen dagegen vor allem dem Verständnis dienen.",
+        "ul": {
+          "li1": {
+            "subheading": "Bestandsdaten: ",
+            "text": "Bestandsdaten umfassen wesentliche Informationen, die für die Identifikation und Verwaltung von Vertragspartnern, Benutzerkonten, Profilen und ähnlichen Zuordnungen notwendig sind. Diese Daten können u.a. persönliche und demografische Angaben wie Namen, Kontaktinformationen (Adressen, Telefonnummern, E-Mail-Adressen), Geburtsdaten und spezifische Identifikatoren (Benutzer-IDs) beinhalten. Bestandsdaten bilden die Grundlage für jegliche formelle Interaktion zwischen Personen und Diensten, Einrichtungen oder Systemen, indem sie eine eindeutige Zuordnung und Kommunikation ermöglichen."
+          },
+          "li2": {
+            "subheading": "Inhaltsdaten: ",
+            "text": "Inhaltsdaten umfassen Informationen, die im Zuge der Erstellung, Bearbeitung und Veröffentlichung von Inhalten aller Art generiert werden. Diese Kategorie von Daten kann Texte, Bilder, Videos, Audiodateien und andere multimediale Inhalte einschließen, die auf verschiedenen Plattformen und Medien veröffentlicht werden. Inhaltsdaten sind nicht nur auf den eigentlichen Inhalt beschränkt, sondern beinhalten auch Metadaten, die Informationen über den Inhalt selbst liefern, wie Tags, Beschreibungen, Autoreninformationen und Veröffentlichungsdaten"
+          },
+          "li3": {
+            "subheading": "Kontaktdaten: ",
+            "text": "Kontaktdaten sind essentielle Informationen, die die Kommunikation mit Personen oder Organisationen ermöglichen. Sie umfassen u.a. Telefonnummern, postalische Adressen und E-Mail-Adressen, sowie Kommunikationsmittel wie soziale Medien-Handles und Instant-Messaging-Identifikatoren."
+          },
+          "li4": {
+            "subheading": "Meta-, Kommunikations- und Verfahrensdaten: ",
+            "text": "Meta-, Kommunikations- und Verfahrensdaten sind Kategorien, die Informationen über die Art und Weise enthalten, wie Daten verarbeitet, übermittelt und verwaltet werden. Meta-Daten, auch bekannt als Daten über Daten, umfassen Informationen, die den Kontext, die Herkunft und die Struktur anderer Daten beschreiben. Sie können Angaben zur Dateigröße, dem Erstellungsdatum, dem Autor eines Dokuments und den Änderungshistorien beinhalten. Kommunikationsdaten erfassen den Austausch von Informationen zwischen Nutzern über verschiedene Kanäle, wie E-Mail-Verkehr, Anrufprotokolle, Nachrichten in sozialen Netzwerken und Chat-Verläufe, inklusive der beteiligten Personen, Zeitstempel und Übertragungswege. Verfahrensdaten beschreiben die Prozesse und Abläufe innerhalb von Systemen oder Organisationen, einschließlich Workflow-Dokumentationen, Protokolle von Transaktionen und Aktivitäten, sowie Audit-Logs, die zur Nachverfolgung und Überprüfung von Vorgängen verwendet werden."
+          },
+          "li5": {
+            "subheading": "Nutzungsdaten: ",
+            "text": "Nutzungsdaten beziehen sich auf Informationen, die erfassen, wie Nutzer mit digitalen Produkten, Dienstleistungen oder Plattformen interagieren. Diese Daten umfassen eine breite Palette von Informationen, die aufzeigen, wie Nutzer Anwendungen nutzen, welche Funktionen sie bevorzugen, wie lange sie auf bestimmten Seiten verweilen und über welche Pfade sie durch eine Anwendung navigieren. Nutzungsdaten können auch die Häufigkeit der Nutzung, Zeitstempel von Aktivitäten, IP-Adressen, Geräteinformationen und Standortdaten einschließen. Sie sind besonders wertvoll für die Analyse des Nutzerverhaltens, die Optimierung von Benutzererfahrungen, das Personalisieren von Inhalten und das Verbessern von Produkten oder Dienstleistungen. Darüber hinaus spielen Nutzungsdaten eine entscheidende Rolle beim Erkennen von Trends, Vorlieben und möglichen Problembereichen innerhalb digitaler Angebote"
+          },
+          "li6": {
+            "subheading": "Personenbezogene Daten: ",
+            "text": "\"Personenbezogene Daten\" sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden \"betroffene Person\") beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z. B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind."
+          },
+          "li7": {
+            "subheading": "Protokolldaten: ",
+            "text": "Protokolldaten sind Informationen über Ereignisse oder Aktivitäten, die in einem System oder Netzwerk protokolliert wurden. Diese Daten enthalten typischerweise Informationen wie Zeitstempel, IP-Adressen, Benutzeraktionen, Fehlermeldungen und andere Details über die Nutzung oder den Betrieb eines Systems. Protokolldaten werden oft zur Analyse von Systemproblemen, zur Sicherheitsüberwachung oder zur Erstellung von Leistungsberichten verwendet."
+          },
+          "li8": {
+            "subheading": "Verantwortlicher: ",
+            "text": "Als \"Verantwortlicher\" wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet, bezeichnet."
+          },
+          "li9": {
+            "subheading": "Verarbeitung: ",
+            "text": "\"Verarbeitung\" ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten, sei es das Erheben, das Auswerten, das Speichern, das Übermitteln oder das Löschen."
+          }
+        },
+        "a": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke"
       }
     },
     "footer": "Impressum"
