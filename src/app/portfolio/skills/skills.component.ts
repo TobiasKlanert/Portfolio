@@ -10,13 +10,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-  skillNames = [
+  frontendSkills = [
     'Angular',
     'TypeScript',
     'JavaScript',
     'HTML',
-    'CSS/SCSS',
+    'CSS / SCSS',
   ];
+  backendSkills = ['Django', 'Python', 'DRF', 'PostgreSQL', 'Docker'];
 
   constructor(public translationService: TranslationService) {}
 }

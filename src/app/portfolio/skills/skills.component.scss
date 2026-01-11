@@ -112,18 +112,33 @@ section {
   }
 
   .skills {
-    @include dFlex($ai: self-start, $g: 40px);
-    flex-wrap: wrap;
+    @include dFlex($fd: column, $ai: flex-start, $g: 32px);
     position: absolute;
     bottom: 100px;
     right: 112px;
     width: clamp(288px, 92vw, 640px);
 
+    .skills-block {
+      @include dFlex($fd: column, $ai: flex-start, $g: 16px);
+      width: 100%;
+
+      h3 {
+        @include standardText($fs: 20px, $fw: 700);
+      }
+    }
+
+    .skills-grid {
+      @include dFlex($ai: flex-start, $g: 40px);
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
     .skill-item {
       @include dFlex($fd: column, $g: 8px);
+      width: 85px;
 
       img {
-        width: 96px;
+        width: 60px;
         flex: 0 0 calc(20% - 40px);
         transition: transform 200ms ease-in-out;
         &:hover {
@@ -163,7 +178,6 @@ section {
       }
 
       .skill-item img {
-        width: 72px;
         @include wobbling-animation;
       }
     }
@@ -177,7 +191,7 @@ section {
   }
 
   @media screen and (max-width: 768px) {
-    .skills {
+    .skills-grid {
       gap: 12px;
     }
   }

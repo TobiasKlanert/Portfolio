@@ -29,9 +29,11 @@
     "skills": {
       "headline": "Core Competencies",
       "text": "In my projects, I use modern <strong>frontend and backend technologies</strong> to build complete web applications, covering everything from the user interface to data processing.<br><br>On the frontend, I focus on <strong>responsive layouts</strong>, clear structures, and intuitive user experiences. On the backend, I develop <strong>structured APIs</strong>, work with databases, and ensure clean interfaces between systems.<br><br>Across both layers, I place strong emphasis on <strong>maintainable code</strong>, a clear architecture, and solutions that <strong>operate reliably in production</strong>.",
+      "frontendTitle": "Frontend",
+      "backendTitle": "Backend",
       "hiddenMenu": {
-        "headline": "Don't see the skill you are looking for?",
-        "text": "Feel free to contact me. I look forward to expanding on my previous knowledge. Also I have a special interest in learning:"
+        "headline": "Open to new technologies",
+        "text": "Beyond my current tech stack, I am open to expanding my skills by working with new technologies and concepts. I focus on learning things in a structured way and integrating them sustainably into real projects."
       }
     },
     "portfolio": {
@@ -525,10 +527,12 @@
     },
     "skills": {
       "headline": "Meine Skills",
+      "frontendTitle": "Frontend",
+      "backendTitle": "Backend",
       "text": "In meinen Projekten setze ich moderne <strong>Frontend- und Backend-Technologien</strong> ein, um vollständige Webanwendungen von der Oberfläche bis zur Datenverarbeitung umzusetzen.<br><br>Im Frontend liegt mein Fokus auf <strong>responsiven Layouts</strong>, klaren Strukturen und einer intuitiven Benutzerführung. Im Backend entwickle ich <strong>strukturierte APIs</strong>, arbeite mit Datenbanken und achte auf saubere Schnittstellen zwischen den Systemen.<br><br>Über beide Ebenen hinweg lege ich großen Wert auf <strong>wartbaren Code</strong>, nachvollziehbare Architektur und Lösungen, die im <strong>Betrieb zuverlässig funktionieren</strong>.",
       "hiddenMenu": {
-        "headline": "Nicht die passende Fähigkeit gefunden?",
-        "text": "Melden Sie sich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen. Besonders interessiert bin ich an folgenden Lernfeldern:"
+        "headline": "Offen für neue Technologien",
+        "text": "Neben meinem aktuellen Tech-Stack bin ich offen dafür, mich gezielt in neue Technologien und Konzepte einzuarbeiten. Ich lege Wert darauf, Neues nicht nur kennenzulernen, sondern nachhaltig in Projekte zu integrieren."
       }
     },
     "portfolio": {

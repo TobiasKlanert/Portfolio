@@ -38,29 +38,41 @@
             <p>
               {{ translationService.translate("skills.hiddenMenu.text") }}
             </p>
-            <div class="learning-skills">
-              <div class="learning-item">
-                <img src="/assets/img/skill_react.svg" alt="React" />
-                <p>React</p>
-              </div>
-              <div class="learning-item">
-                <img src="/assets/img/skill_vue_js.svg" alt="Vue.Js" />
-                <p>Vue.Js</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="skills">
-    @for (index of [0,1,2,3,4,5,6,7,8,9]; track $index) {
-    <div class="skill-item">
-      <img src="/assets/img/skill_{{ index + 1 }}.svg" 
-      [ngStyle]="{ 'animation-delay': (index * 0.15) + 's' }"
-      />
-      <p [innerHTML]="skillNames[index]"></p>
+    <div class="skills-block">
+      <h3>{{ translationService.translate("skills.frontendTitle") }}</h3>
+      <div class="skills-grid">
+        @for (skill of frontendSkills; track $index) {
+        <div class="skill-item">
+          <img
+            src="/assets/img/skill_{{ $index + 1 }}.svg"
+            [ngStyle]="{ 'animation-delay': $index * 0.15 + 's' }"
+          />
+          <p [innerHTML]="skill"></p>
+        </div>
+        }
+      </div>
     </div>
-    }
+    <div class="skills-block">
+      <h3>{{ translationService.translate("skills.backendTitle") }}</h3>
+      <div class="skills-grid">
+        @for (skill of backendSkills; track $index) {
+        <div class="skill-item">
+          <img
+            src="/assets/img/skill_{{ $index + frontendSkills.length + 1 }}.svg"
+            [ngStyle]="{
+              'animation-delay': ($index + frontendSkills.length) * 0.15 + 's'
+            }"
+          />
+          <p [innerHTML]="skill"></p>
+        </div>
+        }
+      </div>
+    </div>
   </div>
 </section>
