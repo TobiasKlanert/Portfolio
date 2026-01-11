@@ -26,7 +26,7 @@ section {
   .textbox-wrapper {
     position: absolute;
     left: 39%;
-    top: 40%;
+    top: 35%;
   }
 
   @media screen and (max-width: 1200px) {
@@ -73,7 +73,7 @@ section {
 
   @media screen and (max-width: 480px) {
     .textbox-wrapper {
-      transform: translateY(-25%);
+      transform: translateY(-18%);
     }
   }
 }
@@ -83,7 +83,7 @@ section {
 // =======================
 .textbox {
   @include dFlex($fd: column, $jc: space-between, $g: 32px);
-  width: clamp(240px, 41.67vw, 600px);
+  width: clamp(300px, 41.67vw, 600px);
   min-height: 250px;
   background-color: $background-dark;
   color: $highlight-white;
@@ -118,10 +118,10 @@ section {
   .overlay {
     @include dFlex($fd: column, $g: 16px);
     position: absolute;
-    bottom: -285px;
+    bottom: -240px;
     right: -210px;
     z-index: 10;
-    width: 272px;
+    width: 300px;
     padding-top: 32px;
     border: 1px solid $highlight-dark;
     border-radius: 4px;

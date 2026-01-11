@@ -11,16 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 export class SkillsComponent {
   skillNames = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'TypeScript',
     'Angular',
-    'Firebase',
-    'Git',
-    'Rest-Api',
-    'Scrum',
-    'Material <br> Design',
+    'TypeScript',
+    'JavaScript',
+    'HTML',
+    'CSS/SCSS',
   ];
 
   constructor(public translationService: TranslationService) {}

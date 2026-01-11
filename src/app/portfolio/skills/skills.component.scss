@@ -12,7 +12,7 @@ section {
   }
 
   .textbox {
-    width: clamp(288px, 92vw, 600px);
+    width: clamp(288px, 92vw, 90%/* 600px */);
     background-color: $background-blue;
     padding: 32px;
     border-radius: 4px;

@@ -2,7 +2,7 @@
   "en": {
     "hero": {
       "greeting": "Hello there! I'm",
-      "title": "Frontend Developer",
+      "title": "Full-Stack Web Developer",
       "contact": "Get in Touch"
     },
     "menu": {
@@ -14,21 +14,21 @@
     },
     "aboutMe": {
       "headline": "About Me",
-      "text": "Hey there, I'm Tobias. I have been working as an IT systems administrator for over 10 years, during which I discovered my passion for programming. What fascinates me most is the creative yet analytical challenge of developing functional and user-friendly solutions. I see every new task as an opportunity to further enhance my skills and to find more efficient and elegant approaches. Let's connect and create something amazing together!",
-      "button": "Let's Talk",
+      "text": "I am a <strong>Full-Stack Web Developer</strong> with over <strong>ten years of experience in IT</strong> and a strong technical foundation in <strong>system administration</strong>.<br><br>Throughout my career, I have learned to not only build software, but to <strong>think in terms of real-world operation</strong>: stability, maintainability, and clarity. I combine this mindset with <strong>modern frontend and backend web development</strong>.<br><br>I value <strong>clean structure</strong>, <strong>clear logic</strong>, and solutions that <strong>work reliably in the long term</strong>. In my projects, I take responsibility <strong>from the initial idea to a production-ready application</strong> — whether working independently or as part of a team.",
+      "button": "View projects",
       "hiddenMenu": {
         "headline": "More about me",
-        "first": "Team player",
-        "second": "Continuosly learning",
-        "third": "Creative Thinker",
-        "thourth": "Based in Saxony-Anhalt",
-        "fifth": "Open to work remote",
-        "sixth": "Open to relocate"
+        "first": "Many years of experience in IT",
+        "second": "Focus on full-stack web development",
+        "third": "Structured and solution-oriented approach",
+        "fourth": "Based in Saxony-Anhalt, Germany",
+        "fifth": "Open to relocation",
+        "sixth": "Remote work possible"
       }
     },
     "skills": {
       "headline": "Core Competencies",
-      "text": "In my projects, I have worked with a wide range of modern front-end technologies to develop both static and dynamic websites. My focus is on creating responsive layouts, intuitive user interfaces, and smooth user experiences. I place great importance on clean, maintainable code and a user-centered design approach.",
+      "text": "In my projects, I use modern <strong>frontend and backend technologies</strong> to build complete web applications, covering everything from the user interface to data processing.<br><br>On the frontend, I focus on <strong>responsive layouts</strong>, clear structures, and intuitive user experiences. On the backend, I develop <strong>structured APIs</strong>, work with databases, and ensure clean interfaces between systems.<br><br>Across both layers, I place strong emphasis on <strong>maintainable code</strong>, a clear architecture, and solutions that <strong>operate reliably in production</strong>.",
       "hiddenMenu": {
         "headline": "Don't see the skill you are looking for?",
         "text": "Feel free to contact me. I look forward to expanding on my previous knowledge. Also I have a special interest in learning:"
@@ -499,7 +499,7 @@
   "de": {
     "hero": {
       "greeting": "Hallo, ich bin",
-      "title": "Frontend-Entwickler",
+      "title": "Full-Stack Webentwickler",
       "contact": "Kontakt aufnehmen"
     },
     "menu": {
@@ -511,21 +511,21 @@
     },
     "aboutMe": {
       "headline": "Über mich",
-      "text": "Hallo, ich bin Tobias! Ich bin seit über 10 Jahren als IT-Systemadministrator tätig und habe dabei meine Leidenschaft für das Programmieren entdeckt. Besonders fasziniert mich die kreative und zugleich analytische Herausforderung, funktionale und benutzerfreundliche Lösungen zu entwickeln. Jede neue Aufgabe sehe ich als Chance, meine Fähigkeiten weiterzuentwickeln und effizientere sowie elegantere Ansätze zu finden. Lassen Sie uns in Kontakt treten und gemeinsam Großartiges schaffen!",
-      "button": "Sprechen wir",
+      "text": "Ich bin <strong>Full-Stack Webentwickler</strong> mit über <strong>zehn Jahren Erfahrung in der IT</strong> und einem starken technischen Fundament aus dem Bereich <strong>Systemadministration</strong>.<br><br>In meiner aktuellen Laufbahn habe ich gelernt, Software nicht nur zu entwickeln, sondern auch <strong>im Betrieb zu denken</strong>: stabil, wartbar und nachvollziehbar. Dieses Verständnis verbinde ich heute mit <strong>moderner Webentwicklung im Frontend und Backend</strong>.<br><br>Besonders wichtig ist mir <strong>saubere Struktur</strong>, <strong>klare Logik</strong> und Lösungen, die <strong>langfristig funktionieren</strong>. In meinen Projekten übernehme ich Verantwortung <strong>von der Idee bis zur lauffähigen Anwendung</strong> – allein oder im Team.",
+      "button": "Projekte ansehen",
       "hiddenMenu": {
         "headline": "Mehr über mich",
-        "first": "Teamplayer",
-        "second": "Stetig lernend",
-        "third": "Kreativer Denker",
-        "thourth": "Ansässig in Sachsen-Anhalt",
-        "fifth": "Offen für Remote-Arbeit",
-        "sixth": "Offen für einen Umzug"
+        "first": "Langjährige IT-Erfahrung",
+        "second": "Schwerpunkt Full-Stack-Webentwicklung",
+        "third": "Strukturiertes und lösungsorientiertes Arbeiten",
+        "fourth": "Ansässig in Sachsen-Anhalt",
+        "fifth": "Offen für einen Umzug",
+        "sixth": "Remote-Arbeit möglich"
       }
     },
     "skills": {
       "headline": "Meine Skills",
-      "text": "In meinen Projekten habe ich eine Vielzahl moderner Front-End-Technologien eingesetzt, um sowohl statische als auch dynamische Websites zu realisieren. Mein Fokus liegt auf der Entwicklung responsiver Layouts, intuitiver Benutzeroberflächen und reibungsloser Nutzererfahrungen. Dabei lege ich besonderen Wert auf sauberen, wartbaren Code und eine zielgerichtete User Experience.",
+      "text": "In meinen Projekten setze ich moderne <strong>Frontend- und Backend-Technologien</strong> ein, um vollständige Webanwendungen von der Oberfläche bis zur Datenverarbeitung umzusetzen.<br><br>Im Frontend liegt mein Fokus auf <strong>responsiven Layouts</strong>, klaren Strukturen und einer intuitiven Benutzerführung. Im Backend entwickle ich <strong>strukturierte APIs</strong>, arbeite mit Datenbanken und achte auf saubere Schnittstellen zwischen den Systemen.<br><br>Über beide Ebenen hinweg lege ich großen Wert auf <strong>wartbaren Code</strong>, nachvollziehbare Architektur und Lösungen, die im <strong>Betrieb zuverlässig funktionieren</strong>.",
       "hiddenMenu": {
         "headline": "Nicht die passende Fähigkeit gefunden?",
         "text": "Melden Sie sich gerne bei mir. Ich freue mich darauf, mein Wissen weiter auszubauen. Besonders interessiert bin ich an folgenden Lernfeldern:"

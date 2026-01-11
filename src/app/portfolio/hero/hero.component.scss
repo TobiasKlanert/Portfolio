@@ -6,6 +6,7 @@ section {
   @include dFlex($jc: space-between);
   background-color: $background-blue;
   color: $highlight-white;
+  overflow-x: hidden;
 
   .left-side {
     @include dFlex($fd: column, $jc: space-between, $ai: flex-start);

@@ -7,11 +7,9 @@
   </div>
   <div class="textbox-wrapper">
     <div class="textbox">
-      <p>
-        {{ translationService.translate("aboutMe.text") }}
-      </p>
+      <p [innerHTML]="translationService.translate('aboutMe.text')"></p>
       <div class="textbox-footer">
-        <a href="#contact">{{
+        <a href="#work">{{
           translationService.translate("aboutMe.button")
         }}</a>
         <div class="overlay-wrapper">
@@ -60,7 +58,7 @@
                 </li>
                 <li>
                   <img src="/assets/img/check_circle.svg" alt="Checkmark" />{{
-                    translationService.translate("aboutMe.hiddenMenu.thourth")
+                    translationService.translate("aboutMe.hiddenMenu.fourth")
                   }}
                 </li>
                 <li>
