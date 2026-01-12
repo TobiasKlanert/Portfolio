@@ -45,6 +45,36 @@ export class WorkComponent {
       spinner: '/assets/img/spinning_shape.svg',
       linksActive: false,
     },
+    {
+      technologies: ['Python', 'Django', 'DRF'],
+      github: 'https://github.com/TobiasKlanert/Coderr-Backend',
+      liveLink: 'https://coderr.tobias-klanert.de',
+      icon: '/assets/img/icon_coderr.svg',
+      screenshot: '/assets/img/screenshot-coderr.png',
+      bgColor: '#F9AF42',
+      spinner: '/assets/img/spinning_shape.svg',
+      linksActive: false,
+    },
+    {
+      technologies: ['Python', 'Django', 'DRF'],
+      github: 'https://github.com/TobiasKlanert/Quizly-Backend',
+      liveLink: 'https://quizly.tobias-klanert.de',
+      icon: '/assets/img/icon_quizly.png',
+      screenshot: '/assets/img/screenshot-quizly.png',
+      bgColor: '#FF834F',
+      spinner: '/assets/img/spinning_shape_yellow.svg',
+      linksActive: false,
+    },
+    {
+      technologies: ['Python', 'Django', 'DRF'],
+      github: 'https://github.com/TobiasKlanert/Videoflix-Backend',
+      liveLink: 'https://videoflix.tobias-klanert.de',
+      icon: '/assets/img/icon_videoflix.svg',
+      screenshot: '/assets/img/screenshot-videoflix.png',
+      bgColor: '#679AAC',
+      spinner: '/assets/img/spinning_shape.svg',
+      linksActive: false,
+    },
   ];
 
   openLink(url: string) {

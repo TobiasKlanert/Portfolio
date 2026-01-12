@@ -55,6 +55,21 @@
         "title": "Coming soon: DABubble",
         "description": "<strong>DaBubble</strong> is a web-based <strong>chat and collaboration tool</strong>, inspired by Slack. The application enables <strong>real-time messaging</strong>, structured channels, and an organized way to manage team communication.",
         "details": "DaBubble is a <strong>collaboratively developed chat and collaboration tool</strong>, inspired by the core functionality of Slack. My main focus was on the technical implementation of key application areas, including the <strong>setup and integration of the Firebase database</strong>, the implementation of <strong>channels and chat functionality</strong>, <strong>user profile management</strong>, and the implementation of a <strong>responsive design</strong> for different devices."
+      },
+      "project4": {
+        "title": "Coderr",
+        "description": "",
+        "details": ""
+      },
+      "project5": {
+        "title": "Quizly",
+        "description": "",
+        "details": ""
+      },
+      "project6": {
+        "title": "Videoflix",
+        "description": "",
+        "details": ""
       }
     },
     "references": {
@@ -554,6 +569,21 @@
         "title": "In Entwicklung: DABubble",
         "description": "<strong>DaBubble</strong> ist ein webbasiertes <strong>Chat- und Kollaborationstool</strong>, orientiert an Slack. Die Anwendung ermöglicht <strong>Echtzeitkommunikation</strong>, strukturierte Kanäle und eine übersichtliche Organisation von Team-Unterhaltungen.",
         "details": "DaBubble ist ein <strong>im Team entwickeltes Chat- und Kollaborationstool</strong>, das sich an den grundlegenden Funktionen von Slack orientiert. Mein Schwerpunkt lag auf der technischen Umsetzung zentraler Anwendungsbereiche. Dazu gehörten die <strong>Einrichtung und Anbindung der Firebase-Datenbank</strong>, die Umsetzung von <strong>Channel- und Chat-Funktionalitäten</strong>, die <strong>Profilverwaltung</strong> sowie die Umsetzung eines <strong>responsiven Designs</strong> für unterschiedliche Endgeräte."
+      },
+      "project4": {
+        "title": "Coderr",
+        "description": "<strong>Coderr</strong> ist ein Backend für eine <strong>Freelancer-Entwicklerplattform</strong>. Es stellt eine <strong>token-gesicherte REST-API</strong> bereit – inklusive Authentifizierung sowie Endpunkten für Angebote, Bestellungen, Bewertungen und einfache Dashboard-Metriken.",
+        "details": ""
+      },
+      "project5": {
+        "title": "Quizly",
+        "description": "",
+        "details": ""
+      },
+      "project6": {
+        "title": "Videoflix",
+        "description": "",
+        "details": ""
       }
     },
     "references": {
