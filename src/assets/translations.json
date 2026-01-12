@@ -14,7 +14,7 @@
     },
     "aboutMe": {
       "headline": "About Me",
-      "text": "I am a <strong>Full-Stack Web Developer</strong> with over <strong>ten years of experience in IT</strong> and a strong technical foundation in <strong>system administration</strong>.<br><br>Throughout my career, I have learned to not only build software, but to <strong>think in terms of real-world operation</strong>: stability, maintainability, and clarity. I combine this mindset with <strong>modern frontend and backend web development</strong>.<br><br>I value <strong>clean structure</strong>, <strong>clear logic</strong>, and solutions that <strong>work reliably in the long term</strong>. In my projects, I take responsibility <strong>from the initial idea to a production-ready application</strong> — whether working independently or as part of a team.",
+      "text": "I am a <strong>Full-Stack Web Developer</strong> with over <strong>ten years of experience in IT</strong> and a strong technical foundation in <strong>system administration</strong>.<br><br>Throughout my career, I have learned to not only build software, but to <strong>think in terms of real-world operation</strong>: stability, maintainability, and clarity. I combine this mindset with <strong>modern frontend and backend web development</strong>.<br><br>I value <strong>clean structure</strong>, <strong>clear logic</strong>, and solutions that <strong>work reliably in the long term</strong>. In my projects, I work with well-defined requirements and implement them in a <strong>reliable and transparent</strong> way — whether working independently or as part of a team.",
       "button": "View projects",
       "hiddenMenu": {
         "headline": "More about me",
@@ -38,23 +38,23 @@
     },
     "portfolio": {
       "headline": "My work",
-      "introduction": "Explore a selection of my work here - Interact with the projects to see my skills in action.",
+      "introduction": "A selection of my projects in which I implemented predefined designs and functional requirements into working web applications. The applications are available as live demos and showcase my technical approach in practice.",
       "buttonNext": "Next project",
       "buttonPrevious": "Previous project",
       "project1": {
         "title": "Join",
-        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "details": "Join is a collaboratively developed project management tool. I was primarily responsible for setting up the Firebase database, developing the interfaces to the web application, and implementing user registration, login, and the task board."
+        "description": "<strong>Join</strong> is a web-based <strong>kanban management system</strong> designed to organize tasks and workflows. Tasks can be managed via <strong>drag and drop</strong>, assigned to users and categories, and structured clearly within boards.",
+        "details": "Join is a <strong>collaboratively developed project management tool</strong> created as part of a team project. My focus was on the technical implementation of core features, including the <strong>setup and structuring of the Firebase database</strong>, connecting the web application to the database, and implementing <strong>user registration, login, and the task board</strong>."
       },
       "project2": {
         "title": "Sharkie",
-        "description": "A simple Jump-and-Run game based on an object-oriented approach.",
+        "description": "<strong>Sharkie</strong> is a browser-based <strong>jump-and-run game</strong> implemented entirely in <strong>JavaScript</strong>. The game logic follows an <strong>object-oriented approach</strong> and covers core gameplay mechanics such as movement, collision detection, and enemy behavior.",
         "details": "Sharkie is a browser game that I implemented independently. The focus was on object-oriented programming with JavaScript – a technical challenge that I thoroughly enjoyed."
       },
       "project3": {
         "title": "Coming soon: DABubble",
-        "description": "This App is a Slack Clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization",
-        "details": "This project is being developed as part of a group collaboration and is currently in progress. The goal is to create a Slack-like messenger built with Angular."
+        "description": "<strong>DaBubble</strong> is a web-based <strong>chat and collaboration tool</strong>, inspired by Slack. The application enables <strong>real-time messaging</strong>, structured channels, and an organized way to manage team communication.",
+        "details": "DaBubble is a <strong>collaboratively developed chat and collaboration tool</strong>, inspired by the core functionality of Slack. My main focus was on the technical implementation of key application areas, including the <strong>setup and integration of the Firebase database</strong>, the implementation of <strong>channels and chat functionality</strong>, <strong>user profile management</strong>, and the implementation of a <strong>responsive design</strong> for different devices."
       }
     },
     "references": {
@@ -513,7 +513,7 @@
     },
     "aboutMe": {
       "headline": "Über mich",
-      "text": "Ich bin <strong>Full-Stack Webentwickler</strong> mit über <strong>zehn Jahren Erfahrung in der IT</strong> und einem starken technischen Fundament aus dem Bereich <strong>Systemadministration</strong>.<br><br>In meiner aktuellen Laufbahn habe ich gelernt, Software nicht nur zu entwickeln, sondern auch <strong>im Betrieb zu denken</strong>: stabil, wartbar und nachvollziehbar. Dieses Verständnis verbinde ich heute mit <strong>moderner Webentwicklung im Frontend und Backend</strong>.<br><br>Besonders wichtig ist mir <strong>saubere Struktur</strong>, <strong>klare Logik</strong> und Lösungen, die <strong>langfristig funktionieren</strong>. In meinen Projekten übernehme ich Verantwortung <strong>von der Idee bis zur lauffähigen Anwendung</strong> – allein oder im Team.",
+      "text": "Ich bin <strong>Full-Stack Webentwickler</strong> mit über <strong>zehn Jahren Erfahrung in der IT</strong> und einem starken technischen Fundament aus dem Bereich <strong>Systemadministration</strong>.<br><br>In meiner aktuellen Laufbahn habe ich gelernt, Software nicht nur zu entwickeln, sondern auch <strong>im Betrieb zu denken</strong>: stabil, wartbar und nachvollziehbar. Dieses Verständnis verbinde ich heute mit <strong>moderner Webentwicklung im Frontend und Backend</strong>.<br><br>Besonders wichtig ist mir <strong>saubere Struktur</strong>, <strong>klare Logik</strong> und Lösungen, die <strong>langfristig funktionieren</strong>. In meinen Projekten arbeite ich auf Basis klarer Anforderungen und setze diese <strong>verlässlich und nachvollziehbar</strong> um – allein oder im Team.",
       "button": "Projekte ansehen",
       "hiddenMenu": {
         "headline": "Mehr über mich",
@@ -537,23 +537,23 @@
     },
     "portfolio": {
       "headline": "Meine Projekte",
-      "introduction": "Entdecken Sie eine Auswahl meiner Projekte – interagieren Sie mit den Anwendungen, um meine Fähigkeiten live zu erleben.",
+      "introduction": "Eine Auswahl meiner Projekte, in denen ich vorgegebene Designs und funktionale Anforderungen in lauffähige Webanwendungen umgesetzt habe. Die Anwendungen sind als Demos live nutzbar und zeigen meine technische Herangehensweise in der Praxis.",
       "buttonNext": "Nächstes Projekt",
       "buttonPrevious": "Vorheriges Projekt",
       "project1": {
         "title": "Join",
-        "description": "Ein Aufgabenmanager inspiriert vom Kanban-System. Aufgaben lassen sich per Drag & Drop erstellen, organisieren, Nutzern und Kategorien zuweisen.",
-        "details": "Join ist ein gemeinschaftlich entwickeltes Projektmanagement-Tool. Ich war dabei maßgeblich für die Einrichtung der Firebase-Datenbank, die Schnittstellen zur Webanwendung sowie die Implementierung von Registrierung, Login und Task-Board verantwortlich."
+        "description": "<strong>Join</strong> ist ein webbasiertes <strong>Kanban-Management-System</strong> zur Organisation von Aufgaben und Workflows. Aufgaben lassen sich per <strong>Drag & Drop</strong> verwalten, Kategorien und Nutzern zuweisen und übersichtlich in Boards organisieren.",
+        "details": "Join ist ein <strong>gemeinschaftlich entwickeltes Projektmanagement-Tool</strong>, das im Team umgesetzt wurde. Mein Schwerpunkt lag auf der technischen Umsetzung zentraler Funktionen. Dazu gehörten die <strong>Einrichtung und Strukturierung der Firebase-Datenbank</strong>, die Anbindung der Webanwendung an die Datenbank sowie die Implementierung von <strong>Registrierung, Login und dem Task-Board</strong>."
       },
       "project2": {
         "title": "Sharkie",
-        "description": "Ein einfaches Jump-and-Run-Spiel, entwickelt mit einem objektorientierten Ansatz.",
-        "details": "Sharkie ist ein Browser-Game, das ich eigenständig umgesetzt habe. Der Fokus lag auf objektorientierter Programmierung mit JavaScript – eine technische Herausforderung, die mir großen Spaß gemacht hat."
+        "description": "<strong>Sharkie</strong> ist ein browserbasiertes <strong>Jump-and-Run-Spiel</strong>, das vollständig mit <strong>JavaScript</strong> umgesetzt wurde. Die Spiellogik basiert auf einem <strong>objektorientierten Ansatz</strong> und bildet typische Gameplay-Mechaniken wie Bewegung, Kollisionen und Gegnerverhalten ab.",
+        "details": "Sharkie ist ein <strong>eigenständig umgesetztes Browser-Game</strong>, bei dem der Schwerpunkt auf einer sauberen <strong>objektorientierten Struktur</strong> lag. Ich habe die Spiellogik vollständig in JavaScript umgesetzt und dabei Konzepte wie <strong>Klassen, Vererbung und Kapselung</strong> genutzt, um Spielobjekte, Bewegungen und Interaktionen klar zu strukturieren."
       },
       "project3": {
         "title": "In Entwicklung: DABubble",
-        "description": "Diese App ist ein Slack-Klon. Sie verbessert Teamkommunikation und Zusammenarbeit durch eine intuitive Oberfläche, Echtzeitnachrichten und eine strukturierte Kanalverwaltung.",
-        "details": "Dieses Projekt entsteht im Rahmen einer Gruppenarbeit und befindet sich derzeit in der Entwicklung. Ziel ist es, einen Slack-ähnlichen Messenger auf Basis von Angular umzusetzen."
+        "description": "<strong>DaBubble</strong> ist ein webbasiertes <strong>Chat- und Kollaborationstool</strong>, orientiert an Slack. Die Anwendung ermöglicht <strong>Echtzeitkommunikation</strong>, strukturierte Kanäle und eine übersichtliche Organisation von Team-Unterhaltungen.",
+        "details": "DaBubble ist ein <strong>im Team entwickeltes Chat- und Kollaborationstool</strong>, das sich an den grundlegenden Funktionen von Slack orientiert. Mein Schwerpunkt lag auf der technischen Umsetzung zentraler Anwendungsbereiche. Dazu gehörten die <strong>Einrichtung und Anbindung der Firebase-Datenbank</strong>, die Umsetzung von <strong>Channel- und Chat-Funktionalitäten</strong>, die <strong>Profilverwaltung</strong> sowie die Umsetzung eines <strong>responsiven Designs</strong> für unterschiedliche Endgeräte."
       }
     },
     "references": {

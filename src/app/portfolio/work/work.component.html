@@ -50,29 +50,16 @@
                   </svg>
                 </button>
               </div>
-              <p>
-                {{
-                  translationService.translate(
-                    "portfolio.project" + (currentProjectIndex + 1) + ".details"
-                  )
-                }}
-              </p>
+              <p [innerHTML]="translationService.translate('portfolio.project' + (currentProjectIndex + 1) + '.details')"></p>
             </div>
           </div>
         </div>
         <p class="project-techstack">
           {{ projects[currentProjectIndex].technologies.join(" | ") }}
         </p>
-        <p>
-          {{
-            translationService.translate(
-              "portfolio.project" + (currentProjectIndex + 1) + ".description"
-            )
-          }}
-        </p>
+        <p [innerHTML]="translationService.translate('portfolio.project' + (currentProjectIndex + 1) + '.description')"></p>
         <div class="project-buttons">
           <button
-            [disabled]="!projects[currentProjectIndex].linksActive"
             (click)="openLink(projects[currentProjectIndex].github)"
             type="button"
           >

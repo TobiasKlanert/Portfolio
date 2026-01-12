@@ -37,7 +37,7 @@ export class WorkComponent {
     },
     {
       technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
-      github: 'https://github.com/TobiasKlanert',
+      github: 'https://github.com/TobiasKlanert/dabubble',
       liveLink: 'https://dabubble.tobias-klanert.de',
       icon: '/assets/img/icon_dabubble.svg',
       screenshot: '/assets/img/screenshot-dabubble.png',
@@ -48,9 +48,7 @@ export class WorkComponent {
   ];
 
   openLink(url: string) {
-    if (this.projects[this.currentProjectIndex].linksActive) {
-      window.open(url, '_blank');
-    }
+    window.open(url, '_blank');
   }
 
   nextProject() {
