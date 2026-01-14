@@ -16,7 +16,7 @@ export class WorkComponent {
 
   projects = [
     {
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+      technologies: ['JavaScript', 'Firebase', 'Drag & Drop', 'HTML', 'CSS'],
       github: 'https://github.com/TobiasKlanert/Join',
       liveLink: 'https://join.tobias-klanert.de',
       icon: '/assets/img/icon_join.svg',
@@ -26,7 +26,7 @@ export class WorkComponent {
       linksActive: true,
     },
     {
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      technologies: ['JavaScript', 'OOP', 'HTML', 'CSS'],
       github: 'https://github.com/TobiasKlanert/Sharkie',
       liveLink: 'https://sharkie.tobias-klanert.de',
       icon: '/assets/img/icon_shark.svg',
@@ -36,7 +36,7 @@ export class WorkComponent {
       linksActive: true,
     },
     {
-      technologies: ['HTML', 'CSS', 'Firebase', 'Angular', 'TypeScript'],
+      technologies: ['Angular', 'TypeScript', 'Firebase', 'Real-time Data'],
       github: 'https://github.com/TobiasKlanert/dabubble',
       liveLink: 'https://dabubble.tobias-klanert.de',
       icon: '/assets/img/icon_dabubble.svg',
@@ -46,7 +46,7 @@ export class WorkComponent {
       linksActive: false,
     },
     {
-      technologies: ['Python', 'Django', 'DRF'],
+      technologies: ['Django', 'DRF', 'Python', 'JWT Authentication'],
       github: 'https://github.com/TobiasKlanert/Coderr-Backend',
       liveLink: 'https://coderr.tobias-klanert.de',
       icon: '/assets/img/icon_coderr.svg',
@@ -56,7 +56,14 @@ export class WorkComponent {
       linksActive: false,
     },
     {
-      technologies: ['Python', 'Django', 'DRF'],
+      technologies: [
+        'Django',
+        'DRF',
+        'Python',
+        'FFmpeg',
+        'Whisper',
+        'Gemini API',
+      ],
       github: 'https://github.com/TobiasKlanert/Quizly-Backend',
       liveLink: 'https://quizly.tobias-klanert.de',
       icon: '/assets/img/icon_quizly.png',
@@ -66,7 +73,14 @@ export class WorkComponent {
       linksActive: false,
     },
     {
-      technologies: ['Python', 'Django', 'DRF'],
+      technologies: [
+        'Django',
+        'DRF',
+        'PostgreSQL',
+        'Redis',
+        'Docker',
+        'Python',
+      ],
       github: 'https://github.com/TobiasKlanert/Videoflix-Backend',
       liveLink: 'https://videoflix.tobias-klanert.de',
       icon: '/assets/img/icon_videoflix.svg',

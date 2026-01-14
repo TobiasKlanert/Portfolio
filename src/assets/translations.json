@@ -58,18 +58,18 @@
       },
       "project4": {
         "title": "Coderr",
-        "description": "",
-        "details": ""
+        "description": "<strong>Coderr</strong> is the backend of a <strong>freelancer developer platform</strong>. It provides a <strong>REST API</strong> that covers core platform features such as user access, offers, orders, and reviews.",
+        "details": "Coderr was one of my first backend projects and served as a foundation for building and consolidating my knowledge of <strong>Django REST Framework</strong>.<br> Within this project, I implemented a structured API and gained hands-on experience with <strong>token-based authentication</strong> using Simple JWT, <strong>Django filtering</strong>, and the configuration of <strong>CORS headers</strong>. The focus was on clear application structure, well-defined responsibilities, and a maintainable server-side implementation."
       },
       "project5": {
         "title": "Quizly",
-        "description": "",
-        "details": ""
+        "description": "<strong>Quizly</strong> is a backend service for the <strong>automated creation of multiple-choice quizzes from YouTube videos</strong>. The application processes video content server-side and exposes the generated quiz data via a REST API.",
+        "details": "Quizly is a self-developed backend project focused on server-side media processing and the integration of external services. The application downloads YouTube videos on the server, extracts the audio track using <strong>FFmpeg</strong>, and transcribes the content with <strong>Whisper</strong>. Based on the transcription, a multiple-choice quiz is automatically generated via the <strong>Google Gemini API</strong>. The main focus was on the <strong>orchestration of multi-step processing pipelines</strong>, a clear backend structure, and the reliable integration of external tools and APIs."
       },
       "project6": {
         "title": "Videoflix",
-        "description": "",
-        "details": ""
+        "description": "<strong>Videoflix</strong> is the backend of a video streaming platform. The application prepares uploaded videos server-side for <strong>HLS-based streaming</strong> and exposes the content through a structured REST API.",
+        "details": "Videoflix is a self-developed backend project in which I gained my first hands-on experience with <strong>Docker, PostgreSQL, Redis</strong> and <strong>asynchronous processing</strong>. Uploaded videos are processed in the background using <strong>worker processes (RQ)</strong> and converted into the HLS format to optimize them for streaming. <strong>Redis</strong> is used to manage background jobs, while <strong>PostgreSQL</strong> handles persistent data storage. In addition, I implemented <strong>email-based user verification</strong>: a confirmation link is sent during user registration as well as during password reset flows. The focus was on a clear separation between web requests and background processing, as well as a stable and maintainable backend architecture."
       }
     },
     "references": {
@@ -572,18 +572,18 @@
       },
       "project4": {
         "title": "Coderr",
-        "description": "<strong>Coderr</strong> ist ein Backend für eine <strong>Freelancer-Entwicklerplattform</strong>. Es stellt eine <strong>token-gesicherte REST-API</strong> bereit – inklusive Authentifizierung sowie Endpunkten für Angebote, Bestellungen, Bewertungen und einfache Dashboard-Metriken.",
-        "details": ""
+        "description": "<strong>Coderr</strong> ist ein Backend für eine <strong>Freelancer-Entwicklerplattform</strong>. Über eine <strong>REST-API</strong> werden zentrale Funktionen wie Nutzerzugang, Angebote, Bestellungen und Bewertungen abgebildet.",
+        "details": "Coderr zählt zu meinen ersten Backend-Projekten und diente dazu, meine Kenntnisse in der Arbeit mit <strong>Django REST Framework</strong> systematisch aufzubauen und zu festigen.<br> Im Projekt habe ich eine strukturierte API umgesetzt und dabei erste praktische Erfahrungen mit <strong>tokenbasierter Authentifizierung</strong> (Simple JWT), <strong>Django-Filtern</strong> sowie der Konfiguration von <strong>CORS-Headern</strong> gesammelt. Der Fokus lag auf einer sauberen Struktur, klaren Verantwortlichkeiten innerhalb der Anwendung und einer nachvollziehbaren Umsetzung der Server-Logik."
       },
       "project5": {
         "title": "Quizly",
-        "description": "",
-        "details": ""
+        "description": "<strong>Quizly</strong> ist ein Backend-Service zur <strong>automatisierten Erstellung von Multiple-Choice-Quizzen aus YouTube-Videos</strong>. Die Anwendung verarbeitet Videoinhalte serverseitig und stellt die generierten Quizdaten über eine REST-API bereit.",
+        "details": "Quizly ist ein eigenständig entwickeltes Backend-Projekt mit dem Fokus auf der serverseitigen Verarbeitung von Medieninhalten und der Integration externer Dienste. Die Anwendung lädt YouTube-Videos serverseitig herunter, extrahiert die Audiospur mithilfe von <strong>FFmpeg</strong> und transkribiert den Inhalt mit <strong>Whisper</strong>. Auf Basis der Transkription wird anschließend über die <strong>Google Gemini API</strong> automatisch ein Multiple-Choice-Quiz generiert. Der Schwerpunkt lag auf der <strong>Orchestrierung mehrstufiger Verarbeitungsprozesse</strong>, einer klaren Backend-Struktur sowie einer zuverlässigen Anbindung externer Tools und APIs."
       },
       "project6": {
         "title": "Videoflix",
-        "description": "",
-        "details": ""
+        "description": "<strong>Videoflix</strong> ist das Backend einer Videostreaming-Plattform. Die Anwendung bereitet hochgeladene Videos serverseitig für das <strong>Streaming im HLS-Format</strong> auf und stellt die Inhalte über eine strukturierte REST-API bereit.",
+        "details": "Videoflix ist ein eigenständig umgesetztes Backend-Projekt, in dem ich erste praktische Erfahrungen mit <strong>Docker, PostgreSQL, Redis</strong> und <strong>asynchroner Verarbeitung</strong> gesammelt habe. Hochgeladene Videos werden im Hintergrund mithilfe von <strong>Worker-Prozessen (RQ)</strong> in das HLS-Format konvertiert, um sie für Streaming zu optimieren. Die Anwendung nutzt <strong>Redis</strong> zur Verwaltung von Hintergrundjobs und <strong>PostgreSQL</strong> zur persistenten Datenhaltung. Zusätzlich habe ich eine <strong>E-Mail-basierte Nutzerverifikation</strong> umgesetzt: Bei der Registrierung wird ein Bestätigungslink versendet, ebenso bei Passwort-Zurücksetzungen. Der Fokus lag auf einer sauberen Trennung von Web- und Background-Prozessen sowie einer stabilen, nachvollziehbaren Backend-Struktur."
       }
     },
     "references": {
