@@ -89,24 +89,24 @@
       }
     },
     "contact": {
-      "headline": "Let's build something Cool together!",
-      "subheading": "Got a problem to solve?",
-      "text": "I look forward to collaborating on exciting projects and bringing your ideas to life with my frontend development expertise. Feel free to get in touch so we can find practical and tailored solutions for your projects together.",
+      "headline": "Get in touch",
+      "subheading": "Let’s start a conversation",
+      "text": "If you have any questions about my projects or would simply like to connect, feel free to reach out.<br> I look forward to hearing from you and will get back to you shortly.",
       "form": {
         "name": {
           "headline": "What's your name?",
-          "placeholder": "Your name goes here",
-          "error": "Oops! It seems your name is missing."
+          "placeholder": "Your name",
+          "error": "Please enter your name."
         },
         "email": {
           "headline": "What's your email?",
           "placeholder": "youremail@email.com",
-          "error": "Hoppla! Your email is required."
+          "error": "Please enter your email address."
         },
         "message": {
           "headline": "How can I help you?",
-          "placeholder": "Hello Tobias, I am interested in...",
-          "error": "What do you need to develop?"
+          "placeholder": "Hi Tobias, I have a question about ...",
+          "error": "Please enter a message."
         },
         "privacyPolicy": {
           "firstPart": "I've read the",
@@ -603,24 +603,24 @@
       }
     },
     "contact": {
-      "headline": "Gemeinsam Großes schaffen!",
-      "subheading": "Haben Sie ein Problem zu lösen?",
-      "text": "Ich freue mich darauf, gemeinsam an spannenden Projekten zu arbeiten und Ihre Ideen mit meiner Expertise im Frontend-Development zum Leben zu erwecken. Kontaktieren Sie mich gerne, um gemeinsam passende und praxisnahe Lösungen für Ihre Projekte zu finden.",
+      "headline": "Kontakt aufnehmen",
+      "subheading": "Lassen Sie uns ins Gespräch kommen",
+      "text": "Wenn Sie Fragen zu meinen Projekten haben oder sich einfach austauschen möchten, schreiben Sie mir gerne.<br> Ich freue mich auf den Kontakt und antworte zeitnah.",
       "form": {
         "name": {
           "headline": "Wie lautet Ihr Name?",
-          "placeholder": "Ihr Name kommt hier hin",
-          "error": "Ups! Ihr Name fehlt."
+          "placeholder": "Ihr Name",
+          "error": "Bitte Name angeben."
         },
         "email": {
           "headline": "Ihre E-Mail-Adresse?",
           "placeholder": "ihre@email.de",
-          "error": "Hoppla! Ihre E-Mail-Adresse fehlt."
+          "error": "Bitte E-Mail-Adresse angeben."
         },
         "message": {
           "headline": "Wie kann ich Ihnen helfen?",
-          "placeholder": "Hallo Tobias, ich interessiere mich für ...",
-          "error": "Worum geht’s bei Ihrem Vorhaben?"
+          "placeholder": "Hallo Tobias, ich habe eine Frage zu ...",
+          "error": "Bitte Nachricht eingeben."
         },
         "privacyPolicy": {
           "firstPart": "Ich habe die",
