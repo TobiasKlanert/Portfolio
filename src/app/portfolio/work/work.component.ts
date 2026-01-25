@@ -53,7 +53,7 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-coderr.png',
       bgColor: '#F9AF42',
       spinner: '/assets/img/spinning_shape.svg',
-      linksActive: false,
+      linksActive: true,
     },
     {
       technologies: [
