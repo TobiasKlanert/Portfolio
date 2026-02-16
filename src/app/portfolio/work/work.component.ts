@@ -87,7 +87,7 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-videoflix.png',
       bgColor: '#679AAC',
       spinner: '/assets/img/spinning_shape.svg',
-      linksActive: false,
+      linksActive: true,
     },
   ];
 
