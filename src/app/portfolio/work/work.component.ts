@@ -70,7 +70,7 @@ export class WorkComponent {
       screenshot: '/assets/img/screenshot-quizly.png',
       bgColor: '#FF834F',
       spinner: '/assets/img/spinning_shape_yellow.svg',
-      linksActive: false,
+      linksActive: true,
     },
     {
       technologies: [
