@@ -59,23 +59,6 @@ export class WorkComponent {
       technologies: [
         'Django',
         'DRF',
-        'Python',
-        'FFmpeg',
-        'Whisper',
-        'Gemini API',
-      ],
-      github: 'https://github.com/TobiasKlanert/Quizly-Backend',
-      liveLink: 'https://quizly.tobias-klanert.de',
-      icon: '/assets/img/icon_quizly.png',
-      screenshot: '/assets/img/screenshot-quizly.png',
-      bgColor: '#FF834F',
-      spinner: '/assets/img/spinning_shape_yellow.svg',
-      linksActive: true,
-    },
-    {
-      technologies: [
-        'Django',
-        'DRF',
         'PostgreSQL',
         'Redis',
         'Docker',
