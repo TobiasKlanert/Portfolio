@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "de",
+        "locales": {
+          "en": { "translation": "src/locale/messages.en.xlf" }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -23,22 +29,19 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "localize": true,
+            "polyfills": ["@angular/localize/init"],
             "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles/styles.scss"],
             "server": "src/main.server.ts",
-            "outputMode": "server",
+            "outputMode": "static",
             "security": {
               "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
             }
           },
           "configurations": {
