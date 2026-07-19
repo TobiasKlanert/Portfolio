@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://tobias-klanert.de",
+  "locales": ["de", "en"],
+  "defaultLocale": "de",
+  "routes": ["", "imprint", "privacy"]
+}
