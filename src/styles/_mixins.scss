@@ -1,0 +1,111 @@
+@use 'sass:map';
+@use 'tokens' as t;
+
+// =============================================================================
+// Mixins
+// -----------------------------------------------------------------------------
+// Components include this file to access mq() and its helper functions:
+//
+//   @use 'mixins' as m;
+//   .card { @include m.mq(md) { … } }
+//
+// The import only includes “tokens” at compile time (no CSS output).
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// mq — Mobile-First Media-Query-Helper (min-width).
+// Expects a key from $breakpoints; if the key is unknown
+// the build aborts with a clear message instead of failing silently.
+// -----------------------------------------------------------------------------
+
+@mixin mq($breakpoint) {
+  @if map.has-key(t.$breakpoints, $breakpoint) {
+    @media (min-width: map.get(t.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error 'Unknown Breakpoint "#{$breakpoint}". Allowed: #{map.keys(t.$breakpoints)}.';
+  }
+}
+
+// mq-down — a max-width variant for the rare cases in which a
+// mobile-specific scenario cannot be expressed using a mobile-first approach.
+// -1px prevents overlap at the exact breakpoint boundary.
+@mixin mq-down($breakpoint) {
+  @if map.has-key(t.$breakpoints, $breakpoint) {
+    @media (max-width: (map.get(t.$breakpoints, $breakpoint) - 1px)) {
+      @content;
+    }
+  } @else {
+    @error 'Unbekannter Breakpoint "#{$breakpoint}". Erlaubt: #{map.keys(t.$breakpoints)}.';
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// the visible focus state
+// -----------------------------------------------------------------------------
+
+@mixin focus-ring {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+
+// -----------------------------------------------------------------------------
+// visually-hidden — visible to screen readers, but hidden from view.
+// Do not use `display:none`, as that also hides the text from screen readers.
+// -----------------------------------------------------------------------------
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+// -----------------------------------------------------------------------------
+// reduced-motion — A wrapper for component-local animation reversal.
+// Global deactivation is handled in _reset.scss; this mixin is for
+// specific exceptions within a component.
+// -----------------------------------------------------------------------------
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// mono — Basis for all technical mono values: stack tags, telemetry,
+// commit hashes, paths. Disable ligatures so that sequences like -> != -- in hashes
+// and paths do not merge into symbols (precision over code aesthetics).
+// -----------------------------------------------------------------------------
+
+@mixin mono {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+}
+
+
+// -----------------------------------------------------------------------------
+// mono-label — the recurring pattern for small technical labels:
+// Eyebrows, origin levels, telemetry values. Monospace, all caps, bold.
+// -----------------------------------------------------------------------------
+
+@mixin mono-label {
+  @include mono;
+  font-size: var(--fs-micro);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
