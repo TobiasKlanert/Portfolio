@@ -1,0 +1,240 @@
+@use 'sass:map';
+
+// =============================================================================
+// Design-Tokens
+// -----------------------------------------------------------------------------
+// Two-level structure:
+//   1. Primitives ($-variables) — the raw values. Compile-time, no CSS output.
+//   2. css-variables-mixin — translates the primitives into CSS custom properties
+//      under :root. Is included once in styles.scss.
+//
+// Components do not import this file for colors/spacing — these
+// are available globally as var(--…). It is only imported where the
+// $-breakpoints are needed (see _mixins.scss).
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// 1. Primitive — Color Palette
+// -----------------------------------------------------------------------------
+
+// Accent
+$amber:        #EF9F27;
+$amber-bright: #FAC775;
+$amber-dim:    #854F0B;
+
+// Dark Surfaces
+$ink-0: #0B0C0F; // Page Background
+$ink-1: #111318; // Inlaid bands, text on amber
+$ink-2: #171A20; // increased surfaces
+$ink-3: #181B21; // Cards
+$ink-4: #1C2027; // Tags, Hover, Inset
+
+// Text
+$paper-0: #F4F2ED; // Text primary
+$paper-1: #E8E6E1; // warm white, dimmed
+$grey-1:  #C9CCD2; // light-colored body text
+$grey-2:  #A6ABB4; // Text secondary
+$grey-3:  #6E747E; // Text tertiary, Labels
+$grey-4:  #4A505B; // Text disabled
+
+// Lines and Overlays
+$line-faint:  rgba(255, 255, 255, 0.06);
+$line:        rgba(255, 255, 255, 0.12);
+$line-strong: rgba(255, 255, 255, 0.16);
+$divider:     rgba(255, 255, 255, 0.07);
+$scrim:       rgba(11, 12, 15, 0.75); // Header Background When Scrolling
+
+
+// -----------------------------------------------------------------------------
+// 2. Primitive — Typography
+// -----------------------------------------------------------------------------
+
+$font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+$font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+// Font weights
+$fw-regular:  400;
+$fw-medium:   500;
+$fw-semibold: 600;
+$fw-bold:     700;
+
+// Font sizes (16px Base)
+$fs-hero: 4rem;      // 64px — Hero
+$fs-h1:   2.375rem;  // 38px
+$fs-h2:   1.625rem;  // 26px
+$fs-h3:   1.25rem;   // 20px
+$fs-body: 1rem;      // 16px — Base
+$fs-sm:   0.875rem;  // 14px
+$fs-xs:   0.8125rem; // 13px
+$fs-2xs:  0.75rem;   // 12px
+$fs-micro: 0.6875rem; // 11px — Telemetry, Mono-Labels
+
+// Line heights
+$lh-tight:  1.08; // Large Headings
+$lh-snug:   1.3;
+$lh-normal: 1.6;  // Body text
+
+// Laufweite
+$ls-tight: -0.015em; // Large Headings
+$ls-wide:  0.08em;   // Mono-Labels
+$ls-wider: 0.12em;   // Eyebrows
+
+
+// -----------------------------------------------------------------------------
+// 3. Primitive — Spacing (4px grid)
+// -----------------------------------------------------------------------------
+
+$space-3xs: 0.25rem; //  4px
+$space-2xs: 0.5rem;  //  8px
+$space-xs:  0.75rem; // 12px
+$space-sm:  1rem;    // 16px
+$space-md:  1.5rem;  // 24px
+$space-lg:  2rem;    // 32px
+$space-xl:  3rem;    // 48px
+$space-2xl: 4rem;    // 64px
+$space-3xl: 6rem;    // 96px
+
+
+// -----------------------------------------------------------------------------
+// 4. Primitive — Radii, Shadows, Layout
+// -----------------------------------------------------------------------------
+
+$radius-xs:   3px;
+$radius-sm:   4px;
+$radius-md:   6px;
+$radius-lg:   8px;
+$radius-xl:   10px;
+$radius-full: 999px;
+
+$shadow-card: 0 2px 12px rgba(0, 0, 0, 0.5);
+
+$container-max:  1120px; // Content Scope
+$measure-prose:  640px;  // Maximum line length for body text
+
+
+// -----------------------------------------------------------------------------
+// 5. Breakpoints — as a $-map so that mq() can read them.
+//    Media queries cannot use CSS custom properties, so
+//    these values remain in SCSS.
+// -----------------------------------------------------------------------------
+
+$breakpoints: (
+  sm: 480px,
+  md: 768px,  // Tablet — Project Grid, 2 Columns
+  lg: 1024px, // Desktop — Project Grid, 3 Columns
+  xl: 1440px,
+);
+
+
+// -----------------------------------------------------------------------------
+// 6. Z-Index
+// -----------------------------------------------------------------------------
+
+$z-starfield: -1;  // Background Star Field
+$z-base:       0;
+$z-content:    1;
+$z-dotnav:     50;
+$z-header:     100;
+$z-overlay:    200; // Language selection menu, etc.
+
+
+// =============================================================================
+// css-variables — Include once in styles.scss:
+//
+//   @use ‘tokens’;
+//   @include tokens.css-variables;
+//
+// After that, all --… are available globally under :root. Importing
+// this file into a component does not generate any CSS output as long as the
+// mixin is not called there.
+// =============================================================================
+
+@mixin css-variables {
+  :root {
+    // Colors - Areas
+    --color-bg:             #{$ink-0};
+    --color-surface:        #{$ink-3};
+    --color-surface-alt:    #{$ink-2};
+    --color-surface-sunken: #{$ink-1};
+    --color-surface-inset:  #{$ink-4};
+
+    // Colors - Text
+    --color-text:           #{$paper-0};
+    --color-text-strong:    #{$paper-1};
+    --color-text-secondary: #{$grey-2};
+    --color-text-tertiary:  #{$grey-3};
+    --color-text-disabled:  #{$grey-4};
+
+    // Colors - Accent
+    --color-accent:        #{$amber};
+    --color-accent-bright: #{$amber-bright};
+    --color-accent-dim:    #{$amber-dim};
+    --color-on-accent:     #{$ink-1};
+
+    // Lines and Overlays
+    --border-faint:  #{$line-faint};
+    --border:        #{$line};
+    --border-strong: #{$line-strong};
+    --divider:       #{$divider};
+    --scrim:         #{$scrim};
+
+    // Typography
+    --font-sans: #{$font-sans};
+    --font-mono: #{$font-mono};
+
+    --fw-regular:  #{$fw-regular};
+    --fw-medium:   #{$fw-medium};
+    --fw-semibold: #{$fw-semibold};
+    --fw-bold:     #{$fw-bold};
+
+    --fs-hero:  #{$fs-hero};
+    --fs-h1:    #{$fs-h1};
+    --fs-h2:    #{$fs-h2};
+    --fs-h3:    #{$fs-h3};
+    --fs-body:  #{$fs-body};
+    --fs-sm:    #{$fs-sm};
+    --fs-xs:    #{$fs-xs};
+    --fs-2xs:   #{$fs-2xs};
+    --fs-micro: #{$fs-micro};
+
+    --lh-tight:  #{$lh-tight};
+    --lh-snug:   #{$lh-snug};
+    --lh-normal: #{$lh-normal};
+
+    --ls-tight: #{$ls-tight};
+    --ls-wide:  #{$ls-wide};
+    --ls-wider: #{$ls-wider};
+
+    // Spaces
+    --space-3xs: #{$space-3xs};
+    --space-2xs: #{$space-2xs};
+    --space-xs:  #{$space-xs};
+    --space-sm:  #{$space-sm};
+    --space-md:  #{$space-md};
+    --space-lg:  #{$space-lg};
+    --space-xl:  #{$space-xl};
+    --space-2xl: #{$space-2xl};
+    --space-3xl: #{$space-3xl};
+
+    // Radii and Shadows
+    --radius-xs:   #{$radius-xs};
+    --radius-sm:   #{$radius-sm};
+    --radius-md:   #{$radius-md};
+    --radius-lg:   #{$radius-lg};
+    --radius-xl:   #{$radius-xl};
+    --radius-full: #{$radius-full};
+    --shadow-card: #{$shadow-card};
+
+    // Layout
+    --container-max: #{$container-max};
+    --measure-prose: #{$measure-prose};
+
+    // Z-Index
+    --z-starfield: #{$z-starfield};
+    --z-content:   #{$z-content};
+    --z-dotnav:    #{$z-dotnav};
+    --z-header:    #{$z-header};
+    --z-overlay:   #{$z-overlay};
+  }
+}
